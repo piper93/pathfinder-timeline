@@ -36,7 +36,7 @@
   color: white;
 }
 .topnav button.ec-link:hover {
-  background-color: #FF4500;
+  background-color: #FFA500;
   color: white;
 }
 .topnav button.av-link:hover {
@@ -65,7 +65,7 @@
   color: white;
 }
 .topnav button.ec-link.active {
-  background-color: #FF4500;
+  background-color: #FFA500;
   color: white;
 }
 .topnav button.av-link.active {
