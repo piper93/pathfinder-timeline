@@ -110,3 +110,23 @@
     text-align: left;
   }
 }
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #25303B;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #181f26;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3c4b59;
+}
