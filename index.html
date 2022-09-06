@@ -3,13 +3,36 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=sevice-width, initial-scale=1">
 <link rel="stylesheet" href="css/timeline.css">
+<link rel="stylesheet" href="css/topnav.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <head>
   <title>Pathfinder Timeline</title>
 </head>
 <body>
+<div class="topnav" id="myTopnav">
+  <button onclick='updatePage("all")' class="all-link active">All</button>
+  <button onclick='updatePage("aoa")' class="aoa-link">Age of Ashes</button>
+  <button onclick='updatePage("ec")' class="ec-link">Extinction Curse</button>
+  <button onclick='updatePage("av")' class="av-link">Abomination Vaults</button>
+  <button onclick='updatePage("fotrp")' class="fotrp-link">Fists of the Ruby Phoenix</button>
+  <button onclick='updatePage("notgd")' class="notgd-link">Night of the Gray Death</button>
+  <button onclick='updatePage("ooa")' class="ooa-link">Outlaws of Alkenstar</button>
+  <button href="javascript:void(0);" class="icon" onclick="topNav()">
+    <i class="fa fa-bars"></i>
+  </button>
+</div>
 <section id="timeline">
 </section>
 <script src="js/timeline.js"></script>
+<script>
+function topNav() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 </body>
 </html>
