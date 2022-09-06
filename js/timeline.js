@@ -138,7 +138,8 @@ const EVENTS = [
 ]
 
 var sortedEvents = {};
-var orderedEvents = new Object()
+var orderedEvents = new Object();
+let tagFilter = "all";
 
 for (event of EVENTS) {
   if (!sortedEvents.hasOwnProperty(event.year)) {
@@ -170,15 +171,28 @@ for (year of years) {
     }
   }
 }
-console.log(orderedEvents)
 
-function getTimeline() {
+function updatePage(filter){
+  var oldLink = document.getElementsByClassName("active");
+  oldLink[0].classList.remove("active");
+  var newLink = document.getElementsByClassName(`${filter}-link`);
+  newLink[0].classList.add("active");
+  getTimeline(filter);
+}
+
+function getTimeline(filter = "all") {
+  var displayedEvents = orderedEvents;
+  if (filter != "all")
+  {
+    tagFilter = filter;
+    displayedEvents = filterEvents()
+  }
   var section = document.getElementById("timeline");
   var timeline = ``;
-  var keys = Object.keys(orderedEvents)
+  var keys = Object.keys(displayedEvents)
   for (key of keys)
   {
-    let events = orderedEvents[key][0];
+    let events = displayedEvents[key][0];
     //get date from first events
     var firstEvent = events[0];
     var string = `
@@ -197,6 +211,27 @@ function getTimeline() {
     timeline += string
   }
   section.innerHTML = timeline;
+}
+
+function filterEvents() {
+  var filteredEvents = new Object()
+  var keys = Object.keys(orderedEvents)
+  for (key of keys)
+  {
+    let events = orderedEvents[key][0];
+    let result = events.filter(checkTag);
+    if (result.length > 0) {
+      if (!filteredEvents.hasOwnProperty(key)) {
+        filteredEvents[key] = new Array()
+      }
+      filteredEvents[key].push(result);
+    }
+  }
+  return filteredEvents;
+}
+
+function checkTag(event) {
+  return event.tag === tagFilter;
 }
 
 getTimeline();
