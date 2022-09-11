@@ -94,12 +94,6 @@ const EVENTS = [
   new Event("ec","Munya claimed Piereta",4720,10,6),
   new Event("ec","Arrived in the Vale of Aroden",4720,10,7),
   new Event("ec","Hernandedor claimed the Arrogant Shirt from Aroden's Collection; Sarvel Ever-Hunger was defeated; The aeon orbs were restored",4720,10,9),
-  new Event("fotrp","The Ruby Phoenix Tournament Qualifier Began; Teams Arrived on Bonmu",4721,7,18),
-  new Event("fotrp","The Blood Moon Blades Qualified for the Tournament",4721,7,21),
-  new Event("fotrp","Patron Week Began",4721,8,25),
-  new Event("fotrp","The Blood Moon Blades defeated the underworld dragon, Iagaara, when it manifested above Goka",4721,8,28),
-  new Event("fotrp","The Blood Moon Blades chose Lady Xhai Zhia as their patron",4721,8,31),
-  new Event("fotrp","The Blood Moon Blades Won the Ruby Phoenix Tournament; They claimed a high-standard mithril waffle iron as their prize from Hao Jin's Vault",4721,9,10),
   new Event("notgd","Chairwoman Drannoch recruited people to attempt to take down the Grey Gardeners",4721,10,26),
   new Event("notgd","Investigation into the Masquerade began; Flynn ordered an elaborate outfit for the masque",4721,10,30),
   new Event("notgd","Hired as High Magistrate Otvald Gharmino's bodyguards at the masque; Perrie got upset with the 'fake clowns' at the market; Perrie and Flynn got out of phase",4721,10,31),
@@ -134,7 +128,7 @@ const EVENTS = [
   new Event("av","Defeated the hydras; Recovered the Cooperative Blade",4721,6,24),
   new Event("av","Glodrum made a deal with Urevian and sold both his and Carman Rajani's soul in exchange for Urevian and his devils to leave the vaults; Mar-T'an beat up Carman and put him in a potato sack; Ysondkhelir was killed and Dorianna was freed; Mar-T'an sold his soul to Szek for 250 years in exchange for a bit of luck",4721,6,25),
   new Event("av","Belcorra attacked the party for the first time",4721,6,28),
-  new Event("av","Traded with some chuul for their eggs; Formed an alliance with Dulac and the Cult of Urthagul; Belcorra attacked again, leaving Dulac and Padli the only surviving members of the Cult",4721,6,29)
+  new Event("av","Traded with some chuul for their eggs; Formed an alliance with Dulac and the Cult of Urthagul; Belcorra attacked again, leaving Dulac and Padli the only surviving members of the Cult",4721,6,29),
   new Event("ooa","Introduced to Yin; Began investigating the Powderkeg Punks; Tried to determine if Vix the Bartender was being exploited",4722,7,6),
   new Event("ooa","Visited Ryka's Reagents; Learned the name Lyzerius",4722,7,7),
   new Event("ooa","Astra, Yin, and Yosiah entered the weekly rodeo; Yin won a membership to the Longhorn Lounge; Bribed Bert to gain access to the members list; Mugged a Punk for the password to the Old Widgetworks Warehouse; Met with Glaz Nixbrix and killed his pet snake, Bitey, in exchange for information",4722,7,8)
