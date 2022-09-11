@@ -43,10 +43,6 @@
   background-color: #20B2AA;
   color: white;
 }
-.topnav button.fotrp-link:hover {
-  background-color: #663399;
-  color: white;
-}
 .topnav button.notgd-link:hover {
   background-color: #708090;
   color: white;
@@ -70,10 +66,6 @@
 }
 .topnav button.av-link.active {
   background-color: #20B2AA;
-  color: white;
-}
-.topnav button.fotrp-link.active {
-  background-color: #663399;
   color: white;
 }
 .topnav button.notgd-link.active {
