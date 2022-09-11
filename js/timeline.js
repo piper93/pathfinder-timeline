@@ -103,7 +103,7 @@ const EVENTS = [
   new Event("notgd","Chairwoman Drannoch recruited people to attempt to take down the Grey Gardeners",4721,10,26),
   new Event("notgd","Investigation into the Masquerade began; Flynn ordered an elaborate outfit for the masque",4721,10,30),
   new Event("notgd","Hired as High Magistrate Otvald Gharmino's bodyguards at the masque; Perrie got upset with the 'fake clowns' at the market; Perrie and Flynn got out of phase",4721,10,31),
-  new Event("notgd","Mr Small (Bertrand Eglantine Petit) removed Perrie and Flynn's curses; The Masquerade Began; Flynn was killed by a vorpal blade trape; Octavio Valentine joined the fight",4721,11,1),
+  new Event("notgd","Mr Small (Bertrand Eglantine Petit) removed Perrie and Flynn's curses; The Masquerade Began; Flynn was killed by a vorpal blade trap; Octavio Valentine joined the fight",4721,11,1),
   new Event("notgd","The first Gray Death was released; All attendees became victims of the Night of the Gray Death; Galt was left in ruins; the Conqueror Worm prepared to move to another land",4721,11,2),
   new Event("ooa","Hired by Foebe Dunsmith for a bank heist",4722,6,27),
   new Event("ooa","Stole the lockbox from the Gold Tank Reserve; Met Lord Glass and the Nailgobblers",4722,6,28),
@@ -134,7 +134,10 @@ const EVENTS = [
   new Event("av","Defeated the hydras; Recovered the Cooperative Blade",4721,6,24),
   new Event("av","Glodrum made a deal with Urevian and sold both his and Carman Rajani's soul in exchange for Urevian and his devils to leave the vaults; Mar-T'an beat up Carman and put him in a potato sack; Ysondkhelir was killed and Dorianna was freed; Mar-T'an sold his soul to Szek for 250 years in exchange for a bit of luck",4721,6,25),
   new Event("av","Belcorra attacked the party for the first time",4721,6,28),
-  new Event("av","Traded with some chuul for their eggs; Formed an alliance with Dulac and the Cult of Urthagul",4721,6,29)
+  new Event("av","Traded with some chuul for their eggs; Formed an alliance with Dulac and the Cult of Urthagul; Belcorra attacked again, leaving Dulac and Padli the only surviving members of the Cult",4721,6,29)
+  new Event("ooa","Introduced to Yin; Began investigating the Powderkeg Punks; Tried to determine if Vix the Bartender was being exploited",4722,7,6),
+  new Event("ooa","Visited Ryka's Reagents; Learned the name Lyzerius",4722,7,7),
+  new Event("ooa","Astra, Yin, and Yosiah entered the weekly rodeo; Yin won a membership to the Longhorn Lounge; Bribed Bert to gain access to the members list; Mugged a Punk for the password to the Old Widgetworks Warehouse; Met with Glaz Nixbrix and killed his pet snake, Bitey, in exchange for information",4722,7,8)
 ]
 
 var sortedEvents = {};
