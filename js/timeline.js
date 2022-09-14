@@ -131,7 +131,8 @@ const EVENTS = [
   new Event("av","Traded with some chuul for their eggs; Formed an alliance with Dulac and the Cult of Urthagul; Belcorra attacked again, leaving Dulac and Padli the only surviving members of the Cult",4721,6,29),
   new Event("ooa","Introduced to Yin; Began investigating the Powderkeg Punks; Tried to determine if Vix the Bartender was being exploited",4722,7,6),
   new Event("ooa","Visited Ryka's Reagents; Learned the name Lyzerius",4722,7,7),
-  new Event("ooa","Astra, Yin, and Yosiah entered the weekly rodeo; Yin won a membership to the Longhorn Lounge; Bribed Bert to gain access to the members list; Mugged a Punk for the password to the Old Widgetworks Warehouse; Met with Glaz Nixbrix and killed his pet snake, Bitey, in exchange for information",4722,7,8)
+  new Event("ooa","Astra, Yin, and Yosiah entered the weekly rodeo; Yin won a membership to the Longhorn Lounge; Bribed Bert to gain access to the members list; Mugged a Punk for the password to the Old Widgetworks Warehouse; Met with Glaz Nixbrix and killed his pet snake, Bitey, in exchange for information",4722,7,8),
+  new Event("av","Belcorra feebleminded Spoons, leaving her <i>stupefied 4</i>; Descended to Yldaris to meet and ally with the drow; Learned of the Fulcrum Lenses and the power of the Empty Death",4721,7,1)
 ]
 
 var sortedEvents = {};
