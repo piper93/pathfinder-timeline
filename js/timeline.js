@@ -132,11 +132,11 @@ const EVENTS = [
   new Event("ooa","Introduced to Yin; Began investigating the Powderkeg Punks; Tried to determine if Vix the Bartender was being exploited",4722,7,6),
   new Event("ooa","Visited Ryka's Reagents; Learned the name Lyzerius",4722,7,7),
   new Event("ooa","Astra, Yin, and Yohsiah entered the weekly rodeo; Yin won a membership to the Longhorn Lounge; Bribed Bert to gain access to the members list; Mugged a Punk for the password to the Old Widgetworks Warehouse; Met with Glaz Nixbrix and killed his pet snake, Bitey, in exchange for information",4722,7,8),
-  new Event("av","Belcorra feebleminded Spoons, leaving her <i>stupefied 4</i>; Descended to Yldaris to meet and ally with the drow; Learned of the Fulcrum Lenses and the power of the Empty Death",4721,7,1)
+  new Event("av","Belcorra feebleminded Spoons, leaving her <i>stupefied 4</i>; Descended to Yldaris to meet and ally with the drow; Learned of the Fulcrum Lenses and the power of the Empty Death",4721,7,1),
   new Event("ooa", "Found Shoma Lyzerius in Hellside; returned him to the Barrel & Bullet Saloon; Learned that the formula for Pyronite might have been discovered by another.",4722,7,9),
   new Event("av", "Met the remaining calignis and promised to help them escape the Vaults; Defeated Urthagul and claimed the Crimson Fulcrum Lens", 4721, 7,3),
-  new Event("av", "Assaulted the urdefhan stronghold; defeated Khurfel and claimed the Emerald Fulcrum Lens", 4721,7,4)
-  new Event("av","Ventured out onto the Deep Lake; recovered the Ochre Fulcrum Lens after an intense fight with the deepwater dhuthorexes",4721,7,5)
+  new Event("av", "Assaulted the urdefhan stronghold; defeated Khurfel and claimed the Emerald Fulcrum Lens", 4721,7,4),
+  new Event("av","Ventured out onto the Deep Lake; recovered the Ochre Fulcrum Lens after an intense fight with the deepwater dhuthorexes",4721,7,5),
   new Event("av","Defeated the black dragon, Ravirex, who had killed Glodrum's wife; Glodrum recovered his clan dagger; led the calignis out of the vault",4721,7,6)
 ]
 
