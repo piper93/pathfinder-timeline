@@ -99,11 +99,11 @@ const EVENTS = [
   new Event("notgd","Hired as High Magistrate Otvald Gharmino's bodyguards at the masque; Perrie got upset with the 'fake clowns' at the market; Perrie and Flynn got out of phase",4721,10,31),
   new Event("notgd","Mr Small (Bertrand Eglantine Petit) removed Perrie and Flynn's curses; The Masquerade Began; Flynn was killed by a vorpal blade trap; Octavio Valentine joined the fight",4721,11,1),
   new Event("notgd","The first Gray Death was released; All attendees became victims of the Night of the Gray Death; Galt was left in ruins; the Conqueror Worm prepared to move to another land",4721,11,2),
-  new Event("ooa","Hired by Foebe Dunsmith for a bank heist",4722,6,27),
-  new Event("ooa","Stole the lockbox from the Gold Tank Reserve; Met Lord Glass and the Nailgobblers",4722,6,28),
-  new Event("ooa","Given a new mission to retrieve Varshon Gattlebee and bring him to the saloon",4722,6,30),
-  new Event("ooa","Escorted Gattlebee and his pet chameleon, Slick, to the Yeast of All Brewery",4722,7,4),
-  new Event("ooa","Ambushed by Dewey Daystar and his pet drake, Roxy; Gruzwil was killed",4722,7,5),
+  new Event("ooa","Hired by Foebe Dunsmith for a bank heist",4722,4,27),
+  new Event("ooa","Stole the lockbox from the Gold Tank Reserve; Met Lord Glass and the Nailgobblers",4722,4,28),
+  new Event("ooa","Given a new mission to retrieve Varshon Gattlebee and bring him to the saloon",4722,4,30),
+  new Event("ooa","Escorted Gattlebee and his pet chameleon, Slick, to the Yeast of All Brewery",4722,5,4),
+  new Event("ooa","Ambushed by Dewey Daystar and his pet drake, Roxy; Gruzwil was killed",4722,5,5),
   new Event("av","Learned of potential danger in the Fogfens",4721,5,3),
   new Event("av","Travelled to Gauntlight for the first time; Petra was killed",4721,5,4),
   new Event("av","Met Boss Skrawng; Asked to kill the Mushroom-Eyed King on the floor below",4721,5,5),
@@ -129,15 +129,18 @@ const EVENTS = [
   new Event("av","Glodrum made a deal with Urevian and sold both his and Carman Rajani's soul in exchange for Urevian and his devils to leave the vaults; Mar-T'an beat up Carman and put him in a potato sack; Ysondkhelir was killed and Dorianna was freed; Mar-T'an sold his soul to Szek for 250 years in exchange for a bit of luck",4721,6,25),
   new Event("av","Belcorra attacked the party for the first time",4721,6,28),
   new Event("av","Traded with some chuul for their eggs; Formed an alliance with Dulac and the Cult of Urthagul; Belcorra attacked again, leaving Dulac and Padli the only surviving members of the Cult",4721,6,29),
-  new Event("ooa","Introduced to Yin; Began investigating the Powderkeg Punks; Tried to determine if Vix the Bartender was being exploited",4722,7,6),
-  new Event("ooa","Visited Ryka's Reagents; Learned the name Lyzerius",4722,7,7),
-  new Event("ooa","Astra, Yin, and Yohsiah entered the weekly rodeo; Yin won a membership to the Longhorn Lounge; Bribed Bert to gain access to the members list; Mugged a Punk for the password to the Old Widgetworks Warehouse; Met with Glaz Nixbrix and killed his pet snake, Bitey, in exchange for information",4722,7,8),
-  new Event("av","Belcorra feebleminded Spoons, leaving her <i>stupefied 4</i>; Descended to Yldaris to meet and ally with the drow; Learned of the Fulcrum Lenses and the power of the Empty Death",4721,7,1)
-  new Event("ooa", "Found Shoma Lyzerius in Hellside; returned him to the Barrel & Bullet Saloon; Learned that the formula for Pyronite might have been discovered by another.",4722,7,9),
-  new Event("av", "Met the remaining calignis and promised to help them escape the Vaults; Defeated Urthagul and claimed the Crimson Fulcrum Lens", 4721, 7,3),
-  new Event("av", "Assaulted the urdefhan stronghold; defeated Khurfel and claimed the Emerald Fulcrum Lens", 4721,7,4)
-  new Event("av","Ventured out onto the Deep Lake; recovered the Ochre Fulcrum Lens after an intense fight with the deepwater dhuthorexes",4721,7,5)
-  new Event("av","Defeated the black dragon, Ravirex, who had killed Glodrum's wife; Glodrum recovered his clan dagger; led the calignis out of the vault",4721,7,6)
+  new Event("ooa","Introduced to Yin; Began investigating the Powderkeg Punks; Tried to determine if Vix the Bartender was being exploited",4722,5,6),
+  new Event("ooa","Visited Ryka's Reagents; Learned the name Lyzerius",4722,5,7),
+  new Event("ooa","Astra, Yin, and Yohsiah entered the weekly rodeo; Yin won a membership to the Longhorn Lounge; Bribed Bert to gain access to the members list; Mugged a Punk for the password to the Old Widgetworks Warehouse; Met with Glaz Nixbrix and killed his pet snake, Bitey, in exchange for information",4722,5,8),
+  new Event("av","Belcorra feebleminded Spoons, leaving her <i>stupefied 4</i>; Descended to Yldaris to meet and ally with the drow; Learned of the Fulcrum Lenses and the power of the Empty Death",4721,5,1),
+  new Event("ooa","Found Shoma Lyzerius in Hellside; returned him to the Barrel & Bullet Saloon; Learned that the formula for Pyronite might have been discovered by another.",4722,5,9),
+  new Event("av","Met the remaining calignis and promised to help them escape the Vaults; Defeated Urthagul and claimed the Crimson Fulcrum Lens", 4721,7,3),
+  new Event("av","Assaulted the urdefhan stronghold; defeated Khurfel and claimed the Emerald Fulcrum Lens", 4721,7,4),
+  new Event("av","Ventured out onto the Deep Lake; recovered the Ochre Fulcrum Lens after an intense fight with the deepwater dhuthorexes",4721,7,5),
+  new Event("av","Defeated the black dragon, Ravirex, who had killed Glodrum's wife; Glodrum recovered his clan dagger; led the calignis out of the vault",4721,7,6),
+  new Event("av","Fled from Caliddo Haruvex at Belcorra's Vault",4721,7,7),
+  new Event("av","Defeated Caliddo Haruvex; Recovered the Fulcrum Lattice",4721,7,8),
+  new Event("av","Entered the ancient Black Doors; Descended to the lowest level of the Vaults",4721,7,9)
 ]
 
 var sortedEvents = {};
