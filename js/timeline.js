@@ -132,7 +132,7 @@ const EVENTS = [
   new Event("ooa","Introduced to Yin; Began investigating the Powderkeg Punks; Tried to determine if Vix the Bartender was being exploited",4722,5,6),
   new Event("ooa","Visited Ryka's Reagents; Learned the name Lyzerius",4722,5,7),
   new Event("ooa","Astra, Yin, and Yohsiah entered the weekly rodeo; Yin won a membership to the Longhorn Lounge; Bribed Bert to gain access to the members list; Mugged a Punk for the password to the Old Widgetworks Warehouse; Met with Glaz Nixbrix and killed his pet snake, Bitey, in exchange for information",4722,5,8),
-  new Event("av","Belcorra feebleminded Spoons, leaving her <i>stupefied 4</i>; Descended to Yldaris to meet and ally with the drow; Learned of the Fulcrum Lenses and the power of the Empty Death",4721,5,1),
+  new Event("av","Belcorra feebleminded Spoons, leaving her <i>stupefied 4</i>; Descended to Yldaris to meet and ally with the drow; Learned of the Fulcrum Lenses and the power of the Empty Death",4721,7,1),
   new Event("ooa","Found Shoma Lyzerius in Hellside; returned him to the Barrel & Bullet Saloon; Learned that the formula for Pyronite might have been discovered by another.",4722,5,9),
   new Event("av","Met the remaining calignis and promised to help them escape the Vaults; Defeated Urthagul and claimed the Crimson Fulcrum Lens", 4721,7,3),
   new Event("av","Assaulted the urdefhan stronghold; defeated Khurfel and claimed the Emerald Fulcrum Lens", 4721,7,4),
@@ -140,7 +140,9 @@ const EVENTS = [
   new Event("av","Defeated the black dragon, Ravirex, who had killed Glodrum's wife; Glodrum recovered his clan dagger; led the calignis out of the vault",4721,7,6),
   new Event("av","Fled from Caliddo Haruvex at Belcorra's Vault",4721,7,7),
   new Event("av","Defeated Caliddo Haruvex; Recovered the Fulcrum Lattice",4721,7,8),
-  new Event("av","Entered the ancient Black Doors; Descended to the lowest level of the Vaults",4721,7,9)
+  new Event("av","Entered the ancient Black Doors; Descended to the lowest level of the Vaults; Unknowingly began Nhimbaloth's trials",4721,7,9)
+  //new Event("av","Completed the trials; Defeated Lady's Whisper; Sent Belcorra to the Empty Death; Escaped the Abomination Vaults",4721,7,11)
+  //new Event("av","Attended Shad Nunder and Honey Tittensore's Heartbond Ceremony",4721,7,24)
 ]
 
 var sortedEvents = {};
