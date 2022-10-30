@@ -141,8 +141,9 @@ const EVENTS = [
   new Event("av","Fled from Caliddo Haruvex at Belcorra's Vault",4721,7,7),
   new Event("av","Defeated Caliddo Haruvex; Recovered the Fulcrum Lattice",4721,7,8),
   new Event("av","Entered the ancient Black Doors; Descended to the lowest level of the Vaults; Unknowingly began Nhimbaloth's trials",4721,7,9)
-  //new Event("av","Completed the trials; Defeated Lady's Whisper; Sent Belcorra to the Empty Death; Escaped the Abomination Vaults",4721,7,11)
-  //new Event("av","Attended Shad Nunder and Honey Tittensore's Heartbond Ceremony",4721,7,24)
+  new Event("av","Completed the trials; Defeated Lady's Whisper; Eri died; Sent Belcorra to the Empty Death; Escaped the Abomination Vaults",4721,7,11)
+  new Event("av","Eri was resurrected by a ritual in Absalom",4721,7,14),
+  new Event("av","Attended Shad Nunder and Honey Tittensor's Heartbond Ceremony",4721,7,24)
 ]
 
 var sortedEvents = {};

@@ -51,6 +51,10 @@
   background-color: #A0522D;
   color: white;
 }
+.topnav a.bl-link:hover {
+  background-color: #CF0000;
+  color: white;
+}
 /* Add an active class to highlight the current page */
 .topnav button.all-link.active {
   background-color: #003366;
@@ -74,6 +78,11 @@
 }
 .topnav a.ooa-link.active {
   background-color: #A0522D;
+  color: white;
+}
+
+.topnav a.bl-link.active {
+  background-color: #CF0000;
   color: white;
 }
 /* Hide the link that should open and close the topnav on small screens */
