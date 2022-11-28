@@ -131,7 +131,7 @@ const EVENTS = [
   new Event("av","Traded with some chuul for their eggs; Formed an alliance with Dulac and the Cult of Urthagul; Belcorra attacked again, leaving Dulac and Padli the only surviving members of the Cult",4721,6,29),
   new Event("ooa","Introduced to Yin; Began investigating the Powderkeg Punks; Tried to determine if Vix the Bartender was being exploited",4722,5,6),
   new Event("ooa","Visited Ryka's Reagents; Learned the name Lyzerius",4722,5,7),
-  new Event("ooa","Astra, Yin, and Yohsiah entered the weekly rodeo; Yin won a membership to the Longhorn Lounge; Bribed Bert to gain access to the members list; Mugged a Punk for the password to the Old Widgetworks Warehouse; Met with Glaz Nixbrix and killed his pet snake, Bitey, in exchange for information",4722,5,8),
+  new Event("ooa","Astra, Yin, and Yohziah entered the weekly rodeo; Yin won a membership to the Longhorn Lounge; Bribed Bert to gain access to the members list; Mugged a Punk for the password to the Old Widgetworks Warehouse; Met with Glaz Nixbrix and killed his pet snake, Bitey, in exchange for information",4722,5,8),
   new Event("av","Belcorra feebleminded Spoons, leaving her <i>stupefied 4</i>; Descended to Yldaris to meet and ally with the drow; Learned of the Fulcrum Lenses and the power of the Empty Death",4721,7,1),
   new Event("ooa","Found Shoma Lyzerius in Hellside; returned him to the Barrel & Bullet Saloon; Learned that the formula for Pyronite might have been discovered by another.",4722,5,9),
   new Event("av","Met the remaining calignis and promised to help them escape the Vaults; Defeated Urthagul and claimed the Crimson Fulcrum Lens", 4721,7,3),
@@ -140,10 +140,12 @@ const EVENTS = [
   new Event("av","Defeated the black dragon, Ravirex, who had killed Glodrum's wife; Glodrum recovered his clan dagger; led the calignis out of the vault",4721,7,6),
   new Event("av","Fled from Caliddo Haruvex at Belcorra's Vault",4721,7,7),
   new Event("av","Defeated Caliddo Haruvex; Recovered the Fulcrum Lattice",4721,7,8),
-  new Event("av","Entered the ancient Black Doors; Descended to the lowest level of the Vaults; Unknowingly began Nhimbaloth's trials",4721,7,9)
-  new Event("av","Completed the trials; Defeated Lady's Whisper; Eri died; Sent Belcorra to the Empty Death; Escaped the Abomination Vaults",4721,7,11)
+  new Event("av","Entered the ancient Black Doors; Descended to the lowest level of the Vaults; Unknowingly began Nhimbaloth's trials",4721,7,9),
+  new Event("av","Completed the trials; Defeated Lady's Whisper; Eri died; Sent Belcorra to the Empty Death; Escaped the Abomination Vaults",4721,7,11),
   new Event("av","Eri was resurrected by a ritual in Absalom",4721,7,14),
-  new Event("av","Attended Shad Nunder and Honey Tittensor's Heartbond Ceremony",4721,7,24)
+  new Event("av","Attended Shad Nunder and Honey Tittensor's Heartbond Ceremony",4721,7,24),
+  new Event("ooa","Began investigating Olomann Kosowana",4722,5,20),
+  new Event("bl","Met with Berline Haldoli at her manor in Graydirge",4722,7,27)
 ]
 
 var sortedEvents = {};
