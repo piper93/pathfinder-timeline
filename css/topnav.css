@@ -32,27 +32,27 @@
   color: white;
 }
 .topnav button.aoa-link:hover {
-  background-color: #8B0000;
+  background-color: #B22222;
   color: white;
 }
 .topnav button.ec-link:hover {
-  background-color: #E8981B;
+  background-color: #FF8C00;
   color: white;
 }
 .topnav button.av-link:hover {
-  background-color: #20B2AA;
+  background-color: #6B8E23;
   color: white;
 }
 .topnav button.notgd-link:hover {
-  background-color: #708090;
+  background-color: #00CED1;
   color: white;
 }
 .topnav button.ooa-link:hover {
   background-color: #A0522D;
   color: white;
 }
-.topnav a.bl-link:hover {
-  background-color: #CF0000;
+.topnav button.bl-link:hover {
+  background-color: #696969;
   color: white;
 }
 /* Add an active class to highlight the current page */
@@ -61,28 +61,27 @@
   color: white;
 }
 .topnav button.aoa-link.active {
-  background-color: #8B0000;
+  background-color: #B22222;
   color: white;
 }
 .topnav button.ec-link.active {
-  background-color: #E8981B;
+  background-color: #FF8C00;
   color: white;
 }
 .topnav button.av-link.active {
-  background-color: #20B2AA;
+  background-color: #6B8E23;
   color: white;
 }
 .topnav button.notgd-link.active {
-  background-color: #708090;
+  background-color: #00CED1;
   color: white;
 }
-.topnav a.ooa-link.active {
+.topnav button.ooa-link.active {
   background-color: #A0522D;
   color: white;
 }
-
-.topnav a.bl-link.active {
-  background-color: #CF0000;
+.topnav button.bl-link.active {
+  background-color: #696969;
   color: white;
 }
 /* Hide the link that should open and close the topnav on small screens */

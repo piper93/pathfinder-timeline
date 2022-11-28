@@ -124,15 +124,15 @@ section#timeline article:nth-child(2n+2) div.inner h2:after {
 }
 
 section#timeline article div.inner h2.aoa {
-  background: #8B0000;
+  background: #B22222;
 }
 
 section#timeline article div.inner h2.ec {
-  background: #E8981B;
+  background: #FF8C00;
 }
 
 section#timeline article div.inner h2.notgd {
-  background: #708090;
+  background: #00CED1;
 }
 
 section#timeline article div.inner h2.ooa {
@@ -140,9 +140,9 @@ section#timeline article div.inner h2.ooa {
 }
 
 section#timeline article div.inner h2.av {
-  background: #20B2AA;
+  background: #6B8E23;
 }
 
 section#timeline article div.inner h2.bl {
-  background: #CF0000;
+  background: #696969;
 }
