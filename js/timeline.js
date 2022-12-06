@@ -144,8 +144,9 @@ const EVENTS = [
   new Event("av","Completed the trials; Defeated Lady's Whisper; Eri died; Sent Belcorra to the Empty Death; Escaped the Abomination Vaults",4721,7,11),
   new Event("av","Eri was resurrected by a ritual in Absalom",4721,7,14),
   new Event("av","Attended Shad Nunder and Honey Tittensor's Heartbond Ceremony",4721,7,24),
-  new Event("ooa","Began investigating Olomann Kosowana",4722,5,20),
-  new Event("bl","Met with Berline Haldoli at her manor in Graydirge",4722,7,27)
+  new Event("ooa","Began investigating Olomann Kosowana; Spent the night in the Asynchronous Archives doing research",4722,5,20),
+  new Event("bl","Met with Berline Haldoli at her manor in Graydirge; Investigated the situation at Old Ergagh's Farm",4722,7,27),
+  new Event("bl","Finished restoring the farm; Granted the key's to Qhallaqh's Manor by Berline",4722,7,29)
 ]
 
 var sortedEvents = {};
