@@ -146,7 +146,9 @@ const EVENTS = [
   new Event("av","Attended Shad Nunder and Honey Tittensor's Heartbond Ceremony",4721,7,24),
   new Event("ooa","Began investigating Olomann Kosowana; Spent the night in the Asynchronous Archives doing research",4722,5,20),
   new Event("bl","Met with Berline Haldoli at her manor in Graydirge; Investigated the situation at Old Ergagh's Farm",4722,7,27),
-  new Event("bl","Finished restoring the farm; Granted the key's to Qhallaqh's Manor by Berline",4722,7,29)
+  new Event("bl","Finished restoring the farm; Granted the key's to Qhallaqh's Manor by Berline",4722,7,29),
+  new Event("ooa","Chartered a flight into the Spellscar Desert; Gathered a collection of interesting passengers to help fund the trip",4722,5,22),
+  new Event("ooa","Began the journey east on the <i>Second Kiss</i>",4722,5,23)
 ]
 
 var sortedEvents = {};
