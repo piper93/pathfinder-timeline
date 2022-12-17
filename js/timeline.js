@@ -148,7 +148,8 @@ const EVENTS = [
   new Event("bl","Met with Berline Haldoli at her manor in Graydirge; Investigated the situation at Old Ergagh's Farm",4722,7,27),
   new Event("bl","Finished restoring the farm; Granted the key's to Qhallaqh's Manor by Berline",4722,7,29),
   new Event("ooa","Chartered a flight into the Spellscar Desert; Gathered a collection of interesting passengers to help fund the trip",4722,5,22),
-  new Event("ooa","Began the journey east on the <i>Second Kiss</i>",4722,5,23)
+  new Event("ooa","Began the journey east on the <i>Second Kiss</i>; Ex-shieldmarshal Solessa died during a Peryton attack; Discovered their door had been rigged with a blackpowder bomb",4722,5,23),
+  new Event("bl","Arrived at Qhallaqh Manor; Met Arghun the Annihilator; Began the clear-out of the basement",4722,7,30)
 ]
 
 var sortedEvents = {};
