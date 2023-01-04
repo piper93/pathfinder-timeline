@@ -148,8 +148,9 @@ const EVENTS = [
   new Event("bl","Met with Berline Haldoli at her manor in Graydirge; Investigated the situation at Old Ergagh's Farm",4722,7,27),
   new Event("bl","Finished restoring the farm; Granted the key's to Qhallaqh's Manor by Berline",4722,7,29),
   new Event("ooa","Chartered a flight into the Spellscar Desert; Gathered a collection of interesting passengers to help fund the trip",4722,5,22),
-  new Event("ooa","Began the journey east on the <i>Second Kiss</i>; Ex-shieldmarshal Solessa died during a Peryton attack; Discovered their door had been rigged with a blackpowder bomb",4722,5,23),
-  new Event("bl","Arrived at Qhallaqh Manor; Met Arghun the Annihilator; Began the clear-out of the basement",4722,7,30)
+  new Event("ooa","Began the journey east on the <i>Second Kiss</i>; Ex-shieldmarshal Solessa died during a Peryton attack; Discovered their door had been rigged with a blackpowder bomb; Learned that Usuvu was also seeking Kosowana; Learned Mugland was funding the Gilded Gunners",4722,5,23),
+  new Event("bl","Arrived at Qhallaqh Manor; Met Arghun the Annihilator; Began the clear-out of the basement",4722,7,30),
+  new Event("ooa","A Chimeric Manticore attacked the Second Kiss; Gbemisola summoned an elephant, which dealt the final blow to the Manticore and fell off the side; The Second Kiss landed in the Spellscar Desert; The party began the walk to the Cradle of Quartz",4722,5,25)
 ]
 
 var sortedEvents = {};
