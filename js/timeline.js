@@ -41,7 +41,18 @@ const CHARACTERS = [
  new Character("ooa","Gbemisola",true,"img/ooa/gbemisola.png"),
  new Character("ooa","Gruzwil",false,"img/ooa/gruzwil.png"),
  new Character("ooa","Yin",true,"img/ooa/yin.png"),
- new Character("ooa","Yohziah",true,"img/ooa/yohziah.png")
+ new Character("ooa","Yohziah",true,"img/ooa/yohziah.png"),
+ new Character("av","Eri",true,"img/av/eri.png"),
+ new Character("av","Finn",false,"img/av/finn.png"),
+ new Character("av","Glodrum",true,"img/av/glodrum.png"),
+ new Character("av","Jeigen",true,"img/av/jeigen.png"),
+ new Character("av","Kahiki",true,"img/av/kahiki.png"),
+ new Character("av","Khesk",false,"img/av/khesk.png"),
+ new Character("av","Mar-T'an",true,"img/av/mar tan.png"),
+ new Character("av","Marvin",false,"img/av/marvin.png"),
+ new Character("av","Max",true,"img/av/max.png"),
+ new Character("av","Spoons",true,"img/av/spoons.png"),
+ new Character("av","Verity",true,"img/av/verity.png")
 ]
 
 const EVENTS = [
