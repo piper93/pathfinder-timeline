@@ -233,7 +233,6 @@ function updatePage(filter){
 }
 
 function getCharacters(filter = "all") {
- console.log(filter);
  var section = document.getElementById("characters");
  if (filter == "all") {
    section.innerHTML = ``;
@@ -251,7 +250,7 @@ function getCharacters(filter = "all") {
    count = count + 1;
    if (count == 7)
    {
-    string += `</tr>
+    characters += `</tr>
     </table>
     </div>
     </article>
