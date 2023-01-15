@@ -150,7 +150,10 @@ const EVENTS = [
   new Event("ooa","Chartered a flight into the Spellscar Desert; Gathered a collection of interesting passengers to help fund the trip",4722,5,22),
   new Event("ooa","Began the journey east on the <i>Second Kiss</i>; Ex-shieldmarshal Solessa died during a Peryton attack; Discovered their door had been rigged with a blackpowder bomb; Learned that Usuvu was also seeking Kosowana; Learned Mugland was funding the Gilded Gunners",4722,5,23),
   new Event("bl","Arrived at Qhallaqh Manor; Met Arghun the Annihilator; Began the clear-out of the basement",4722,7,30),
-  new Event("ooa","A Chimeric Manticore attacked the Second Kiss; Gbemisola summoned an elephant, which dealt the final blow to the Manticore and fell off the side; The Second Kiss landed in the Spellscar Desert; The party began the walk to the Cradle of Quartz",4722,5,25)
+  new Event("ooa","A Chimeric Manticore attacked the Second Kiss; Gbemisola summoned an elephant, which dealt the final blow to the Manticore and fell off the side; The Second Kiss landed in the Spellscar Desert; The party began the walk to the Cradle of Quartz",4722,5,25),
+  new Event("bl", "Met with Ortagar Stitch-Skull at the Empty Threshold",4722,8,7),
+  new Event("bl","Investigated the Bone Shards Hideout; Talus was lost amid collapsing bones; Learned of Kepgeda the Hag-Nailed and her interest in the bank; Investigated the abandoned Greydirge Bank",4722,8,8),
+  new Event("ooa","Continued their trek into the Spellscar Desert; Met with a Nyktera colony",4722,5,26)
 ]
 
 var sortedEvents = {};
