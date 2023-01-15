@@ -53,7 +53,13 @@ const CHARACTERS = [
  new Character("av","Max",true,"img/av/max.png"),
  new Character("av","Petra",false,"img/av/petra.png"),
  new Character("av","Spoons",true,"img/av/spoons.png"),
- new Character("av","Verity",true,"img/av/verity.png")
+ new Character("av","Verity",true,"img/av/verity.png"),
+ new Character("notgd","Flynn",false,"img/notgd/flynn.webp"),
+ new Character("notgd","Myrra",false,"img/notgd/myrra.webp"),
+ new Character("notgd","Nevvin",false,"img/notgd/nevvin.webp"),
+ new Character("notgd","Octavio",false,"img/notgd/octavio.webp"),
+ new Character("notgd","Perri",false,"img/notgd/perri.webp"),
+ new Character("notgd","Sylvie",false,"img/notgd/sylvie.webp")
 ]
 
 const EVENTS = [
