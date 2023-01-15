@@ -51,6 +51,7 @@ const CHARACTERS = [
  new Character("av","Mar-T'an",true,"img/av/mar tan.png"),
  new Character("av","Marvin",false,"img/av/marvin.png"),
  new Character("av","Max",true,"img/av/max.png"),
+ new Character("av","Petra",false,"img/av/petra.png"),
  new Character("av","Spoons",true,"img/av/spoons.png"),
  new Character("av","Verity",true,"img/av/verity.png")
 ]
