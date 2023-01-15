@@ -5,7 +5,8 @@ section#characters {
   }
   
   section#characters img {
-    width: 100px;
+    width: 100%;
+    max-width: 100px;
     height: auto;
     display: block;
     margin-left: auto;
