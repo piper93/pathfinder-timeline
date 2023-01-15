@@ -37,7 +37,11 @@ const CHARACTERS = [
  new Character("bl","Kiya",true,"img/bl/kiya.webp"),
  new Character("bl","Siegmeyer", true, "img/bl/shade.webp"),
  new Character("bl","Siegmeyer", true, "img/bl/siegmeyer.webp"),
- new Character("aoa","Ben",true,"img/aoa/ben.webp")
+ new Character("ooa","Astra",true,"img/ooa/astra.png"),
+ new Character("ooa","Gbemisola",true,"img/ooa/gbemisola.png"),
+ new Character("ooa","Gruzwil",false,"img/ooa/gruzwil.png"),
+ new Character("ooa","Yin",true,"img/ooa/yin.png"),
+ new Character("ooa","Yohziah",true,"img/ooa/yohziah.png")
 ]
 
 const EVENTS = [
