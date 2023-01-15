@@ -245,8 +245,21 @@ function getCharacters(filter = "all") {
      <table style="width:100%">
        <tr>`;
  var filteredCharacters = filterCharacters(filter);
+ var count = 0;
  for (character of filteredCharacters)
  {
+   count = count + 1;
+   if (count == 7)
+   {
+    string += `</tr>
+    </table>
+    </div>
+    </article>
+    <article>
+      <div class="character">
+        <table style="width:100%">
+          <tr>`
+   }
    var status = "alive";
    if (!character.alive)
      {
