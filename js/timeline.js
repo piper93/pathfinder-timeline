@@ -59,7 +59,12 @@ const CHARACTERS = [
  new Character("notgd","Nevvin",false,"img/notgd/nevvin.webp"),
  new Character("notgd","Octavio",false,"img/notgd/octavio.webp"),
  new Character("notgd","Perri",false,"img/notgd/perri.webp"),
- new Character("notgd","Sylvie",false,"img/notgd/sylvie.webp")
+ new Character("notgd","Sylvie",false,"img/notgd/sylvie.webp"),
+ new Character("ec","Hernandedor",true,"img/ec/hernandedor.webp"),
+ new Character("ec","Kalira",true,"img/ec/kalira.webp"),
+ new Character("ec","Munya",true,"img/ec/munya.webp"),
+ new Character("ec","Pudding",true,"img/ec/pudding.webp"),
+ new Character("ec","Tupp",true,"img/ec/tupp.webp")
 ]
 
 const EVENTS = [
@@ -272,7 +277,7 @@ function getCharacters(filter = "all") {
        status = "dead"
      }
    var string = `
-   <td><img class="${status}" src="${character.image}" alt="${character.name}"></td>`
+   <td><img class="${status}" src="${character.image}" alt="${character.name}" title="${character.name}"></td>`
    characters += string
  }
  characters += `</tr>
