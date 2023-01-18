@@ -35,7 +35,7 @@ class Character {
 const CHARACTERS = [
  new Character("bl","Ginness",true,"img/bl/ginness.webp"),
  new Character("bl","Kiya",true,"img/bl/kiya.webp"),
- new Character("bl","Siegmeyer", true, "img/bl/shade.webp"),
+ new Character("bl","Shade", true, "img/bl/shade.webp"),
  new Character("bl","Siegmeyer", true, "img/bl/siegmeyer.webp"),
  new Character("ooa","Astra",true,"img/ooa/astra.png"),
  new Character("ooa","Gbemisola",true,"img/ooa/gbemisola.png"),
