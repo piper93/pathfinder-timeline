@@ -65,7 +65,7 @@ const CHARACTERS = [
  new Character("ec","Munya",true,"img/ec/munya.webp"),
  new Character("ec","Pudding",true,"img/ec/pudding.webp"),
  new Character("ec","Tupp",true,"img/ec/tupp.webp"),
- new Character("aoa","Ardbert",true,"img/aoa/arbert.webp"),
+ new Character("aoa","Ardbert",true,"img/aoa/ardbert.webp"),
  new Character("aoa","Benjemyn",true,"img/aoa/ben.webp"),
  new Character("aoa","Dr Bang",true,"img/aoa/drbang.webp"),
  new Character("aoa","Grannok",true,"img/aoa/grannok.webp"),
