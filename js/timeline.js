@@ -202,7 +202,9 @@ const EVENTS = [
  new Event("ooa","A Chimeric Manticore attacked the Second Kiss; Gbemisola summoned an elephant, which dealt the final blow to the Manticore and fell off the side; The Second Kiss landed in the Spellscar Desert; The party began the walk to the Cradle of Quartz",4722,5,25),
  new Event("bl", "Met with Ortagar Stitch-Skull at the Empty Threshold",4722,8,7),
  new Event("bl","Investigated the Bone Shards Hideout; Talus was lost amid collapsing bones; Learned of Kepgeda the Hag-Nailed and her interest in the bank; Investigated the abandoned Greydirge Bank",4722,8,8),
- new Event("ooa","Continued their trek into the Spellscar Desert; Met with a Nyktera colony",4722,5,26)
+ new Event("ooa","Continued their trek into the Spellscar Desert; Met with a Nyktera colony",4722,5,26),
+ new Event("ooa","Arrived at the Cradle of Quartz near midnight; Encountered the Claws of Time",4722,5,27),
+ new Event("bl","Assaulted the Crooked Coffin Brewery seeking Kepgeda",4722,8,10)
 ]
 
 var sortedEvents = {};
