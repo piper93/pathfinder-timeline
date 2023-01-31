@@ -204,7 +204,8 @@ const EVENTS = [
  new Event("bl","Investigated the Bone Shards Hideout; Talus was lost amid collapsing bones; Learned of Kepgeda the Hag-Nailed and her interest in the bank; Investigated the abandoned Greydirge Bank",4722,8,8),
  new Event("ooa","Continued their trek into the Spellscar Desert; Met with a Nyktera colony",4722,5,26),
  new Event("ooa","Arrived at the Cradle of Quartz near midnight; Encountered the Claws of Time",4722,5,27),
- new Event("bl","Assaulted the Crooked Coffin Brewery seeking Kepgeda",4722,8,10)
+ new Event("bl","Assaulted the Crooked Coffin Brewery seeking Kepgeda; Defeated Kepgeda and learned of the Graveclaw Coven",4722,8,10),
+ new Event("bl","Dined with Taf-Gekhta Seven-Stomachs; Revealed the true ownership of the Graydirge to the Tax Collectors Guild",4722,8,13)
 ]
 
 var sortedEvents = {};
