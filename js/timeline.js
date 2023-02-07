@@ -203,9 +203,14 @@ const EVENTS = [
  new Event("bl", "Met with Ortagar Stitch-Skull at the Empty Threshold",4722,8,7),
  new Event("bl","Investigated the Bone Shards Hideout; Talus was lost amid collapsing bones; Learned of Kepgeda the Hag-Nailed and her interest in the bank; Investigated the abandoned Greydirge Bank",4722,8,8),
  new Event("ooa","Continued their trek into the Spellscar Desert; Met with a Nyktera colony",4722,5,26),
- new Event("ooa","Arrived at the Cradle of Quartz near midnight; Encountered the Claws of Time",4722,5,27),
+ new Event("ooa","Arrived at the Cradle of Quartz near midnight; Encountered the Claws of Time; Saved Kosowana",4722,5,27),
  new Event("bl","Assaulted the Crooked Coffin Brewery seeking Kepgeda; Defeated Kepgeda and learned of the Graveclaw Coven",4722,8,10),
- new Event("bl","Dined with Taf-Gekhta Seven-Stomachs; Revealed the true ownership of the Graydirge to the Tax Collectors Guild",4722,8,13)
+ new Event("bl","Dined with Taf-Gekhta Seven-Stomachs; Revealed the true ownership of the Graydirge to the Tax Collectors Guild",4722,8,13),
+ new Event("ooa","Returned to Alkenstar; Learned of the Gilded Gunners plan to steal from the Steaming Kingdom",4722,6,2),
+ new Event("ooa","Explosion at the Steaming Kingdom; Found the Gilded Halls and made a deal with Sabora Sharkosa",4722,6,3),
+ new Event("ooa","Sabora Sharkosa killed Mugland; Learned of Loveless's plan to sell the formula to two wizards",4722,6,4),
+ new Event("bl","Berline told them of Iron Taviah's connection to the Graveclaw and asked them to travel to the Axan Wood and kill the hag",4722,8,22),
+ new Event("bl","Began searching the Axan Wood; Met the huldra, Drusilla, and correctly answered her riddles",4722,8,25)
 ]
 
 var sortedEvents = {};
