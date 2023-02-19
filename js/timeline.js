@@ -36,7 +36,7 @@ const CHARACTERS = [
  new Character("bl","Ginness",true,"img/bl/ginness.webp"),
  new Character("bl","Kiya",true,"img/bl/kiya.webp"),
  new Character("bl","Shade", true, "img/bl/shade.webp"),
- new Character("bl","Siegmeyer", true, "img/bl/siegmeyer.webp"),
+ new Character("bl","Siegmeyer", false, "img/bl/siegmeyer.webp"),
  new Character("ooa","Astra",true,"img/ooa/astra.png"),
  new Character("ooa","Gbemisola",true,"img/ooa/gbemisola.png"),
  new Character("ooa","Gruzwil",false,"img/ooa/gruzwil.png"),
@@ -210,7 +210,9 @@ const EVENTS = [
  new Event("ooa","Explosion at the Steaming Kingdom; Found the Gilded Halls and made a deal with Sabora Sharkosa",4722,6,3),
  new Event("ooa","Sabora Sharkosa killed Mugland; Learned of Loveless's plan to sell the formula to two wizards",4722,6,4),
  new Event("bl","Berline told them of Iron Taviah's connection to the Graveclaw and asked them to travel to the Axan Wood and kill the hag",4722,8,22),
- new Event("bl","Began searching the Axan Wood; Met the huldra, Drusilla, and correctly answered her riddles",4722,8,25)
+ new Event("bl","Began searching the Axan Wood; Met the huldra, Drusilla, and correctly answered her riddles",4722,8,25),
+ new Event("ooa","Infiltrated the Vault of Secrets searching for leads on Loveless; Did not escape quietly",4722,6,5),
+ new Event("bl","Met Ginness' neglected half-brother, Nebumi, in Iron Taviah's attic; Defeated Iron Taviah; Iron Taviah's Cottage absorbed her body and attempted to digest the party; Siegmeyer was killed",4722,8,26)
 ]
 
 var sortedEvents = {};
