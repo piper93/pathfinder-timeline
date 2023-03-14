@@ -217,7 +217,9 @@ const EVENTS = [
  new Event("ooa","Attended Christia Tombend's Art Gala; Learned that Christia is seeking support for a bill that would introduce mandatory conscription in Alkenstar",4722,6,6),
  new Event("ooa","Rescued Rhangyl Foruza from execution; Learned that a Nexian wizard, Ibrium, organised the purchase of large quantities of pyronite supplies",4722,6,7),
  new Event("bl","Arrived in Sallowshore; Met with Tobias Highridge and agreed to retrieve his late wife's Heartstone; Highridge demanded his junior associate, Xanthos, accompany them",4722,9,3),
- new Event("bl","Opened the Builder's League Vault; Returned the Potion of Annulment to Stana Keystone",4722,9,5)
+ new Event("bl","Opened the Builder's League Vault; Returned the Potion of Annulment to Stana Keystone",4722,9,5),
+ new Event("bl","Descended to the sunken Temple of Urgathoa; The meat guardians demanded they destroy Sahni's shrine to Dagon; Defeated Sahni Bride-of-the-Sea; Xanthos was cursed with hooves, Ginness with lost time",4722,9,6),
+ new Event("ooa","Met Dash at the Dead Spot outside of Alkenstar",4722,6,8)
 ]
 
 var sortedEvents = {};
