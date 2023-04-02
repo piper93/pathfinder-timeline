@@ -41,6 +41,7 @@ const CHARACTERS = [
  new Character("ooa","Astra",true,"img/ooa/astra.png"),
  new Character("ooa","Gbemisola",true,"img/ooa/gbemisola.png"),
  new Character("ooa","Gruzwil",false,"img/ooa/gruzwil.png"),
+ new Character("ooa","Tyke",true,"img/ooa/tyke.png"),
  new Character("ooa","Yin",false,"img/ooa/yin.png"),
  new Character("ooa","Yohziah",true,"img/ooa/yohziah.png"),
  new Character("av","Eri",true,"img/av/eri.png"),
@@ -218,8 +219,11 @@ const EVENTS = [
  new Event("ooa","Rescued Rhangyl Foruza from execution; Learned that a Nexian wizard, Ibrium, organised the purchase of large quantities of pyronite supplies",4722,6,7),
  new Event("bl","Arrived in Sallowshore; Met with Tobias Highridge and agreed to retrieve his late wife's Heartstone; Highridge demanded his junior associate, Xanthos, accompany them",4722,9,3),
  new Event("bl","Opened the Builder's League Vault; Returned the Potion of Annulment to Stana Keystone",4722,9,5),
- new Event("bl","Descended to the sunken Temple of Urgathoa; The meat guardians demanded they destroy Sahni's shrine to Dagon; Defeated Sahni Bride-of-the-Sea; Xanthos was cursed with hooves, Ginness with lost time",4722,9,6),
- new Event("ooa","Met Dash at the Dead Spot outside of Alkenstar; the Headless Rustlers decapitated Yin; learned that Parsus had delivered the materials to the Gunworks",4722,6,8)
+ new Event("bl","Descended to the sunken Temple of Urgathoa; The meat guardians demanded they destroy Sahni's shrine to Dagon; Defeated Sahni Bride-of-the-Sea; Xanthos was cursed with hooves, Ginness with lost time; Destroyed the Shrine to Dagon; Returned Nepenthe's body to Tobias; Xanthos was instructed to go with the others",4722,9,6),
+ new Event("ooa","Met Dash at the Dead Spot outside of Alkenstar; the Headless Rustlers decapitated Yin; learned that Parsus had delivered the materials to the Gunworks",4722,6,8),
+ new Event("bl","Chartered a ship north towards Yled",4722,9,7),
+ new Event("bl","Arrived in Yled; Curses removed",4722,9,19),
+ new Event("ooa","Arrived to the Gunworks; Met Tyke Steyrlock; Helped remove gremlins from the Tower of Metallurgy",4722,6,9)
 ]
 
 var sortedEvents = {};
