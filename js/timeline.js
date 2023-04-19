@@ -43,7 +43,7 @@ const CHARACTERS = [
  new Character("ooa","Gruzwil",false,"img/ooa/gruzwil.png"),
  new Character("ooa","Tyke",true,"img/ooa/tyke.png"),
  new Character("ooa","Yin",false,"img/ooa/yin.png"),
- new Character("ooa","Yohziah",true,"img/ooa/yohziah.png"),
+ new Character("ooa","Yohziah",false,"img/ooa/yohziah.png"),
  new Character("av","Eri",true,"img/av/eri.png"),
  new Character("av","Finn",false,"img/av/finn.png"),
  new Character("av","Glodrum",true,"img/av/glodrum.png"),
@@ -223,7 +223,8 @@ const EVENTS = [
  new Event("ooa","Met Dash at the Dead Spot outside of Alkenstar; the Headless Rustlers decapitated Yin; learned that Parsus had delivered the materials to the Gunworks",4722,6,8),
  new Event("bl","Chartered a ship north towards Yled",4722,9,7),
  new Event("bl","Arrived in Yled; Curses removed",4722,9,19),
- new Event("ooa","Arrived to the Gunworks; Met Tyke Steyrlock; Helped remove gremlins from the Tower of Metallurgy",4722,6,9)
+ new Event("ooa","Arrived to the Gunworks; Met Tyke Steyrlock; Helped remove gremlins from the Tower of Metallurgy",4722,6,9),
+ new Event("ooa","Met with Loy Ayton; The Slugs of the Waste assaulted the Gunworks; The Maw of Rovagug was destroyed by Pyronite; Yohziah was killed by Vewslog, the Cyclops",4722,6,10)
 ]
 
 var sortedEvents = {};
