@@ -146,3 +146,7 @@ section#timeline article div.inner h2.av {
 section#timeline article div.inner h2.bl {
   background: #696969;
 }
+
+section#timeline article div.inner h2.gw {
+  background: #9f65c3;
+}

@@ -33,6 +33,7 @@ class Character {
 }
 
 const CHARACTERS = [
+ new Character("bl","Bask",true,"img/bl/ginness.webp"),
  new Character("bl","Ginness",true,"img/bl/ginness.webp"),
  new Character("bl","Kiya",true,"img/bl/kiya.webp"),
  new Character("bl","Shade", true, "img/bl/shade.webp"),
@@ -224,7 +225,10 @@ const EVENTS = [
  new Event("bl","Chartered a ship north towards Yled",4722,9,7),
  new Event("bl","Arrived in Yled; Curses removed",4722,9,19),
  new Event("ooa","Arrived to the Gunworks; Met Tyke Steyrlock; Helped remove gremlins from the Tower of Metallurgy",4722,6,9),
- new Event("ooa","Met with Loy Ayton; The Slugs of the Waste assaulted the Gunworks; The Maw of Rovagug was destroyed by Pyronite; Yohziah was killed by Vewslog, the Cyclops",4722,6,10)
+ new Event("ooa","Met with Loy Ayton; The Slugs of the Waste assaulted the Gunworks; The Maw of Rovagug was destroyed by Pyronite; Yohziah was killed by Vewslog, the Cyclops",4722,6,10),
+ new Event("bl","Organised transport to Pagked; Met Bask Vishky",4722,9,20),
+ new Event("bl","Arrived in Pagked; Started the search for Decrosia; Bask made a deal with The Shroud; Nebumi began the return trip to Yled alone",4722,9,23),
+ new Event("gw","The night of the Missing Moment; hundred of onlookers walk through <i>aiudara</i>",4723,1,6)
 ]
 
 var sortedEvents = {};
