@@ -228,7 +228,7 @@ const EVENTS = [
  new Event("ooa","Met with Loy Ayton; The Slugs of the Waste assaulted the Gunworks; The Maw of Rovagug was destroyed by Pyronite; Yohziah was killed by Vewslog, the Cyclops",4722,6,10),
  new Event("bl","Organised transport to Pagked; Met Bask Vishky",4722,9,20),
  new Event("bl","Arrived in Pagked; Started the search for Decrosia; Bask made a deal with The Shroud; Nebumi began the return trip to Yled alone",4722,9,23),
- new Event("gw","The night of the Missing Moment; hundred of onlookers walk through <i>aiudara</i>",4723,1,6)
+ new Event("gw","The night of the Missing Moment; hundred of onlookers walk through <i>aiudara</i>",4722,7,21)
 ]
 
 var sortedEvents = {};
