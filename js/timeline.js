@@ -228,9 +228,10 @@ const EVENTS = [
  new Event("ooa","Met with Loy Ayton; The Slugs of the Waste assaulted the Gunworks; The Maw of Rovagug was destroyed by Pyronite; Yohziah was killed by Vewslog, the Cyclops",4722,6,10),
  new Event("bl","Organised transport to Pagked; Met Bask Vishky",4722,9,20),
  new Event("bl","Arrived in Pagked; Started the search for Decrosia; Bask made a deal with The Shroud; Nebumi began the return trip to Yled alone",4722,9,23),
- //new Event("gw","The night of the Missing Moment; hundred of onlookers walk through <i>aiudara</i>",4722,7,21)
+ new Event("gw","The night of the Missing Moment; hundred of onlookers walk through <i>aiudara</i>",4722,7,21),
  new Event("ooa","The <i>Gearsmoke</i> Steamboat explodes at the top of Alken Falls, destroying the waterfall and the Tinwound Hydroforge",4722,6,13),
- new Event("ooa","The High Parliament rushes through Tombend's bill of mandatory conscription; Loveless is placed in control of the new standing army",4722,6,17)
+ new Event("ooa","The High Parliament rushes through Tombend's bill of mandatory conscription; Loveless is placed in control of the new standing army",4722,6,17),
+ new Event("bl","Ilfiltrated Decrosia's factory",4722,9,25)
 ]
 
 var sortedEvents = {};
