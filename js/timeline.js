@@ -33,6 +33,9 @@ class Character {
 }
 
 const CHARACTERS = [
+ new Character("gw","Caratacus",true,"img/gw/caratacus.webp"),
+ new Character("gw","Lethe",true,"img/gw/lethe.webp"),
+ new Character("gw","Sherman",true,"img/gw/sherman.webp"),
  new Character("bl","Bask",true,"img/bl/bask.webp"),
  new Character("bl","Ginness",true,"img/bl/ginness.webp"),
  new Character("bl","Kiya",true,"img/bl/kiya.webp"),
@@ -231,7 +234,9 @@ const EVENTS = [
  new Event("gw","The night of the Missing Moment; hundred of onlookers walk through <i>aiudara</i>",4722,7,21),
  new Event("ooa","The <i>Gearsmoke</i> Steamboat explodes at the top of Alken Falls, destroying the waterfall and the Tinwound Hydroforge",4722,6,13),
  new Event("ooa","The High Parliament rushes through Tombend's bill of mandatory conscription; Loveless is placed in control of the new standing army",4722,6,17),
- new Event("bl","Ilfiltrated Decrosia's factory",4722,9,25)
+ new Event("bl","Ilfiltrated Decrosia's factory; Killed Decrosia and escaped Pagked",4722,9,25),
+ new Event("bl","Arrived back in Yled; Bask was fired by Mauldor Gavvik; Were introduced to Blood Lord Zthni and Blood Lord Kyril Vonth by Berline; Spent the entire night indulging with Ztni",4722,10,4),
+ new Event("gw","Returned through the <i>aiudara</i> with no memory of what had happened since they walked through",4722,10,18)
 ]
 
 var sortedEvents = {};
