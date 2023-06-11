@@ -236,10 +236,15 @@ const EVENTS = [
  new Event("ooa","The <i>Gearsmoke</i> Steamboat explodes at the top of Alken Falls, destroying the waterfall and the Tinwound Hydroforge",4722,6,13),
  new Event("ooa","The High Parliament rushes through Tombend's bill of mandatory conscription; Loveless is placed in control of the new standing army",4722,6,17),
  new Event("bl","Ilfiltrated Decrosia's factory; Killed Decrosia and escaped Pagked",4722,9,25),
- new Event("bl","Arrived back in Yled; Bask was fired by Mauldor Gavvik; Were introduced to Blood Lord Zthni and Blood Lord Kyril Vonth by Berline; Spent the entire night indulging with Ztni",4722,10,4),
+ new Event("bl","Arrived back in Yled; Bask was fired by Mauldor Gavvik; Were introduced to Blood Lord Zthni and Blood Lord Kyril Vonth by Berline; Spent the entire night indulging with Zthni",4722,10,4),
  new Event("gw","Returned through the <i>aiudara</i> with no memory of what had happened since they walked through",4722,10,18),
  new Event("gw","Arrived at Sevenarches with Dr Ritalson; Investigated the <i>aiudara</i> at the city center",4723,1,6),
- new Event("gw","Lemma Feldthorn told them about the Gatewalker, Bolan Nogasso, and his theft of the <i>Shadewither Key</i>; Began the journey to the Wilewood and the real Seven Arches",4723,1,7)
+ new Event("gw","Lemma Feldthorn told them about the Gatewalker, Bolan Nogasso, and his theft of the <i>Shadewither Key</i>; Began the journey to the Wilewood and the real Seven Arches",4723,1,7),
+ new Event("gw","The Gatewalkers reached the Seven Arches and prevented the sacrifice of a unicorn by the rebel Oakstewards; They cleared the lower level of the forest commune of Bolan's fey allies",4723,1,9),
+ new Event("gw","The Gatewalkers, sans clothes, faced off against Bolan; They learned that Bolan was missing his memories of beyond the gate, and that he was working for a fey known as Kaneepo the Slim",4723,1,10),
+ new Event("gw","Turned Bolan over to the Oakstewards; Lemma asked for them to find Kaneepo the Slim and retrieve the <i>Shadewither Key</i> on behalf of the Oakstewards",4723,1,12),
+ new Event("bl","Attended Nathnelma's lecture, <i>Creating Unusual Undead</i>",4722,10,5),
+ new Event("bl","Played board games with Blood Lord Kyril Vonth; Bask and Xanthos were caught in a Pharasmin attack at the Pallidium; Ginness, Shade, and Kiya investigated Nathnelma's Office; They learned of Nathnelma's likely involvement in the Graveclaw and her interest in Shadow Ash",4722,10,6)
 ]
 
 var sortedEvents = {};
