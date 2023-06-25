@@ -244,7 +244,12 @@ const EVENTS = [
  new Event("gw","The Gatewalkers, sans clothes, faced off against Bolan; They learned that Bolan was missing his memories of beyond the gate, and that he was working for a fey known as Kaneepo the Slim",4723,1,10),
  new Event("gw","Turned Bolan over to the Oakstewards; Lemma asked for them to find Kaneepo the Slim and retrieve the <i>Shadewither Key</i> on behalf of the Oakstewards",4723,1,12),
  new Event("bl","Attended Nathnelma's lecture, <i>Creating Unusual Undead</i>",4722,10,5),
- new Event("bl","Played board games with Blood Lord Kyril Vonth; Bask and Xanthos were caught in a Pharasmin attack at the Pallidium; Ginness, Shade, and Kiya investigated Nathnelma's Office; They learned of Nathnelma's likely involvement in the Graveclaw and her interest in Shadow Ash",4722,10,6)
+ new Event("bl","Played board games with Blood Lord Kyril Vonth; Bask and Xanthos were caught in a Pharasmin attack at the Pallidium; Ginness, Shade, and Kiya investigated Nathnelma's Office; They learned of Nathnelma's likely involvement in the Graveclaw and her interest in Shadow Ash",4722,10,6),
+ new Event("bl","Learned of the Graveclaw's mysterious patron; Ambushed and captured Nathnelma; Shade was killed by <i>Cloudkill</i>",4722,10,7),
+//  new Event("bl","Ginness starts having nightmares",4722,10,22),
+//  new Event("bl","Ginness' nightmares end'",4722,10,30),
+ new Event("bl","Shade's mummification was completed",4722,11,4),
+ new Event("gw","Travelled through a portal to the Thinlands; The Chronicler informed the Gatewalkers of Kaneepo's plans",4723,1,16)
 ]
 
 var sortedEvents = {};
