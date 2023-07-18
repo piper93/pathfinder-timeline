@@ -246,10 +246,18 @@ const EVENTS = [
  new Event("bl","Attended Nathnelma's lecture, <i>Creating Unusual Undead</i>",4722,10,5),
  new Event("bl","Played board games with Blood Lord Kyril Vonth; Bask and Xanthos were caught in a Pharasmin attack at the Pallidium; Ginness, Shade, and Kiya investigated Nathnelma's Office; They learned of Nathnelma's likely involvement in the Graveclaw and her interest in Shadow Ash",4722,10,6),
  new Event("bl","Learned of the Graveclaw's mysterious patron; Ambushed and captured Nathnelma; Shade was killed by <i>Cloudkill</i>",4722,10,7),
-//  new Event("bl","Ginness starts having nightmares",4722,10,22),
-//  new Event("bl","Ginness' nightmares end'",4722,10,30),
+ new Event("bl","Ginness starts having nightmares",4722,10,22),
+ new Event("bl","Ginness' nightmares end'",4722,10,30),
  new Event("bl","Shade's mummification was completed",4722,11,4),
- new Event("gw","Travelled through a portal to the Thinlands; The Chronicler informed the Gatewalkers of Kaneepo's plans",4723,1,16)
+ new Event("gw","Travelled through a portal to the Thinlands; The Chronicler informed the Gatewalkers of Kaneepo's plans; Defeated Kaneepo and met Hubert Hedge",4723,1,16),
+ new Event("bl","Contacted by Seldeg Bhedlis and asked to join him as he follows the newly-risen Iron Taviah's trail",4722,11,19),
+ new Event("bl","Arrived at Iron Taviah's Shadow Cottage; Retreated from a young umbral dragon that had claimed the ground floor as their lair",4722,11,21),
+ new Event("bl","Defeated the umbral dragon with Seldeg's help; Destroyed the heart of the Shadow Cottage; Found evidence that Iron Taviah was travelling to Thornhearth",4722,11,22),
+ new Event("bl","Arrived to Thornhearth; Learned of Kiya's connection to the Benefactor and of the Benefactor's fate; Put Leysa, Kiya's mother, in place as the new Benefactor; Identified Hollow Flesh as Iron Taviah's next destination",4722,11,29),
+ new Event("bl","Arrived at Hollow Flesh Market; Discovered Iron Taviah had returned as a Vetalarana Vampire and was heading south to the Field of Maidens",4722,12,2),
+ new Event("bl","Set up camp in the Field of Maidens; Seldeg returned to Mechitar and left the party in charge of investigating Iron Taviah",4722,12,7),
+ new Event("bl","Encountered Kerinza, the 'Lonely Maiden' among the stone statues; discovered a military camp on the ridge",4722,12,8),
+ new Event("gw","Used the Shadewither Key to leave the First World; Arrived in Loskialua, realised they were no longer on Golarion; Showed the Shadewither Key to Alleli, accidentally cursing her with the <i>obnubilate curse</i>; The sage Jenthiel told them of Osoyo, the Blackfrost Whale",4722,1,17)
 ]
 
 var sortedEvents = {};
