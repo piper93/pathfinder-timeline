@@ -256,8 +256,18 @@ const EVENTS = [
  new Event("bl","Arrived to Thornhearth; Learned of Kiya's connection to the Benefactor and of the Benefactor's fate; Put Leysa, Kiya's mother, in place as the new Benefactor; Identified Hollow Flesh as Iron Taviah's next destination",4722,11,29),
  new Event("bl","Arrived at Hollow Flesh Market; Discovered Iron Taviah had returned as a Vetalarana Vampire and was heading south to the Field of Maidens",4722,12,2),
  new Event("bl","Set up camp in the Field of Maidens; Seldeg returned to Mechitar and left the party in charge of investigating Iron Taviah",4722,12,7),
- new Event("bl","Encountered Kerinza, the 'Lonely Maiden' among the stone statues; discovered a military camp on the ridge",4722,12,8),
- new Event("gw","Used the Shadewither Key to leave the First World; Arrived in Loskialua, realised they were no longer on Golarion; Showed the Shadewither Key to Alleli, accidentally cursing her with the <i>obnubilate curse</i>; The sage Jenthiel told them of Osoyo, the Blackfrost Whale",4722,1,17)
+ new Event("bl","Encountered Kerinza, the 'Lonely Maiden' among the stone statues; discovered a military camp on the ridge led by The Rhino",4722,12,8),
+ new Event("gw","Used the <i>Shadewither Key</i> to leave the First World; Arrived in Loskialua, realised they were no longer on Golarion; Showed the Shadewither Key to Alleli, accidentally cursing her with the <i>obnubilate curse</i>; The sage Jenthiel told them of Osoyo, the Blackfrost Whale",4723,1,17),
+ new Event("gw","Descended to the Memory Cache and spoke with Iskariel's head, who told them that Osoyo was a psychic whale sealed by the elves below the Crown of the World millennia ago",4723,1,18),
+ new Event("gw","Retrieved the headwaters from She Who Walks Through Seasons",4723,1,19),
+ new Event("gw","Jenthiel completed the cure for Alleli, restoring her to full strength",4723,1,20),
+ new Event("gw","Alleli used the <i>Shadewither Key</i> and her telescope to open a connection between the aiudara and Skywatch; The Gatewalkers survived the calibrations, jumping between different planets, before going through the open portal and meeting Sakuachi",4722,1,29),
+ new Event("gw","Lethe sees the masked figure in her dreams; The Gatewalkers begin their exploration of Skywatch as they search for Sakuachi's guides",4723,1,30),
+ new Event("bl","Discovered another Holoma camp in the Field of Maidens, this time the personal retinue of Lasheeli Aminda of Zuntisha",4722,12,10),
+ new Event("bl","Met with the ghoul smuggler Yulthruk, who they agreed to leave alone, and retrieved the Zuntishan supplies from him",4722,12,12),
+ new Event("bl","Gained the Rhino's trust and learned of her true purpose in Geb - to unite Nwanyi with a foreign war; Persuaded the Rhino that her plans were foolish and convinced her to leave the Field of Maidens",4722,12,18),
+ new Event("bl","Delivered the Nwanyian equipment to the Zuntishans; Led Lasheeli to the statues of her family",4722,12,20),
+ new Event("bl","Met with Kerinza at her home and learned that Iron Taviah had travelled to Gristlehall",4722,12,21)
 ]
 
 var sortedEvents = {};
