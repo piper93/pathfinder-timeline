@@ -262,12 +262,14 @@ const EVENTS = [
  new Event("gw","Retrieved the headwaters from She Who Walks Through Seasons",4723,1,19),
  new Event("gw","Jenthiel completed the cure for Alleli, restoring her to full strength",4723,1,20),
  new Event("gw","Alleli used the <i>Shadewither Key</i> and her telescope to open a connection between the aiudara and Skywatch; The Gatewalkers survived the calibrations, jumping between different planets, before going through the open portal and meeting Sakuachi",4723,1,29),
- new Event("gw","Lethe saw the masked figure in her dreams; The Gatewalkers begin their exploration of Skywatch as they search for Sakuachi's guides",4723,1,30),
+ new Event("gw","Lethe saw the masked figure in her dreams; The Gatewalkers begin their exploration of Skywatch as they search for Sakuachi's guides; Rescued Ulikuuq from the captivity of the Obsidian Oath; Caratacus agreed to take the Moon Hag's curse from the Winter Wolf, Isthald",4723,1,30),
  new Event("bl","Discovered another Holoma camp in the Field of Maidens, this time the personal retinue of Lasheeli Aminda of Zuntisha",4722,12,10),
  new Event("bl","Met with the ghoul smuggler Yulthruk, who they agreed to leave alone, and retrieved the Zuntishan supplies from him",4722,12,12),
  new Event("bl","Gained the Rhino's trust and learned of her true purpose in Geb - to unite Nwanyi with a foreign war; Persuaded the Rhino that her plans were foolish and convinced her to leave the Field of Maidens",4722,12,18),
  new Event("bl","Delivered the Nwanyian equipment to the Zuntishans; Led Lasheeli to the statues of her family",4722,12,20),
- new Event("bl","Met with Kerinza at her home and learned that Iron Taviah had travelled to Gristlehall",4722,12,21)
+ new Event("bl","Met with Kerinza at her home and learned that Iron Taviah had travelled to Gristlehall; Destroyed Iron Taviah; Fought with Kerinza, leading to the petrification of Bask, Ginness, and Xanthos; Kiya made a deal with Kerinza to restore two of them in exchange for all their magical items, but betrayed her after Xanthos' restoration",4722,12,21),
+ new Event("bl","Seldeg confirmed Chancellor Kemnebi's involvement in the poisoning plot, but warned them he was too powerful to accuse without hard evidence; The group was told to make their way to Mechitar for a meeting with Geb himself, should they choose to continue investigating",4722,12,22),
+ new Event("bl","Attended an audience with Geb",4723,2,2)
 ]
 
 var sortedEvents = {};
