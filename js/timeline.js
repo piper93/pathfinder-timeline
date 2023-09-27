@@ -40,6 +40,7 @@ const CHARACTERS = [
  new Character("bl","Bask",true,"img/bl/bask.webp"),
  new Character("bl","Ginness",true,"img/bl/ginness.webp"),
  new Character("bl","Kiya",true,"img/bl/kiya.webp"),
+ new Character("bl","Nohi",true,"img/bl/nohi.webp"),
  new Character("bl","Shade", true, "img/bl/shade.webp"),
  new Character("bl","Siegmeyer", false, "img/bl/siegmeyer.webp"),
  new Character("bl","Xanthos",true,"img/bl/xanthos.webp"),
@@ -269,7 +270,13 @@ const EVENTS = [
  new Event("bl","Delivered the Nwanyian equipment to the Zuntishans; Led Lasheeli to the statues of her family",4722,12,20),
  new Event("bl","Met with Kerinza at her home and learned that Iron Taviah had travelled to Gristlehall; Destroyed Iron Taviah; Fought with Kerinza, leading to the petrification of Bask, Ginness, and Xanthos; Kiya made a deal with Kerinza to restore two of them in exchange for all their magical items, but betrayed her after Xanthos' restoration",4722,12,21),
  new Event("bl","Seldeg confirmed Chancellor Kemnebi's involvement in the poisoning plot, but warned them he was too powerful to accuse without hard evidence; The group was told to make their way to Mechitar for a meeting with Geb himself, should they choose to continue investigating",4722,12,22),
- new Event("bl","Attended an audience with Geb",4723,2,2)
+ new Event("bl","Attended an audience with Geb, where he named the party as the newest Blood Lords; Assigned as Kortash Khain's honour guards along with recent Blood Lord Nohi Tisras",4723,2,2),
+ new Event("bl","The Blood Lords, except Nohi, officially moved into their state-granted Alcazar; Met with Harmony in Agony, Weeping Jack, and Rumin; Kortash Khain told them of a fanatical Kabriri cult based in Mechitar",4723,2,3),
+ new Event("bl","Ginness asks Kortash Khain to give her ghoul fever and agrees to respect Kabriri in return",4723,2,7),
+ new Event("bl","After a few days of fever, Ginness dies; Before she passes, Xanthos gives her a rose in a chicken",4723,2,11),
+ new Event("bl","Ginness rises as a ghoul",4723,2,12),
+ new Event("gw","The Gatewalkers found one of Sakuachi's companions, Deniigi, at the Skywatch Market; Caratacus called on Isthald to help with the bandits",4723,1,31),
+ new Event("gw","Found the remains of Sakuachi's last companion, Pamak, in the lair of a dangerous myrzoga",4723,2,1)
 ]
 
 var sortedEvents = {};
