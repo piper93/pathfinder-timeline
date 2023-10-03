@@ -263,7 +263,7 @@ const EVENTS = [
  new Event("gw","Retrieved the headwaters from She Who Walks Through Seasons",4723,1,19),
  new Event("gw","Jenthiel completed the cure for Alleli, restoring her to full strength",4723,1,20),
  new Event("gw","Alleli used the <i>Shadewither Key</i> and her telescope to open a connection between the aiudara and Skywatch; The Gatewalkers survived the calibrations, jumping between different planets, before going through the open portal and meeting Sakuachi",4723,1,29),
- new Event("gw","Lethe saw the masked figure in her dreams; The Gatewalkers begin their exploration of Skywatch as they search for Sakuachi's guides; Rescued Ulikuuq from the captivity of the Obsidian Oath; Caratacus agreed to take the Moon Hag's curse from the Winter Wolf, Isthald",4723,1,30),
+ new Event("gw","Lethe saw the masked figure in her dreams; The Gatewalkers begin their exploration of Skywatch as they search for Sakuachi's guides; Rescued Ulikuq from the captivity of the Obsidian Oath; Caratacus agreed to take the Moon Hag's curse from the Winter Wolf, Isthald",4723,1,30),
  new Event("bl","Discovered another Holoma camp in the Field of Maidens, this time the personal retinue of Lasheeli Aminda of Zuntisha",4722,12,10),
  new Event("bl","Met with the ghoul smuggler Yulthruk, who they agreed to leave alone, and retrieved the Zuntishan supplies from him",4722,12,12),
  new Event("bl","Gained the Rhino's trust and learned of her true purpose in Geb - to unite Nwanyi with a foreign war; Persuaded the Rhino that her plans were foolish and convinced her to leave the Field of Maidens",4722,12,18),
@@ -274,9 +274,13 @@ const EVENTS = [
  new Event("bl","The Blood Lords, except Nohi, officially moved into their state-granted Alcazar; Met with Harmony in Agony, Weeping Jack, and Rumin; Kortash Khain told them of a fanatical Kabriri cult based in Mechitar",4723,2,3),
  new Event("bl","Ginness asks Kortash Khain to give her ghoul fever and agrees to respect Kabriri in return",4723,2,7),
  new Event("bl","After a few days of fever, Ginness dies; Before she passes, Xanthos gives her a rose in a chicken",4723,2,11),
- new Event("bl","Ginness rises as a ghoul",4723,2,12),
+ new Event("bl","Ginness rises as a ghoul; Berline visits the alcazar to join the celebration and remind them of her role in their rise to power",4723,2,12),
  new Event("gw","The Gatewalkers found one of Sakuachi's companions, Deniigi, at the Skywatch Market; Caratacus called on Isthald to help with the bandits",4723,1,31),
- new Event("gw","Found the remains of Sakuachi's last companion, Pamak, in the lair of a dangerous myrzoga",4723,2,1)
+ new Event("gw","Found the remains of Sakuachi's last companion, Pamak, in the lair of a dangerous myrzoga",4723,2,1),
+ new Event("gw","Departed Skywatch by raft, accompanied by Sakuachi and her companions",4723,2,4),
+ new Event("gw","Arrived at Winterbreak Bay in the Lake of Mists and Veils",4723,2,6),
+ new Event("gw","Sakuachi had a vision of a weeping mermaid and a watching masked man; Following Sakuachi's instructions, the Gatewalkers searched the Jundlan Wrecks for a bigger boat and met the ghost of Captain Adney Tinhill",4723,2,8),
+ new Event("gw","The Blood Lords began their assault on Nodbones, drawing almost all the ghouls from the lower levels into a single fight",4723,2,14)
 ]
 
 var sortedEvents = {};
