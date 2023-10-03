@@ -280,7 +280,7 @@ const EVENTS = [
  new Event("gw","Departed Skywatch by raft, accompanied by Sakuachi and her companions",4723,2,4),
  new Event("gw","Arrived at Winterbreak Bay in the Lake of Mists and Veils",4723,2,6),
  new Event("gw","Sakuachi had a vision of a weeping mermaid and a watching masked man; Following Sakuachi's instructions, the Gatewalkers searched the Jundlan Wrecks for a bigger boat and met the ghost of Captain Adney Tinhill",4723,2,8),
- new Event("gw","The Blood Lords began their assault on Nodbones, drawing almost all the ghouls from the lower levels into a single fight",4723,2,14)
+ new Event("bl","The Blood Lords began their assault on Nodbones, drawing almost all the ghouls from the lower levels into a single fight",4723,2,14)
 ]
 
 var sortedEvents = {};
