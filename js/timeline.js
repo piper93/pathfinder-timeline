@@ -20,7 +20,7 @@ var sortedEvents = {};
 var orderedEvents = new Object();
 let tagFilter = "all";
 
-for (event of EVENTS) {
+for (var event of EVENTS) {
  if (!sortedEvents.hasOwnProperty(event.year)) {
    sortedEvents[event.year] = {}
  }
@@ -35,15 +35,14 @@ for (event of EVENTS) {
 
 let years = Object.keys(sortedEvents).map(Number);
 years.sort(function(a, b){return a - b});
-console.log(years)
-for (year of years) {
+for (var year of years) {
 console.log(year)
  let months = Object.keys(sortedEvents[year]).map(Number);
  months.sort(function(a, b){return a - b});
- for (month of months) {
+ for (var month of months) {
    let days = Object.keys(sortedEvents[year][month]).map(Number);
    days.sort(function(a, b){return a - b});
-   for (day of days) {
+   for (var day of days) {
      var orderedKey = `${day}.${month}.${year}`;
      if (!orderedEvents.hasOwnProperty(orderedKey)){
        orderedEvents[orderedKey] = new Array()
@@ -75,7 +74,7 @@ function getCharacters(filter = "all") {
        <tr>`;
  var filteredCharacters = filterCharacters(filter);
  var count = 0;
- for (character of filteredCharacters)
+ for (var character of filteredCharacters)
  {
    count = count + 1;
    if (count == 7)
@@ -115,7 +114,7 @@ function getTimeline(filter = "all") {
  var section = document.getElementById("timeline");
  var timeline = ``;
  var keys = Object.keys(displayedEvents)
- for (key of keys)
+ for (var key of keys)
  {
    let events = displayedEvents[key][0];
    //get date from first events
@@ -141,7 +140,7 @@ function getTimeline(filter = "all") {
 function filterEvents() {
  var filteredEvents = new Object()
  var keys = Object.keys(orderedEvents)
- for (key of keys)
+ for (var key of keys)
  {
    let events = orderedEvents[key][0];
    let result = events.filter(checkTag);
@@ -157,7 +156,7 @@ function filterEvents() {
 
 function filterCharacters(tag) {
  var filteredCharacters = new Array()
-   for (character of CHARACTERS){
+   for (var character of CHARACTERS){
      if (character.tag == tag)
      {
        filteredCharacters.push(character);
