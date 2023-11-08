@@ -170,3 +170,5 @@ function checkTag(event) {
 }
 
 getTimeline();
+
+window.updatePage = updatePage;
