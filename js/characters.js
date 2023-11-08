@@ -8,9 +8,14 @@ class Character {
    }
 
 export const CHARACTERS = [
+    new Character("skt","Chud",true,"img/skt/chud.webp"),
+    new Character("skt","Mellea",true,"img/skt/mellea.webp"),
+    new Character("skt","Ygg",true,"img/skt/ygg,webp"),
+    new Character("skt","Zeppia",true,"img/skt/zeppia.webp"),
     new Character("gw","Caratacus",true,"img/gw/caratacus.webp"),
     new Character("gw","Lethe",true,"img/gw/lethe.webp"),
     new Character("gw","Niihqteziyk",true,"img/gw/niihqteziyk.webp"),
+    new Character("gw","Robyn",true,"img/gw/robyn.webp"),
     new Character("gw","Sherman",true,"img/gw/sherman.webp"),
     new Character("bl","Bask",true,"img/bl/bask.webp"),
     new Character("bl","Ginness",true,"img/bl/ginness.webp"),
