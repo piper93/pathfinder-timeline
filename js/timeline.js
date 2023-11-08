@@ -45,7 +45,6 @@ for (var event of EVENTS) {
 let years = Object.keys(sortedEvents).map(Number);
 years.sort(function(a, b){return a - b});
 for (var year of years) {
-console.log(year)
  let months = Object.keys(sortedEvents[year]).map(Number);
  months.sort(function(a, b){return a - b});
  for (var month of months) {
