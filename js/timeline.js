@@ -13,8 +13,8 @@ const MONTHS = [
   "KUT"
 ];
 
-import { CHARACTERS } from "./characters";
-import { EVENTS } from "./events";
+import { CHARACTERS } from "./characters.js";
+import { EVENTS } from "./events.js";
 
 var sortedEvents = {};
 var orderedEvents = new Object();
