@@ -1,0 +1,56 @@
+class Character {
+    constructor(tag, name, alive, image) {
+      this.tag = tag,
+      this.name = name,
+      this.alive = alive
+      this.image = image
+    }
+   }
+
+export const CHARACTERS = [
+    new Character("gw","Caratacus",true,"img/gw/caratacus.webp"),
+    new Character("gw","Lethe",true,"img/gw/lethe.webp"),
+    new Character("gw","Niihqteziyk",true,"img/gw/niihqteziyk.webp"),
+    new Character("gw","Sherman",true,"img/gw/sherman.webp"),
+    new Character("bl","Bask",true,"img/bl/bask.webp"),
+    new Character("bl","Ginness",true,"img/bl/ginness.webp"),
+    new Character("bl","Kiya",true,"img/bl/kiya.webp"),
+    new Character("bl","Nohi",true,"img/bl/nohi.webp"),
+    new Character("bl","Shade", true, "img/bl/shade.webp"),
+    new Character("bl","Siegmeyer", false, "img/bl/siegmeyer.webp"),
+    new Character("bl","Xanthos",true,"img/bl/xanthos.webp"),
+    new Character("ooa","Astra",true,"img/ooa/astra.png"),
+    new Character("ooa","Gbemisola",true,"img/ooa/gbemisola.png"),
+    new Character("ooa","Gruzwil",false,"img/ooa/gruzwil.png"),
+    new Character("ooa","Tyke",true,"img/ooa/tyke.png"),
+    new Character("ooa","Yin",false,"img/ooa/yin.png"),
+    new Character("ooa","Yohziah",false,"img/ooa/yohziah.png"),
+    new Character("av","Eri",true,"img/av/eri.png"),
+    new Character("av","Finn",false,"img/av/finn.png"),
+    new Character("av","Glodrum",true,"img/av/glodrum.png"),
+    new Character("av","Jeigen",true,"img/av/jeigen.png"),
+    new Character("av","Kahiki",true,"img/av/kahiki.png"),
+    new Character("av","Khesk",false,"img/av/khesk.png"),
+    new Character("av","Mar-T'an",true,"img/av/mar tan.png"),
+    new Character("av","Marvin",false,"img/av/marvin.png"),
+    new Character("av","Max",true,"img/av/max.png"),
+    new Character("av","Petra",false,"img/av/petra.png"),
+    new Character("av","Spoons",true,"img/av/spoons.png"),
+    new Character("av","Verity",true,"img/av/verity.png"),
+    new Character("notgd","Flynn",false,"img/notgd/flynn.webp"),
+    new Character("notgd","Myrra",false,"img/notgd/myrra.webp"),
+    new Character("notgd","Nevvin",false,"img/notgd/nevvin.webp"),
+    new Character("notgd","Octavio",false,"img/notgd/octavio.webp"),
+    new Character("notgd","Perri",false,"img/notgd/perri.webp"),
+    new Character("notgd","Sylvie",false,"img/notgd/sylvie.webp"),
+    new Character("ec","Hernandedor",true,"img/ec/hernandedor.webp"),
+    new Character("ec","Kalira",true,"img/ec/kalira.webp"),
+    new Character("ec","Munya",true,"img/ec/munya.webp"),
+    new Character("ec","Pudding",true,"img/ec/pudding.webp"),
+    new Character("ec","Tupp",true,"img/ec/tupp.webp"),
+    new Character("aoa","Ardbert",true,"img/aoa/ardbert.webp"),
+    new Character("aoa","Benjemyn",true,"img/aoa/ben.webp"),
+    new Character("aoa","Dr Bang",true,"img/aoa/drbang.webp"),
+    new Character("aoa","Grannok",true,"img/aoa/grannok.webp"),
+    new Character("aoa","Morta",true,"img/aoa/morta.webp")
+   ];
