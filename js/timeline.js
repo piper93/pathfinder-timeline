@@ -16,6 +16,9 @@ const MONTHS = [
 import { Character, CHARACTERS } from "./characters.js";
 import { Event, EVENTS } from "./events.js";
 
+console.log(EVENTS)
+console.log(CHARACTERS)
+
 var sortedEvents = {};
 var orderedEvents = new Object();
 let tagFilter = "all";
@@ -33,6 +36,7 @@ for (event of EVENTS) {
  sortedEvents[event.year][event.month][event.day].push(event)
 }
 
+console.log(sortedEvents)
 let years = Object.keys(sortedEvents).map(Number);
 years.sort(function(a, b){return a - b});
 for (year of years) {
