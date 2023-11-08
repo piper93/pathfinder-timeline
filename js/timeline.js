@@ -13,11 +13,18 @@ const MONTHS = [
   "KUT"
 ];
 
+class Event {
+  constructor(tag, name, year, month, day) {
+    this.tag = tag,
+    this.name = name,
+    this.year = year,
+    this.month = month,
+    this.day = day
+  }
+ }
+
 import { Character, CHARACTERS } from "./characters.js";
 import { Event, EVENTS } from "./events.js";
-
-console.log(EVENTS)
-console.log(CHARACTERS)
 
 var sortedEvents = {};
 var orderedEvents = new Object();
@@ -36,10 +43,11 @@ for (event of EVENTS) {
  sortedEvents[event.year][event.month][event.day].push(event)
 }
 
-console.log(sortedEvents)
 let years = Object.keys(sortedEvents).map(Number);
 years.sort(function(a, b){return a - b});
+console.log(years)
 for (year of years) {
+console.log(year)
  let months = Object.keys(sortedEvents[year]).map(Number);
  months.sort(function(a, b){return a - b});
  for (month of months) {
