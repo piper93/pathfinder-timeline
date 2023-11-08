@@ -210,5 +210,11 @@ export const EVENTS = [
     new Event("gw","Sakuachi had a vision of a weeping mermaid and a watching masked man; Following Sakuachi's instructions, the Gatewalkers searched the Jundlan Wrecks for a bigger boat and met the ghost of Captain Adney Tinhill",4723,2,8),
     new Event("bl","The Blood Lords began their assault on Nodbones; the grave demon Ragrathax was defeated; Yurgak and Vaock offered knowledge and magic in exchange for their escape, but the Blood Lords chose to kill them",4723,2,14),
     new Event("gw","The Gatewalkers found the Temple of the Water Lord and made a deal with Pholebis for the Phantom Ship scroll; The <i>Mermaid's Tears</i> was freed from the ice and they started west to Egede",4723,2,9),
-    new Event("gw","The Gatewalkers had a vision of stepping through an <i>aiudara</i> together; The <i>Mermaid's Tears</i> was ambushed by a Chelaxian ship",4723,2,11)
+    new Event("gw","The Gatewalkers had a vision of stepping through an <i>aiudara</i> together; The <i>Mermaid's Tears</i> was ambushed by a Chelaxian ship; Captain Kitari Lambossa's final word to Caratacus is" + ' "Bubble"',4723,2,11),
+    new Event("bl","Exchequer Kyril Vonth organises a weekly games night with the Blood Lords while he is in Mechitar",4723,2,15),
+    new Event("bl","Ginness receives a letter from Jaromir's lawyer informing her that their marriage contract has been voided",4723,3,9),
+    new Event("bl","Although Kortash is unimpressed by the motivation behind Xanthos' undeath, he gifts the Blood Lords two rituals as he no longer considers them fools",4723,4,2),
+    new Event("bl","After accompanying Kortash on a tour of the harbour, the Blood Lords see a commotion on the <i>Wyvern's Wife</i>; After dealing with several wraiths, they chase down the single fleeing wraith to stop it before it hurts more civilians or find out where it's going",4723,4,15),
+    new Event("gw","A heavy snowstorm brings another vision to the Gatewalkers, who see themselves trudging through snow and pulling a sled with a covered creature on it; Caratacus sets Niihqteziyk on fire to try and warm her up",4723,2,12),
+    new Event("gw","The <i>Mermaid's Tears</i> is exposed to a dream bubble; The Gatewalkers remember a circle of towering monoliths, curtains of auroral light, and an iridescent beast under the black ice; The <i>Mermaid's Tears</i> arrives to Egede and Captain Adney finally moves on",4723,2,13)
    ]
