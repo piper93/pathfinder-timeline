@@ -1,0 +1,28 @@
+import { Event } from "../events.js";
+
+export const GATEWALKERS = [
+    new Event("gw","The night of the Missing Moment; hundred of onlookers walk through <i>aiudara</i>",4722,7,21),
+    new Event("gw","Returned through the <i>aiudara</i> with no memory of what had happened since they walked through",4722,10,18),
+    new Event("gw","Arrived at Sevenarches with Dr Ritalson; Investigated the <i>aiudara</i> at the city center",4723,1,6),
+    new Event("gw","Lemma Feldthorn told them about the Gatewalker, Bolan Nogasso, and his theft of the <i>Shadewither Key</i>; Began the journey to the Wilewood and the real Seven Arches",4723,1,7),
+    new Event("gw","The Gatewalkers reached the Seven Arches and prevented the sacrifice of a unicorn by the rebel Oakstewards; They cleared the lower level of the forest commune of Bolan's fey allies",4723,1,9),
+    new Event("gw","The Gatewalkers, sans clothes, faced off against Bolan; They learned that Bolan was missing his memories of beyond the gate, and that he was working for a fey known as Kaneepo the Slim",4723,1,10),
+    new Event("gw","Turned Bolan over to the Oakstewards; Lemma asked for them to find Kaneepo the Slim and retrieve the <i>Shadewither Key</i> on behalf of the Oakstewards",4723,1,12),
+    new Event("gw","Travelled through a portal to the Thinlands; The Chronicler informed the Gatewalkers of Kaneepo's plans; Defeated Kaneepo and met Hubert Hedge",4723,1,16),
+    new Event("gw","Used the <i>Shadewither Key</i> to leave the First World; Arrived in Loskialua, realised they were no longer on Golarion; Showed the Shadewither Key to Alleli, accidentally cursing her with the <i>obnubilate curse</i>; The sage Jenthiel told them of Osoyo, the Blackfrost Whale",4723,1,17),
+    new Event("gw","Descended to the Memory Cache and spoke with Iskariel's head, who told them that Osoyo was a psychic whale sealed by the elves below the Crown of the World millennia ago",4723,1,18),
+    new Event("gw","Retrieved the headwaters from She Who Walks Through Seasons",4723,1,19),
+    new Event("gw","Jenthiel completed the cure for Alleli, restoring her to full strength",4723,1,20),
+    new Event("gw","Alleli used the <i>Shadewither Key</i> and her telescope to open a connection between the aiudara and Skywatch; The Gatewalkers survived the calibrations, jumping between different planets, before going through the open portal and meeting Sakuachi",4723,1,29),
+    new Event("gw","Lethe saw the masked figure in her dreams; The Gatewalkers begin their exploration of Skywatch as they search for Sakuachi's guides; Rescued Ulikuq from the captivity of the Obsidian Oath; Caratacus agreed to take the Moon Hag's curse from the Winter Wolf, Isthald",4723,1,30),
+    new Event("gw","The Gatewalkers found one of Sakuachi's companions, Deniigi, at the Skywatch Market; Caratacus called on Isthald to help with the bandits",4723,1,31),
+    new Event("gw","Found the remains of Sakuachi's last companion, Pamak, in the lair of a dangerous myrzoga",4723,2,1),
+    new Event("gw","Departed Skywatch by raft, accompanied by Sakuachi and her companions",4723,2,4),
+    new Event("gw","Arrived at Winterbreak Bay in the Lake of Mists and Veils",4723,2,6),
+    new Event("gw","Sakuachi had a vision of a weeping mermaid and a watching masked man; Following Sakuachi's instructions, the Gatewalkers searched the Jundlan Wrecks for a bigger boat and met the ghost of Captain Adney Tinhill",4723,2,8),
+    new Event("gw","The Gatewalkers found the Temple of the Water Lord and made a deal with Pholebis for the Phantom Ship scroll; The <i>Mermaid's Tears</i> was freed from the ice and they started west to Egede",4723,2,9),
+    new Event("gw","The Gatewalkers had a vision of stepping through an <i>aiudara</i> together; The <i>Mermaid's Tears</i> was ambushed by a Chelaxian ship; Captain Kitari Lambossa's final word to Caratacus is" + ' "Bubble"',4723,2,11),
+    new Event("gw","A heavy snowstorm brings another vision to the Gatewalkers, who see themselves trudging through snow and pulling a sled with a covered creature on it; Caratacus sets Niihqteziyk on fire to try and warm her up",4723,2,12),
+    new Event("gw","The <i>Mermaid's Tears</i> is exposed to a dream bubble; The Gatewalkers remember a circle of towering monoliths, curtains of auroral light, and an iridescent beast under the black ice; The <i>Mermaid's Tears</i> arrives to Egede and Captain Adney finally moves on",4723,2,13)
+
+]
