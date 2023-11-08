@@ -13,16 +13,6 @@ const MONTHS = [
   "KUT"
 ];
 
-class Event {
-  constructor(tag, name, year, month, day) {
-    this.tag = tag,
-    this.name = name,
-    this.year = year,
-    this.month = month,
-    this.day = day
-  }
- }
-
 import { Character, CHARACTERS } from "./characters.js";
 import { Event, EVENTS } from "./events.js";
 
