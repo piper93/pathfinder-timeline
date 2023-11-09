@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: Helvetica, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -124,29 +124,33 @@ section#timeline article:nth-child(2n+2) div.inner h2:after {
 }
 
 section#timeline article div.inner h2.aoa {
-  background: #B22222;
+  background: #DB5A5E;
 }
 
 section#timeline article div.inner h2.ec {
-  background: #FF8C00;
+  background: #FBE691;
 }
 
 section#timeline article div.inner h2.notgd {
-  background: #00CED1;
+  background: #697EA9;
 }
 
 section#timeline article div.inner h2.ooa {
-  background: #A0522D;
+  background: #CB8460;
 }
 
 section#timeline article div.inner h2.av {
-  background: #6B8E23;
+  background: #87A29F;
 }
 
 section#timeline article div.inner h2.bl {
-  background: #696969;
+  background: #9F998D;
 }
 
 section#timeline article div.inner h2.gw {
-  background: #9f65c3;
+  background: #A2CECC;
+}
+
+section#timeline article div.inner h2.skt {
+  background: #9F9F55;
 }
