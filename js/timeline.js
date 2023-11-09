@@ -130,7 +130,7 @@ function getTimeline(filter = "all") {
    var string = `
    <article>
      <div class="inner">
-       <span class="date ${MONTHS[firstEvent.month-1].toLowerCase}">
+       <span class="date ${MONTHS[firstEvent.month-1].toLowerCase()}">
          <span class="day">${firstEvent.day}</span>
          <span class="month">${MONTHS[firstEvent.month-1]}</span>
          <span class="year">${firstEvent.year}</span>
