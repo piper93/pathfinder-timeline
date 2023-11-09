@@ -82,6 +82,55 @@ section#timeline article div.inner span.date span.year {
   font-size: 10px;
 }
 
+/* Background Colours for Different Months */
+section#timeline article div.inner span.date.aba {
+  background: #F7E39A;
+}
+
+section#timeline article div.inner span.date.cal {
+  background: #FECE79;
+}
+
+section#timeline article div.inner span.date.pha {
+  background: #F8A555;
+}
+
+section#timeline article div.inner span.date.goz {
+  background: #F4816F;
+}
+
+section#timeline article div.inner span.date.des {
+  background: #F48093;
+}
+
+section#timeline article div.inner span.date.sar {
+  background: #F390BC;
+}
+
+section#timeline article div.inner span.date.era {
+  background: #E4B7D4;
+}
+
+section#timeline article div.inner span.date.aro {
+  background: #8A8BC3;
+}
+
+section#timeline article div.inner span.date.rov {
+  background: #94CAE4;
+}
+
+section#timeline article div.inner span.date.lam {
+  background: #9FD9DA;
+}
+
+section#timeline article div.inner span.date.net {
+  background: #97D1A9;
+}
+
+section#timeline article div.inner span.date.kut {
+  background: #CAE189;
+}
+
 section#timeline article div.inner h2 {
   padding: 15px;
   margin: 0;
