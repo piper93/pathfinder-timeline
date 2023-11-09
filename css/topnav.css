@@ -33,72 +33,72 @@
 }
 .topnav button.aoa-link:hover {
   background-color: #DB5A5E;
-  color: white;
+  color: black;
 }
 .topnav button.ec-link:hover {
   background-color: #FBE691;
-  color: white;
+  color: black;
 }
 .topnav button.av-link:hover {
   background-color: #87A29F;
-  color: white;
+  color: black;
 }
 .topnav button.notgd-link:hover {
   background-color: #697EA9;
-  color: white;
+  color: black;
 }
 .topnav button.ooa-link:hover {
   background-color: #CB8460;
-  color: white;
+  color: black;
 }
 .topnav button.bl-link:hover {
   background-color: #9F998D;
-  color: white;
+  color: black;
 }
 .topnav button.gw-link:hover {
   background-color: #A2CECC;
-  color: white;
+  color: black;
 }
 .topnav button.skt-link:hover{
   background-color: #9F9F55;
-  color: white;
+  color: black;
 }
 /* Add an active class to highlight the current page */
 .topnav button.all-link.active {
   background-color: #003366;
-  color: white;
+  color: black;
 }
 .topnav button.aoa-link.active {
   background-color: #DB5A5E;
-  color: white;
+  color: black;
 }
 .topnav button.ec-link.active {
   background-color: #FBE691;
-  color: white;
+  color: black;
 }
 .topnav button.av-link.active {
   background-color: #87A29F;
-  color: white;
+  color: black;
 }
 .topnav button.notgd-link.active {
   background-color: #697EA9;
-  color: white;
+  color: black;
 }
 .topnav button.ooa-link.active {
   background-color: #CB8460;
-  color: white;
+  color: black;
 }
 .topnav button.bl-link.active {
   background-color: #9F998D;
-  color: white;
+  color: black;
 }
 .topnav button.gw-link.active {
   background-color: #A2CECC;
-  color: white;
+  color: black;
 }
 .topnav button.skt-link.active {
   background-color: #9F9F55;
-  color: white
+  color: black;
 }
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
