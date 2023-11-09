@@ -59,7 +59,7 @@ section#timeline article div.inner span.date {
   font-weight: 900;
   text-transform: uppercase;
   background: #25303B;
-  color: rgba(255,255,255,0.5);
+  color: black;
   border: 2px solid rgba(255,255,255,0.2);
   box-shadow: 0 0 0 7px #25303B;
 }
@@ -71,6 +71,7 @@ section#timeline article div.inner span.date span {
 
 section#timeline article div.inner span.date span.day {
   font-size: 10px;
+  padding: 3px 0 0 0;
 }
 
 section#timeline article div.inner span.date span.month {

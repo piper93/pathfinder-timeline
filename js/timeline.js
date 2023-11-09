@@ -1,16 +1,16 @@
 const MONTHS = [
-  "ABA",
-  "CAL",
-  "PHA",
-  "GOZ",
-  "DES",
-  "SAR",
-  "ERA",
-  "ARO",
-  "ROV",
-  "LAM",
-  "NET",
-  "KUT"
+  ["ABA", "#F7E39A"],
+  ["CAL", "#FECE79"],
+  ["PHA","#F8A555"],
+  ["GOZ","#F4816F"],
+  ["DES","#F48093"],
+  ["SAR","#F390BC"],
+  ["ERA","#E4B7D4"],
+  ["ARO","#8A8BC3"],
+  ["ROV","#94CAE4"],
+  ["LAM","#9FD9DA"],
+  ["NET","#97D1A9"],
+  ["KUT","#CAE189"]
 ];
 
 import { CHARACTERS } from "./characters.js";
@@ -130,9 +130,9 @@ function getTimeline(filter = "all") {
    var string = `
    <article>
      <div class="inner">
-       <span class="date">
+       <span class="date" style="background: ${MONTHS[firstEvent.month-1][0]};">
          <span class="day">${firstEvent.day}</span>
-         <span class="month">${MONTHS[firstEvent.month-1]}</span>
+         <span class="month">${MONTHS[firstEvent.month-1][0]}</span>
          <span class="year">${firstEvent.year}</span>
        </span>`
      for (event of events) {
