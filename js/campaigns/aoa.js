@@ -1,15 +1,14 @@
 import { Event } from "../events.js";
 
 export const AGEOFASHES = [
-    new Event("aoa","Call to Heroes",4719,9,22),
-    new Event("aoa","Met Benjemyn Trayle; discovered Alseta's Ring",4719,9,24),
-    new Event("ec","The Circus of Wayward Wonders performs in Abberton; the Ringmaster is murdered",4720,2,5),
-    new Event("aoa","Travelled through Huntergate; Met the Ekujae",4719,10,15),
-    new Event("aoa","Attended the Akrivel Welcome Feast",4719,10,16),
-    new Event("aoa","Met Gerhard Pendergrast",4719,10,26),
-    new Event("aoa","Ancient Temple exploded; Gerhard Pendergrast died",4719,10,29),
-    new Event("aoa","Cleared out the Cinderclaw Mine; Ben slept outside and got malaria",4719,11,11),
-    new Event("aoa","Defeated Belmazog at the Fortress of Sorrow; Met the red dragon, Kyrion",4719,11,22),
+    new Event("aoa","Breachill hosted the <i>Call to Heroes</i>, ultimately recruiting the party to investigate Hellknight Hill",4719,9,22),
+    new Event("aoa","Met Benjemyn Trayle; discovered a circle of <i>aiudara</i> below the abandoned citadel - Alseta's Ring",4719,9,24),
+    new Event("aoa","Travelled through Huntergate and survived the vision of Dahak trapped within the <i>aiudara</i>; Met the Ekujae on the other side; Ben was disqualified from a dancing competition",4719,10,15),
+    new Event("aoa","Attended the Akrivel Welcome Feast; Nketiah told them the story of the Great Darkness and the <i>anima invocation</i> ritual the elves had used to trap it",4719,10,16),
+    new Event("aoa","Met Gerhard Pendergrast and learned that he was seeking an ancient elven temple in order to destroy it and prevent people from discrediting his academic claims",4719,10,26),
+    new Event("aoa","They were unable to stop Gerhard Pendergrast from setting off his explosives and exploding the Ancient Temple; Gerhard Pendergrast died in the blast, while the rubble fell around a stunned Grannok",4719,10,29),
+    new Event("aoa","The kobold cultist, Hezle, asked them to kill the vrock guarding the camp; The party defeated everything at the Cinderclaw Mine; Despite Hezle offering them use of her shack, Ben slept outside and got malaria",4719,11,11),
+    new Event("aoa","The party defeated all the cultists at the Fortress of Sorrow; Ardbert nearly died to a door; With the help of the captured red dragon, Kyrion, they defeated the Cinderclaws leader, Belmazog",4719,11,22),
     new Event("aoa","Destroyed the Vision of Dahak; Returned to Breachill",4719,12,1),
     new Event("aoa","Dr Bang was kidnapped by the Scarlet Triad",4719,12,8),
     new Event("aoa","Travelled through Dreamgate",4719,12,9),

@@ -1,6 +1,7 @@
 import { Event } from "../events.js";
 
 export const EXTINCTIONCURSE = [
+    new Event("ec","The Circus of Wayward Wonders performs in Abberton; the Ringmaster is murdered",4720,2,5),
     new Event("ec","The Ringmaster's murderer, Nemmia, was defeated",4720,2,6),
     new Event("ec","Major Jae Abber asked for assistance; Viktor Volkano was nearly killed",4720,2,7),
     new Event("ec","Momberolf died; the Mayor was rescued from the Hermitage",4720,2,8),
