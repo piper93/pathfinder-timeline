@@ -25,6 +25,6 @@ export const OUTLAWSOFALKENSTAR = [
     new Event("ooa","Met Dash at the Dead Spot outside of Alkenstar; the Headless Rustlers decapitated Yin; learned that Parsus had delivered the materials to the Gunworks",4722,6,8),
     new Event("ooa","Arrived to the Gunworks; Met Tyke Steyrlock; Helped remove gremlins from the Tower of Metallurgy",4722,6,9),
     new Event("ooa","Met with Loy Ayton; The Slugs of the Waste assaulted the Gunworks; The Maw of Rovagug was destroyed by Pyronite; Yohziah was killed by Vewslog, the Cyclops",4722,6,10),
-    new Event("ooa","The <i>Gearsmoke</i> Steamboat explodes at the top of Alken Falls, destroying the waterfall and the Tinwound Hydroforge",4722,6,13),
-    new Event("ooa","The High Parliament rushes through Tombend's bill of mandatory conscription; Loveless is placed in control of the new standing army",4722,6,17)
+    new Event("ooa","The <i>Gearsmoke</i> Steamboat exploded at the top of Alken Falls, destroying the waterfall and the Tinwound Hydroforge",4722,6,13),
+    new Event("ooa","The High Parliament rushed through Tombend's bill of mandatory conscription; Loveless is placed in control of the new standing army",4722,6,17)
 ]

@@ -23,6 +23,10 @@ export const GATEWALKERS = [
     new Event("gw","The Gatewalkers found the Temple of the Water Lord and made a deal with Pholebis for the Phantom Ship scroll; The <i>Mermaid's Tears</i> was freed from the ice and they started west to Egede",4723,2,9),
     new Event("gw","The Gatewalkers had a vision of stepping through an <i>aiudara</i> together; The <i>Mermaid's Tears</i> was ambushed by a Chelaxian ship; Captain Kitari Lambossa's final word to Caratacus is" + ' "Bubble"',4723,2,11),
     new Event("gw","A heavy snowstorm brings another vision to the Gatewalkers, who see themselves trudging through snow and pulling a sled with a covered creature on it; Caratacus sets Niihqteziyk on fire to try and warm her up",4723,2,12),
-    new Event("gw","The <i>Mermaid's Tears</i> is exposed to a dream bubble; The Gatewalkers remember a circle of towering monoliths, curtains of auroral light, and an iridescent beast under the black ice; The <i>Mermaid's Tears</i> arrives to Egede and Captain Adney finally moves on",4723,2,13)
+    new Event("gw","The <i>Mermaid's Tears</i> is exposed to a dream bubble; The Gatewalkers remember a circle of towering monoliths, curtains of auroral light, and an iridescent beast under the black ice; The <i>Mermaid's Tears</i> arrives to Egede and Captain Adney finally moves on",4723,2,13),
+    new Event("gw","The Gatewalkers met Robyn Bánks, another who returned through the gates the same time as them. They went shopping at <i>Snowshoes & Pickles Co.</i>",4723,2,14),
+    new Event("gw","Along with Sakauchi and her companions, the Gatewalkers joined a caravan to Kenabres",4723,2,17),
+    new Event("gw","Robyn saw the Masked Man in his dreams for the first time; Niihqteziyk was briefly possessed by an Invidiak",4723,2,21),
+    new Event("gw","Sakuachi dreams of a falling star and the Gatewalkers leave the caravan to search for it in the hopes that a god may have fallen; They help four halflings find a missing wedding ring",4723,2,26)
 
 ]
