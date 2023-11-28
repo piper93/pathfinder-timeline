@@ -20,10 +20,10 @@ import { NIGHTOFTHEGRAYDEATH } from "./campaigns/notgd.js"
 import { ABOMINATIONVAULTS } from "./campaigns/av.js"
 import { OUTLAWSOFALKENSTAR } from "./campaigns/ooa.js"
 import { BLOODLORDS } from "./campaigns/bl.js"
-import { GATEWALKERS } from "./campaigns/gw.js"
+import { SKYKINGSTOMB } from "./campaigns/skt.js"
 
 const EVENTS = AGEOFASHES.concat(EXTINCTIONCURSE, NIGHTOFTHEGRAYDEATH, ABOMINATIONVAULTS, 
-  OUTLAWSOFALKENSTAR, BLOODLORDS, GATEWALKERS)
+  OUTLAWSOFALKENSTAR, BLOODLORDS, SKYKINGSTOMB)
 
 var sortedEvents = {};
 var orderedEvents = new Object();

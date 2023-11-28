@@ -28,5 +28,4 @@ export const GATEWALKERS = [
     new Event("gw","Along with Sakauchi and her companions, the Gatewalkers joined a caravan to Kenabres",4723,2,17),
     new Event("gw","Robyn saw the Masked Man in his dreams for the first time; Niihqteziyk was briefly possessed by an Invidiak",4723,2,21),
     new Event("gw","Sakuachi dreams of a falling star and the Gatewalkers leave the caravan to search for it in the hopes that a god may have fallen; They help four halflings find a missing wedding ring",4723,2,26)
-
 ]
