@@ -48,5 +48,11 @@ export const BLOODLORDS = [
     new Event("bl","Exchequer Kyril Vonth organised a weekly games night with the Blood Lords while he is in Mechitar",4723,2,15),
     new Event("bl","Ginness received a letter from Jaromir's lawyer informing her that their marriage contract has been voided",4723,3,9),
     new Event("bl","Although Kortash was unimpressed by the motivation behind Xanthos' undeath, he gifted the Blood Lords two rituals as he no longer considered them fools",4723,4,2),
-    new Event("bl","After accompanying Kortash on a tour of the harbour, the Blood Lords saw a commotion on the <i>Wyvern's Wife</i>; They chased down the single remaining wraith to the Cerulean Glade, where they defeated Rumin Purgo and recovered several samples of <i>Shadow Ash</i>",4723,4,15)
+    new Event("bl","After accompanying Kortash on a tour of the harbour, the Blood Lords saw a commotion on the <i>Wyvern's Wife</i>; They chased down the single remaining wraith to the Cerulean Glade, where they defeated Rumin Purgo and recovered several samples of <i>Shadow Ash</i>",4723,4,15),
+    new Event("bl","Spoke with the harbormaster, Vernetta, and learned the poison was a combination of braingrit, shadow ash, and tremor paste",4723,4,16),
+    new Event("bl","Kyril Vonth told the Blood Lords that, although he imagined there was a mistake, games night was cancelled and he was returning to oversee a financial investment in Yled",4723,4,17),
+    new Event("bl","The Blood Lords' research led them to Professor Bremeteria Veng at the university as a source of knowledge about <i>Shadow Ash</i>",4723,4,21),
+    new Event("bl","Professor Veng told Xanthos that <i>Shadow Ash</i> was initially created by the Empty Chorus, but gaining access to their abandoned Sanctum would require permission from the Cathedral of Epiphenomena",4723,4,28),
+    new Event("bl","Both Seldeg and Zthni refused to petition for their entry to the Cathedral; The Blood Lords gave the Export Guild the evidence of Pharasmin presence within the Carters Consortium in exchange for their petition",4723,4,29),
+    new Event("bl","Received permission to enter the Yearning Sanctum; Discovered Hyrune's lackeys within the Sanctum; Rinnella Brenon, ruler of the cathedral, suggested they challenge Hyrune to a fight at the Deathless Arena and told them she would provide her own bodyguard as Hyrune's champion to ensure the outcome",4723,5,3)
 ]
