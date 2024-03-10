@@ -54,5 +54,15 @@ export const BLOODLORDS = [
     new Event("bl","The Blood Lords' research led them to Professor Bremeteria Veng at the university as a source of knowledge about <i>Shadow Ash</i>",4723,4,21),
     new Event("bl","Professor Veng told Xanthos that <i>Shadow Ash</i> was initially created by the Empty Chorus, but gaining access to their abandoned Sanctum would require permission from the Cathedral of Epiphenomena",4723,4,28),
     new Event("bl","Both Seldeg and Zthni refused to petition for their entry to the Cathedral; The Blood Lords gave the Export Guild the evidence of Pharasmin presence within the Carters Consortium in exchange for their petition",4723,4,29),
-    new Event("bl","Received permission to enter the Yearning Sanctum; Discovered Hyrune's lackeys within the Sanctum; Rinnella Brenon, ruler of the cathedral, suggested they challenge Hyrune to a fight at the Deathless Arena and told them she would provide her own bodyguard as Hyrune's champion to ensure the outcome",4723,5,3)
+    new Event("bl","Received permission to enter the Yearning Sanctum; Discovered Hyrune's lackeys within the Sanctum; Rinnella Brenon, ruler of the cathedral, suggested they challenge Hyrune to a fight at the Deathless Arena and told them she would provide her own bodyguard as Hyrune's champion to ensure the outcome",4723,5,3),
+    new Event("bl","Successfully challenged Blood Lord Hyrune to a match in the Deathless Arena",4723,5,4),
+    new Event("bl","Embarassed Hyrune in the arena; Geb stripped Hyrune of his Blood Lord privileges and told the party the location of Hyrune's secret sanctum",4723,5,5),
+    new Event("bl","The Blood Lords descended below their alcazar to the Hanging Castle; Hyrune told them of Kemnebi's plans and his anger at Geb; Hyrune was destroyed",4723,5,6),
+    new Event("bl","Departed Mechitar and began the journey north to Yled",4723,5,9),
+    new Event("bl","Met with Seldeg outside of Yled; Learned of the Warmaster Council and of rumours that the High Priest Pesabnet is involved in smuggling",4723,5,11),
+    new Event("bl","Learned that Pokmit Bloody-Pike was making plans to move against Pesabnet",4723,5,14),
+    new Event("bl","Pokmit Bloody-Pike took Pesabnet into custody; The Blood Lords examined Pesabnet's things and found leads pointing to the involvement of the theatre owner, Ghiasi the Unraveller",4723,5,15),
+    new Event("bl","Ginness asked her ex-husband, Jarek, to provide them tickets to Ghiasi's upcoming show, <i>The Winnowing of Gachanta</i>",4723,5,16),
+    new Event("bl","All but Nohi performed in Ghiasi's play as emergency understudies; Followed Ghiasi though a portal to Shadow Yled, where they fought their way to her; After proving their combat prowess, Ghiasi deemed them powerful enough to help and revealed her involvment with Kemnebi",4723,5,17),
+    new Event("bl","Xanthos took Ghiasi's place at her scheduled meeting with Kemnebi's in-between; Graelar told them that mass quantities of <i>shadow ash</i> were being produced by the Agorron and led them to its entrance",4723,5,18)
 ]
