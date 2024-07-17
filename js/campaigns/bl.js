@@ -64,5 +64,12 @@ export const BLOODLORDS = [
     new Event("bl","Pokmit Bloody-Pike took Pesabnet into custody; The Blood Lords examined Pesabnet's things and found leads pointing to the involvement of the theatre owner, Ghiasi the Unraveller",4723,5,15),
     new Event("bl","Ginness asked her ex-husband, Jarek, to provide them tickets to Ghiasi's upcoming show, <i>The Winnowing of Gachanta</i>",4723,5,16),
     new Event("bl","All but Nohi performed in Ghiasi's play as emergency understudies; Followed Ghiasi though a portal to Shadow Yled, where they fought their way to her; After proving their combat prowess, Ghiasi deemed them powerful enough to help and revealed her involvment with Kemnebi",4723,5,17),
-    new Event("bl","Xanthos took Ghiasi's place at her scheduled meeting with Kemnebi's in-between; Graelar told them that mass quantities of <i>shadow ash</i> were being produced by the Agorron and led them to its entrance",4723,5,18)
+    new Event("bl","Xanthos took Ghiasi's place at her scheduled meeting with Kemnebi's in-between; Graelar told them that mass quantities of <i>shadow ash</i> were being produced by the Agorron and led them to its entrance; received evidence of Kemnebi's plots from The Bound One",4723,5,18),
+    new Event("bl","Presented the evidence to Geb; Were tasked with receiving Balji's soul from the Boneyard",4723,5,21),
+    new Event("bl","Descended into the abandoned Carters Stronghold and met the shabti's still living below; Convinced Erthrais that they would take her to freedom and lied that they wouldn't kill the others",4723,5,27),
+    new Event("bl","After failing to deceive Erthrais, she killed herself instead of helping them pass to the Boneyard; Requested Berline's help to open the Passage Pane",4723,5,28),
+    new Event("bl","Travelled to the Boneyard and made a deal with Matron Uldrula for Balji's soul urn; Defeated the Arbiter in a close fight on their way out",4723,5,31),
+    new Event("bl","Returned Balji's soul urn to Geb",4723,6,2),
+    new Event("bl","Geb ordered them to fetch the components he needs for a ritual to restore Balji's soul urn, as well as asking them to retrieve additional components to allow him to untether himself from his throne room; Worked with Seldeg to obtain the armour of Corporal Elgrai instead of Seldeg's own'",4723,6,6),
+    new Event("bl","Retrieved cursed shadow from Kulun's Folly",4723,6,7)
 ]
