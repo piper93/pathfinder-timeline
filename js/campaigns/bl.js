@@ -71,5 +71,7 @@ export const BLOODLORDS = [
     new Event("bl","Travelled to the Boneyard and made a deal with Matron Uldrula for Balji's soul urn; Defeated the Arbiter in a close fight on their way out",4723,5,31),
     new Event("bl","Returned Balji's soul urn to Geb",4723,6,2),
     new Event("bl","Geb ordered them to fetch the components he needs for a ritual to restore Balji's soul urn, as well as asking them to retrieve additional components to allow him to untether himself from his throne room; Worked with Seldeg to obtain the armour of Corporal Elgrai instead of Seldeg's own'",4723,6,6),
-    new Event("bl","Retrieved cursed shadow from Kulun's Folly",4723,6,7)
+    new Event("bl","Retrieved cursed shadow from Kulun's Folly; retrieved the skull of Algh-ahri from the Cathedral of Epiphenomena",4723,6,7),
+    new Event("bl","Retrieved the <i>Fiendflame Cage</i> from the Ossum Lighthouse; Returned the ritual components to Geb",4723,6,10),
+    new Event("bl","Geb gave them his blessing and sent them to Peridantia in search of Kemnebi",4723,6,12)
 ]
