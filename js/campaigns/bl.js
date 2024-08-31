@@ -73,5 +73,7 @@ export const BLOODLORDS = [
     new Event("bl","Geb ordered them to fetch the components he needs for a ritual to restore Balji's soul urn, as well as asking them to retrieve additional components to allow him to untether himself from his throne room; Worked with Seldeg to obtain the armour of Corporal Elgrai instead of Seldeg's own'",4723,6,6),
     new Event("bl","Retrieved cursed shadow from Kulun's Folly; retrieved the skull of Algh-ahri from the Cathedral of Epiphenomena",4723,6,7),
     new Event("bl","Retrieved the <i>Fiendflame Cage</i> from the Ossum Lighthouse; Returned the ritual components to Geb",4723,6,10),
-    new Event("bl","Geb gave them his blessing and sent them to Peridantia in search of Kemnebi",4723,6,12)
+    new Event("bl","Geb gave them his blessing and sent them to Peridantia in search of Kemnebi",4723,6,12),
+    new Event("bl","The Blood Lords made their way through Kemnebi's Shadow Sanctum and defeated the ex-Chancellor in his own lair",4723,6,13),
+    new Event("bl","Geb announced his triumph over Kemnebi to the public, warning that the same fate would await any traitor; Geb assigned each Blood Lord their new jobs and promised that he would call on them as his agents again when needed",4723,6,15)
 ]
