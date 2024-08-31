@@ -8,6 +8,10 @@ export class Character {
    }
 
 export const CHARACTERS = [
+    new Character("sog","Kubo",true,"img/sog/kubo.webp"),
+    new Character("sog","Moriko",true,"img/sog/moriko.webp"),
+    new Character("sog","Otoko",true,"img/sog/otoko.webp"),
+    new Character("sog","Yoonji",true,"img/sog/yoonji.webp"),
     new Character("gw","Caratacus",true,"img/gw/caratacus.webp"),
     new Character("gw","Lethe",true,"img/gw/lethe.webp"),
     new Character("gw","Niihqteziyk",true,"img/gw/niihqteziyk.webp"),
