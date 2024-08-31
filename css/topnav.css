@@ -59,8 +59,8 @@
   background-color: #A2CECC;
   color: black;
 }
-.topnav button.skt-link:hover{
-  background-color: #9F9F55;
+.topnav button.sog-link:hover{
+  background-color: #E4E1D0;
   color: black;
 }
 /* Add an active class to highlight the current page */
@@ -96,8 +96,8 @@
   background-color: #A2CECC;
   color: black;
 }
-.topnav button.skt-link.active {
-  background-color: #9F9F55;
+.topnav button.sog-link.active {
+  background-color: #E4E1D0;
   color: black;
 }
 /* Hide the link that should open and close the topnav on small screens */

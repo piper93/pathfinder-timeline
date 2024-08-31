@@ -20,6 +20,7 @@ import { NIGHTOFTHEGRAYDEATH } from "./campaigns/notgd.js"
 import { ABOMINATIONVAULTS } from "./campaigns/av.js"
 import { OUTLAWSOFALKENSTAR } from "./campaigns/ooa.js"
 import { BLOODLORDS } from "./campaigns/bl.js"
+import { SEASONOFGHOSTS } from "./campaigns/sog.js";
 
 const EVENTS = AGEOFASHES.concat(EXTINCTIONCURSE, NIGHTOFTHEGRAYDEATH, ABOMINATIONVAULTS, 
   OUTLAWSOFALKENSTAR, BLOODLORDS)
