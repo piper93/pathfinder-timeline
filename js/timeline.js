@@ -13,11 +13,8 @@ const MONTHS = [
   "KUT"
 ];
 
-import { EVENTS } from "./campaigns";
-import { CHARACTERS } from "./campaigns";
-
-console.log(EVENTS)
-console.log(CHARACTERS)
+import { EVENTS } from "./events.js";
+import { CHARACTERS } from "./characters.js";
 
 var sortedEvents = {};
 var orderedEvents = new Object();
