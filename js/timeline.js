@@ -16,6 +16,9 @@ const MONTHS = [
 import { EVENTS } from "./events";
 import { CHARACTERS } from "./characters";
 
+console.log(EVENTS)
+console.log(CHARACTERS)
+
 var sortedEvents = {};
 var orderedEvents = new Object();
 let tagFilter = "all";
