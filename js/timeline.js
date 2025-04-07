@@ -13,8 +13,8 @@ const MONTHS = [
   "KUT"
 ];
 
-import { EVENTS } from "./events";
-import { CHARACTERS } from "./characters";
+import { EVENTS } from "./campaigns";
+import { CHARACTERS } from "./campaigns";
 
 console.log(EVENTS)
 console.log(CHARACTERS)
