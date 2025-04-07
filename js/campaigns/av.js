@@ -1,4 +1,20 @@
 import { Event } from "../events.js";
+import { Character } from "../characters.js";
+
+export const AVCHARACTERS = [
+    new Character("av","Eri",true,"img/av/eri.png"),
+    new Character("av","Finn",false,"img/av/finn.png"),
+    new Character("av","Glodrum",true,"img/av/glodrum.png"),
+    new Character("av","Jeigen",true,"img/av/jeigen.png"),
+    new Character("av","Kahiki",true,"img/av/kahiki.png"),
+    new Character("av","Khesk",false,"img/av/khesk.png"),
+    new Character("av","Mar-T'an",true,"img/av/mar tan.png"),
+    new Character("av","Marvin",false,"img/av/marvin.png"),
+    new Character("av","Max",true,"img/av/max.png"),
+    new Character("av","Petra",false,"img/av/petra.png"),
+    new Character("av","Spoons",true,"img/av/spoons.png"),
+    new Character("av","Verity",true,"img/av/verity.png")
+]
 
 export const ABOMINATIONVAULTS = [
     new Event("av","Founder's Day in Otari; Learned of potential danger in the Fogfens from Wrinn",4721,5,3),

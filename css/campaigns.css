@@ -1,0 +1,100 @@
+:root {
+ --aoa: #DB5A5E;
+ --ec: #FBE691;
+ --notgd: #697EA9;
+ --ooa: #CB8460;
+ --av: #87A29F;
+ --bl: #9F998D;
+ --sog: #D2DBD1;
+}
+
+/* Age of Ashes */
+section#timeline article div.inner h2.aoa {
+    background: var(--aoa);
+}
+.topnav button.aoa-link:hover {
+    background-color: var(--aoa);
+    color: black;
+}
+.topnav button.aoa-link.active {
+    background-color: var(--aoa);
+    color: black;
+}
+
+/* Extinction Curse */
+section#timeline article div.inner h2.ec {
+    background: var(--ec);
+}
+.topnav button.ec-link:hover {
+    background-color: var(--ec);
+    color: black;
+}
+.topnav button.ec-link.active {
+    background-color: var(--ec);
+    color: black;
+}
+
+/* Abomination Vaults */
+section#timeline article div.inner h2.av {
+    background: var(--av);
+}
+.topnav button.av-link:hover {
+    background-color: var(--av);
+    color: black;
+}
+.topnav button.av-link.active {
+    background-color: var(--av);
+    color: black;
+}
+
+/* Blood Lords */
+section#timeline article div.inner h2.bl {
+    background: var(--bl);
+}
+.topnav button.bl-link:hover {
+    background-color: var(--bl);
+    color: black;
+}
+.topnav button.bl-link.active {
+    background-color: var(--bl);
+    color: black;
+}
+
+/* Night of the Gray Death */
+section#timeline article div.inner h2.notgd {
+    background: var(--notgd);
+}
+.topnav button.notgd-link:hover {
+    background-color: var(--notgd);
+    color: black;
+}
+.topnav button.notgd-link.active {
+    background-color: var(--notgd);
+    color: black;
+}
+
+/* Outlaws of Alkenstar */
+section#timeline article div.inner h2.ooa {
+    background: var(--ooa);
+}
+.topnav button.ooa-link:hover {
+    background-color: var(--ooa);
+    color: black;
+}
+.topnav button.ooa-link.active {
+    background-color: var(--ooa);
+    color: black;
+}
+
+/* Season of Ghosts */
+section#timeline article div.inner h2.sog {
+    background: var(--sog);
+}
+.topnav button.sog-link:hover {
+    background-color: var(--sog);
+    color: black;
+}
+.topnav button.sog-link.active {
+    background-color: var(--sog);
+    color: black;
+}

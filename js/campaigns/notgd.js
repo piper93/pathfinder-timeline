@@ -1,4 +1,14 @@
 import { Event } from "../events.js";
+import { Character } from "../characters.js";
+
+export const NOTGDCHARACTERS = [
+    new Character("notgd","Flynn",false,"img/notgd/flynn.webp"),
+    new Character("notgd","Myrra",false,"img/notgd/myrra.webp"),
+    new Character("notgd","Nevvin",false,"img/notgd/nevvin.webp"),
+    new Character("notgd","Octavio",false,"img/notgd/octavio.webp"),
+    new Character("notgd","Perri",false,"img/notgd/perri.webp"),
+    new Character("notgd","Sylvie",false,"img/notgd/sylvie.webp")
+]
 
 export const NIGHTOFTHEGRAYDEATH = [
     new Event("notgd","Chairwoman Drannoch recruited people to attempt to take down the Grey Gardeners",4721,10,26),

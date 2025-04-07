@@ -1,4 +1,13 @@
 import { Event } from "../events.js";
+import { Character } from "../characters.js";
+
+export const AOACHARACTERS = [
+    new Character("aoa","Ardbert",true,"img/aoa/ardbert.webp"),
+    new Character("aoa","Benjemyn",true,"img/aoa/ben.webp"),
+    new Character("aoa","Dr Bang",true,"img/aoa/drbang.webp"),
+    new Character("aoa","Grannok",true,"img/aoa/grannok.webp"),
+    new Character("aoa","Morta",true,"img/aoa/morta.webp")
+]
 
 export const AGEOFASHES = [
     new Event("aoa","Breachill hosted the <i>Call to Heroes</i>, ultimately recruiting the party to investigate Hellknight Hill",4719,9,22),

@@ -1,4 +1,13 @@
 import { Event } from "../events.js";
+import { Character } from "../characters.js";
+
+export const ECCHARACTERS = [
+    new Character("ec","Hernandedor",true,"img/ec/hernandedor.webp"),
+    new Character("ec","Kalira",true,"img/ec/kalira.webp"),
+    new Character("ec","Munya",true,"img/ec/munya.webp"),
+    new Character("ec","Pudding",true,"img/ec/pudding.webp"),
+    new Character("ec","Tupp",true,"img/ec/tupp.webp")
+]
 
 export const EXTINCTIONCURSE = [
     new Event("ec","The Circus of Wayward Wonders performs in Abberton; the Ringmaster is murdered",4720,2,5),

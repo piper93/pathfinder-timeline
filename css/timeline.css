@@ -172,35 +172,3 @@ section#timeline article:nth-child(2n+2) div.inner {
 section#timeline article:nth-child(2n+2) div.inner h2:after {
   left: -5px;
 }
-
-section#timeline article div.inner h2.aoa {
-  background: #DB5A5E;
-}
-
-section#timeline article div.inner h2.ec {
-  background: #FBE691;
-}
-
-section#timeline article div.inner h2.notgd {
-  background: #697EA9;
-}
-
-section#timeline article div.inner h2.ooa {
-  background: #CB8460;
-}
-
-section#timeline article div.inner h2.av {
-  background: #87A29F;
-}
-
-section#timeline article div.inner h2.bl {
-  background: #9F998D;
-}
-
-section#timeline article div.inner h2.gw {
-  background: #A2CECC;
-}
-
-section#timeline article div.inner h2.sog {
-  background: #D2DBD1;
-}

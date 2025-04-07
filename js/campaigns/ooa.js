@@ -1,4 +1,14 @@
 import { Event } from "../events.js";
+import { Character } from "../characters.js";
+
+export const OOACHARACTERS = [
+    new Character("ooa","Astra",true,"img/ooa/astra.png"),
+    new Character("ooa","Gbemisola",true,"img/ooa/gbemisola.png"),
+    new Character("ooa","Gruzwil",false,"img/ooa/gruzwil.png"),
+    new Character("ooa","Tyke",true,"img/ooa/tyke.png"),
+    new Character("ooa","Yin",false,"img/ooa/yin.png"),
+    new Character("ooa","Yohziah",false,"img/ooa/yohziah.png")
+]
 
 export const OUTLAWSOFALKENSTAR = [
     new Event("ooa","Hired by Foebe Dunsmith for a bank heist",4722,4,27),

@@ -13,17 +13,8 @@ const MONTHS = [
   "KUT"
 ];
 
-import { CHARACTERS } from "./characters.js";
-import { AGEOFASHES } from "./campaigns/aoa.js"
-import { EXTINCTIONCURSE } from "./campaigns/ec.js"
-import { NIGHTOFTHEGRAYDEATH } from "./campaigns/notgd.js"
-import { ABOMINATIONVAULTS } from "./campaigns/av.js"
-import { OUTLAWSOFALKENSTAR } from "./campaigns/ooa.js"
-import { BLOODLORDS } from "./campaigns/bl.js"
-import { SEASONOFGHOSTS } from "./campaigns/sog.js";
-
-const EVENTS = AGEOFASHES.concat(EXTINCTIONCURSE, NIGHTOFTHEGRAYDEATH, ABOMINATIONVAULTS, 
-  OUTLAWSOFALKENSTAR, BLOODLORDS)
+import { EVENTS } from "./events";
+import { CHARACTERS } from "./characters";
 
 var sortedEvents = {};
 var orderedEvents = new Object();

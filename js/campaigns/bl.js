@@ -1,4 +1,15 @@
 import { Event } from "../events.js";
+import { Character } from "../characters.js";
+
+export const BLCHARACTERS = [
+    new Character("bl","Bask",true,"img/bl/bask.webp"),
+    new Character("bl","Ginness",true,"img/bl/ginness.webp"),
+    new Character("bl","Kiya",true,"img/bl/kiya.webp"),
+    new Character("bl","Nohi",true,"img/bl/nohi.webp"),
+    new Character("bl","Shade", true, "img/bl/shade.webp"),
+    new Character("bl","Siegmeyer", false, "img/bl/siegmeyer.webp"),
+    new Character("bl","Xanthos",true,"img/bl/xanthos.webp")
+]
 
 export const BLOODLORDS = [
     new Event("bl","Met with Berline Haldoli at her manor in Graydirge; Investigated the situation at Old Ergagh's Farm",4722,7,27),
