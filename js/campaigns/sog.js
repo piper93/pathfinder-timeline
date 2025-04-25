@@ -7,7 +7,7 @@ export const SOGCHARACTERS = [
     new Character(tag,"Kubo",true,"img/sog/kubo.webp"),
     new Character(tag,"Moriko",true,"img/sog/moriko.webp"),
     new Character(tag,"Otoko",true,"img/sog/otoko.webp"),
-    new Character(tag,"Rani",true,"img/sog/rani/webp"),
+    new Character(tag,"Rani",true,"img/sog/rani.webp"),
     new Character(tag,"Yoonji",true,"img/sog/yoonji-2.webp")
 ]
 
