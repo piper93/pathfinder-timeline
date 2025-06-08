@@ -6,6 +6,7 @@
  --av: #87A29F;
  --bl: #9F998D;
  --sog: #A2CECC;
+ --sw: #A2AC88;
 }
 
 /* Age of Ashes */
@@ -96,5 +97,18 @@ section#timeline article div.inner h2.sog {
 }
 .topnav button.sog-link.active {
     background-color: var(--sog);
+    color: black;
+}
+
+/* Spore War */
+section#timeline article div.inner h2.sw {
+    background: var(--sw);
+}
+.topnav button.sw-link:hover {
+    background-color: var(--sw);
+    color: black;
+}
+.topnav button.sw-link.active {
+    background-color: var(--sw);
     color: black;
 }
