@@ -23,5 +23,5 @@ export const SEASONOFGHOSTS = [
     new Event(tag,"To complete Ren Mei Li's final task, the party travelled to the Gossamer Path to speak with the Path Maidens; the maiden revealed a door within the governor's manor",4724,3,21),
     new Event(tag,"While on overnight watch, Kubo witnessed a figure return to the Governor's Manor while on watch; they discovered the body of You So-Jin in her workshop in the morning",4724,3,24),
     new Event(tag,"Ren Mei Li granted the <i>Fang and Key</i> to Yoonji and Kubo, marking them as the rightful rulers of Willowshore",4724,3,27),
-    new Event(tag,"The party passed through an alternate version of the governor's manor and through the door they saw in the Path Maiden's answer; In Kugaptee's Dream, they freed the souls of those killed by the corrupted Heh Shan-Bao, and then they moved deeper into the dream to find the governor",4724,3,28)
+    new Event(tag,"The party passed through an alternate version of the governor's manor and through the door they saw in the Path Maiden's answer; In Kugaptee's Dream, they freed the souls of those killed by the corrupted Heh Shan-Bao; They continued into Kugaptee's Grave and freed the Governor's soul, stopping Kugaptee from returning",4724,3,28)
 ]
