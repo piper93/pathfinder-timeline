@@ -31,7 +31,7 @@ section#timeline {
   }
 
   section#timeline article:nth-child(2n+2) div.inner {
-    float: none;
+    float: none !important;
     margin-left: 60px;
   }
 
