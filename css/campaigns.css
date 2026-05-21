@@ -7,6 +7,7 @@
  --bl: #9F998D;
  --sog: #A2CECC;
  --sw: #A2AC88;
+ --sob: #A088AC;
 }
 
 /* Age of Ashes */
@@ -110,5 +111,18 @@ section#timeline article div.inner h2.sw {
 }
 .topnav button.sw-link.active {
     background-color: var(--sw);
+    color: black;
+}
+
+/* Shades of Blood */
+section#timeline article div.inner h2.sob {
+    background: var(--sob);
+}
+.topnav button.sob-link:hover {
+    background-color: var(--sob);
+    color: black;
+}
+.topnav button.sob-link.active {
+    background-color: var(--sob);
     color: black;
 }
