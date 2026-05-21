@@ -11,8 +11,8 @@
 }
 
 /* Age of Ashes */
-section#timeline article div.inner h2.aoa {
-    background: var(--aoa);
+section#timeline article div.inner div.event-block.aoa {
+    border-color: var(--aoa);
 }
 .topnav button.aoa-link:hover {
     background-color: var(--aoa);
@@ -24,8 +24,8 @@ section#timeline article div.inner h2.aoa {
 }
 
 /* Extinction Curse */
-section#timeline article div.inner h2.ec {
-    background: var(--ec);
+section#timeline article div.inner div.event-block.ec {
+    border-color: var(--ec);
 }
 .topnav button.ec-link:hover {
     background-color: var(--ec);
@@ -37,8 +37,8 @@ section#timeline article div.inner h2.ec {
 }
 
 /* Abomination Vaults */
-section#timeline article div.inner h2.av {
-    background: var(--av);
+section#timeline article div.inner div.event-block.av {
+    border-color: var(--av);
 }
 .topnav button.av-link:hover {
     background-color: var(--av);
@@ -50,8 +50,8 @@ section#timeline article div.inner h2.av {
 }
 
 /* Blood Lords */
-section#timeline article div.inner h2.bl {
-    background: var(--bl);
+section#timeline article div.inner div.event-block.bl {
+    border-color: var(--bl);
 }
 .topnav button.bl-link:hover {
     background-color: var(--bl);
@@ -63,8 +63,8 @@ section#timeline article div.inner h2.bl {
 }
 
 /* Night of the Gray Death */
-section#timeline article div.inner h2.notgd {
-    background: var(--notgd);
+section#timeline article div.inner div.event-block.notgd {
+    border-color: var(--notgd);
 }
 .topnav button.notgd-link:hover {
     background-color: var(--notgd);
@@ -76,8 +76,8 @@ section#timeline article div.inner h2.notgd {
 }
 
 /* Outlaws of Alkenstar */
-section#timeline article div.inner h2.ooa {
-    background: var(--ooa);
+section#timeline article div.inner div.event-block.ooa {
+    border-color: var(--ooa);
 }
 .topnav button.ooa-link:hover {
     background-color: var(--ooa);
@@ -89,8 +89,8 @@ section#timeline article div.inner h2.ooa {
 }
 
 /* Season of Ghosts */
-section#timeline article div.inner h2.sog {
-    background: var(--sog);
+section#timeline article div.inner div.event-block.sog {
+    border-color: var(--sog);
 }
 .topnav button.sog-link:hover {
     background-color: var(--sog);
@@ -102,8 +102,8 @@ section#timeline article div.inner h2.sog {
 }
 
 /* Spore War */
-section#timeline article div.inner h2.sw {
-    background: var(--sw);
+section#timeline article div.inner div.event-block.sw {
+    border-color: var(--sw);
 }
 .topnav button.sw-link:hover {
     background-color: var(--sw);
@@ -115,8 +115,8 @@ section#timeline article div.inner h2.sw {
 }
 
 /* Shades of Blood */
-section#timeline article div.inner h2.sob {
-    background: var(--sob);
+section#timeline article div.inner div.event-block.sob {
+    border-color: var(--sob);
 }
 .topnav button.sob-link:hover {
     background-color: var(--sob);
