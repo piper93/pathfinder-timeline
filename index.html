@@ -23,6 +23,21 @@
   <button onclick='updatePage("sog")' class="sog-link">Season of Ghosts</button>
   <button onclick='updatePage("sw")' class="sw-link">Spore War</button>
   <button onclick='updatePage("sob")' class="sob-link">Shades of Blood</button>
+
+  <!--- Dropdown for mobile (hidden by default)-->
+   <select id="campaignSelect" class="campaign-select" onchange="updatePage(this.value)">
+    <option value="all">All</option>
+    <option value="aoa">Age of Ashes</option>
+    <option value="ec">Extinction Curse</option>
+    <option value="av">Abomination Vaults</option>
+    <option value="notgd">Night of the Gray Death</option>
+    <option value="ooa">Outlaws of Alkenstar</option>
+    <option value="bl">Blood Lords</option>
+    <option value="sog">Season of Ghosts</option>
+    <option value="sw">Spore War</option>
+    <option value="sob">Shades of Blood</option>
+  </select>
+  
   <button href="javascript:void(0);" class="icon" onclick="topNav()">
     <i class="fa fa-bars"></i>
   </button>

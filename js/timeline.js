@@ -58,6 +58,11 @@ function updatePage(filter){
  oldLink[0].classList.remove("active");
  var newLink = document.getElementsByClassName(`${filter}-link`);
  newLink[0].classList.add("active");
+
+ // Also update the select dropdown
+  document.getElementById("campaignSelect").value = filter;
+
+
  getCharacters(filter);
  getTimeline(filter);
 }
