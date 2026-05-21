@@ -21,12 +21,20 @@
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-weight: 900;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  position: relative;
 }
 
 /* Change the color of links on hover */
 .topnav button:hover {
-  background-color: #ddd;
-  color: black;
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+
+.topnav button.active {
+  border-bottom-color: currentColor;
+  background-color: transparent;
 }
 
 /* Add an active class to highlight the selection */

@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Inter', 'Roboto', Arial, sans-serif;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
 
 section#timeline {
   width: 80%;
-  margin: 20px auto;
+  margin: 30px auto;
   position: relative;
 }
 
@@ -49,13 +49,15 @@ section#timeline {
 
   section#timeline article div.inner h2 {
     font-size: 16px;
-    padding: 12px;
+    padding: 14px;
   }
 
   section #timeline article div.inner p {
     font-size: 13px;
-    padding: 12px;
+    padding: 14px;
+    line-height: 1.5;
   }
+
 }
 
 section#timeline:before {
@@ -65,14 +67,14 @@ section#timeline:before {
   left: 50%;
   top: 0;
   margin: 0 0 0 -1px;
-  width: 2px;
   height: 100%;
-  background: rgba(255,255,255,0.2);
+  width: 3px; /* Slightly thicker */
+  background: rgba(255,255,255,0.3);
 }
 
 section#timeline article {
   width: 100%;
-  margin: 0 0 20px 0;
+  margin: 0 0 30px 0;
   position: relative;
 }
 
@@ -86,7 +88,16 @@ section#timeline article div.inner {
   width: 40%;
   float: left;
   margin: 5px 0 0 0;
-  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  border: none !important;
+  border-radius: 10px 10px 4px 4px;
+  overflow: hidden;
+  border-style: solid;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section#timeline article div.inner:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
 
 section#timeline article div.inner span.date {
@@ -104,8 +115,14 @@ section#timeline article div.inner span.date {
   text-transform: uppercase;
   background: #25303B;
   color: black;
-  border: 2px solid rgba(255,255,255,0.2);
-  box-shadow: 0 0 0 7px #25303B;
+  box-shadow: 0 0 0 3px #25303B, 0 4px 10px rgba(0, 0, 0, 0.3);
+  border: 3px solid rgba(255,255,255,0.1);
+  transition: all 0.3s ease;
+}
+
+section#timeline article div.inner:hover span.date {
+  box-shadow: 0 0 0 3px #25303B, 0 6px 16px rgba(0, 0, 0, 0.4);
+  transform: scale(1.05);
 }
 
 section#timeline article div.inner span.date span {
@@ -176,14 +193,18 @@ section#timeline article div.inner span.date.kut {
 }
 
 section#timeline article div.inner h2 {
-  padding: 15px;
+  padding: 18px;
   margin: 0;
-  color: #000;
+  color: #f5f6fa;
   font-size: 20px;
   text-transform: uppercase;
-  letter-spacing: -1px;
-  border-radius: 6px 6px 0 0;
+  border-radius: 0 0 4px 4px;
   position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1.3;
+  background: linear-gradient(135deg, #232c36 80%, #2e3a47 100%);
 }
 
 section#timeline article div.inner h2:after {
@@ -196,16 +217,14 @@ section#timeline article div.inner h2:after {
   -webkit-transform: rotate(-45deg);
 }
 
-section#timeline article div.inner h2:nth-child(3) {
-  border-radius: 0 0 6px 6px
-}
-
 section#timeline article div.inner p {
-  padding: 15px;
+  padding: 18px;
   margin: 0;
   font-size: 14px;
   background: #000;
-  color: #656565;
+  line-height: 1.6;
+  color: #a0a0a0; /* Lighter than #656565 */
+  font-weight: 400;
   border-radius: 0 0 6px 6px;
 }
 
@@ -216,3 +235,30 @@ section#timeline article:nth-child(2n+2) div.inner {
 section#timeline article:nth-child(2n+2) div.inner h2:after {
   left: -5px;
 }
+
+section#timeline article div.inner div.event-block {
+  border: 3px solid;
+  border-top-width: 20px;
+  margin-top: -3px;
+}
+
+section#timeline article div.inner div.event-block:first-child {
+  margin-top: 0;
+  border-radius: 10px 10px 0 0;
+}
+
+section#timeline article div.inner div.event-block:last-child h2 {
+  border-radius: 0 0 4px 4px;
+}
+
+section#timeline article div.inner div.event-block:only-child h2 {
+  border-radius: 0 0 4px 4px;
+}
+
+/* section#timeline article div.inner div.event-block:only-child {
+  border-radius: 10px;
+}
+
+section#timeline article div.inner div.event-block:first-child {
+  border-radius: 0 0 10px 10px;
+} */
