@@ -19,7 +19,7 @@ import { OUTLAWSOFALKENSTAR } from "./campaigns/ooa.js"
 import { BLOODLORDS } from "./campaigns/bl.js"
 import { SEASONOFGHOSTS } from "./campaigns/sog.js";
 import { SPOREWAR } from "./campaigns/sw.js";
-import { SOBEVENTS } from "./campaigns/sob.js";
+import { SHADESOFBLOOD } from "./campaigns/sob.js";
 
 export const EVENTS = AGEOFASHES.concat(EXTINCTIONCURSE, NIGHTOFTHEGRAYDEATH, ABOMINATIONVAULTS, 
   OUTLAWSOFALKENSTAR, BLOODLORDS, SEASONOFGHOSTS, SPOREWAR, SHADESOFBLOOD)
