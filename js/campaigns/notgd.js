@@ -12,8 +12,8 @@ export const NOTGDCHARACTERS = [
 
 export const NIGHTOFTHEGRAYDEATH = [
     new Event("notgd","Chairwoman Drannoch recruited people to attempt to take down the Grey Gardeners",4721,10,26),
-    new Event("notgd","Investigation into the Masquerade began; Flynn ordered an elaborate outfit for the masque",4721,10,30),
-    new Event("notgd","Hired as High Magistrate Otvald Gharmino's bodyguards at the masque; Perrie got upset with the 'fake clowns' at the market; Perrie and Flynn got out of phase",4721,10,31),
-    new Event("notgd","Mr Small (Bertrand Eglantine Petit) removed Perrie and Flynn's curses; The Masquerade Began; Flynn was killed by a vorpal blade trap; Octavio Valentine joined the fight",4721,11,1),
-    new Event("notgd","Sylvie's Birthday; The first Gray Death was released; All attendees became victims of the Night of the Gray Death; Galt was left in ruins; the Conqueror Worm prepared to move to another land",4721,11,2)
+    new Event("notgd","Investigation into the Masquerade began. Flynn ordered an elaborate outfit for the masque",4721,10,30),
+    new Event("notgd","The party were hired as High Magistrate Otvald Gharmino's bodyguards at the masque.<br><br>Perrie got upset with the 'fake clowns' at the market; Perrie and Flynn got out of phase",4721,10,31),
+    new Event("notgd","Mr Small (Bertrand Eglantine Petit) removed Perrie and Flynn's curses<br><br>The Masquerade began. Flynn was killed by a vorpal blade trap, Octavio Valentine joined the fight",4721,11,1),
+    new Event("notgd","(Sylvie's Birthday)<br><br>The first Gray Death was released. All attendees became victims of the Night of the Gray Death<br><br>Galt was left in ruins and the Conqueror Worm prepared to move to another land",4721,11,2)
 ]
