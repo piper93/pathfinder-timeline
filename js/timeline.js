@@ -58,6 +58,11 @@ function updatePage(filter){
  oldLink[0].classList.remove("active");
  var newLink = document.getElementsByClassName(`${filter}-link`);
  newLink[0].classList.add("active");
+
+ // Also update the select dropdown
+  document.getElementById("campaignSelect").value = filter;
+
+
  getCharacters(filter);
  getTimeline(filter);
 }
@@ -120,16 +125,17 @@ function getTimeline(filter = "all") {
    let events = displayedEvents[key][0];
    //get date from first events
    var firstEvent = events[0];
+   console.log(firstEvent);
    var string = `
    <article>
-     <div class="inner">
+     <div class="inner" id="${firstEvent.tag}">
        <span class="date ${MONTHS[firstEvent.month-1].toLowerCase()}">
          <span class="day">${firstEvent.day}</span>
          <span class="month">${MONTHS[firstEvent.month-1]}</span>
          <span class="year">${firstEvent.year}</span>
        </span>`
      for (event of events) {
-       string += `<h2 class="${event.tag}">${event.name}</h2>`
+       string += `<div class="event-block ${event.tag}"><h2>${event.name}</h2></div>`
      }
      string += `</div>
        </article>`

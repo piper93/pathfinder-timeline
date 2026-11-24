@@ -2,6 +2,9 @@
 .topnav {
   background-color: #181f26;
   overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 /* Style the links inside the navigation bar */
@@ -18,12 +21,20 @@
   font-family: 'Roboto', sans-serif;
   text-transform: uppercase;
   font-weight: 900;
+  transition: all 0.3s ease;
+  border-bottom: 3px solid transparent;
+  position: relative;
 }
 
 /* Change the color of links on hover */
 .topnav button:hover {
-  background-color: #ddd;
-  color: black;
+  opacity: 0.8;
+  transform: translateY(-1px);
+}
+
+.topnav button.active {
+  border-bottom-color: currentColor;
+  background-color: transparent;
 }
 
 /* Add an active class to highlight the selection */
@@ -41,15 +52,40 @@
   display: none;
 }
 
+.campaign-select {
+  height: 44px; /* Match button height */
+  padding: 12px 14px; /* Reduce default padding */
+  line-height: 1;
+}
+
 @media screen and (max-width: 600px) {
   .topnav button:not(:first-child) {display: none;}
   .topnav button.icon {
     float: right;
     display: block;
   }
-}
 
-@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  
+  .topnav.responsive button.campaign-btn {
+    display: block;
+    float: none;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .topnav.responsive .campaign-select {
+    display: none;
+  }
+  
+  .topnav.responsive button.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
   .topnav.responsive {position: relative;}
   .topnav.responsive button.icon {
     position: absolute;
@@ -61,6 +97,59 @@
     display: block;
     text-align: left;
   }
+
+  .campaign-btn:not(:first-child) {
+    display: none;
+  }
+  
+  .campaign-select {
+    display: block;
+    float: left;
+    font-size: 11px;
+    height: 42px;
+    padding: 10px 12px;
+  }
+  
+  .topnav .icon {
+    display: block;
+    float: right;
+  }
+
+  .topnav .campaign-btn {
+    display: none;
+  }
+
+  .topnav.responsive .campaign-btn {
+    display: block;
+    float: none;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .topnav.responsive .campaign-select {
+    display: none;
+  }
+}
+
+
+/* Dropdown select for mobile */
+.campaign-select {
+  display: none;
+  width: 100%;
+  padding: 14px;
+  background-color: #181f26;
+  color: #f2f2f2;
+  border: none;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.campaign-select option {
+  background-color: #25303B;
+  color: #f2f2f2;
 }
 
 /* width */
