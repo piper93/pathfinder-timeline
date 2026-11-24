@@ -116,8 +116,8 @@ section#timeline article div.inner div.event-block.sw {
 }
 
 /* Hellbreakers */
-section#timeline article div.inner h2.hb {
-    background: var(--hb);
+section#timeline article div.inner div.event-block.hb {
+    border-color: var(--hb);
 }
 .topnav button.hb-link:hover {
     background-color: var(--hb);
