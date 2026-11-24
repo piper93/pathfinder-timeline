@@ -7,6 +7,7 @@
  --bl: #9F998D;
  --sog: #A2CECC;
  --sw: #A2AC88;
+ --hb: #792628;
 }
 
 /* Age of Ashes */
@@ -111,4 +112,17 @@ section#timeline article div.inner h2.sw {
 .topnav button.sw-link.active {
     background-color: var(--sw);
     color: black;
+}
+
+/* Hellbreakers */
+section#timeline article div.inner h2.hb {
+    background: var(--hb);
+}
+.topnav button.hb-link:hover {
+    background-color: var(--hb);
+    color: white;
+}
+.topnav button.hb-link.active {
+    background-color: var(--hb);
+    color: white;
 }
