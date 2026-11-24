@@ -11,21 +11,20 @@ export const HBCHARACTERS = [
 ]
 
 export const HELLBREAKERS = [
-    new Event("hb", "Began escorting the ex-Eagle Knight, Ethran Howell, to Saringallow", 4725, 10, 17),
-    new Event("hb", "Arrived in Saringallow; Met with the local Hellbreaker lieutenants", 4725, 10, 22),
-    new Event("hb", "Ambushed a Chelaxian ship in order to steal provisions; Maric drowns the ship's captain while the rest of the party is unconscious", 4725, 10, 24),
-    new Event("hb", "Learned from Maire that Rhokrag was late to return from his mission", 4725, 10, 27),
-    new Event("hb", "Rescued Rhokrag from a group of Chelaxian slavers; Learned about a Hellknight paying from information on the Hellbreakers League", 4725, 10, 29),
-    new Event("hb", "Rhokrag dispatched the party to travel around the Isgeri countryside to offer aid to the local villages", 4725, 11, 6),
-    new Event("hb", "Defeated the Attic Whisperer that had taken over the abandoned Vordia orphanage", 4725, 11, 10),
-    new Event("hb", "Dealt with the hellhounds that were torching the Chitterword near the village of Umok", 4725, 11, 12),
-    new Event("hb", "Traveled to Fernsby to investigate the rumours of goblin attacks; Discovered that a goblin snake was to blame and sent him to hopefully find a place within the Stumpfield community", 4725, 11, 15),
-    new Event("hb", "Met with Sister Sylve of the Golden Erinyes while on the road; Learned that a false Hellknight, Viro Ahala, had tricked her sisters and was planning a dangerous ritual", 4725, 11, 16),
-    new Event("hb", "Investigated the abandoned Wolfpoint Garrison and met Hellknight Caeto Vulaunex; Received his thanks for helping to maintain order in the countryside", 4725, 11, 17),
-    new Event("hb", "Returned to Vordia and traveled into the mountains to find the Lucent Mission; Learned from the Mother Superior that Ahala was planning a ritual somewhere in the Chitterwood to kill all goblinkind", 4725, 11, 19),
-    new Event("hb", "Traveled to the Chitterwood and met the Looksee Party; Met the oracle Brakknap at the goblin community of Thorngrip", 4725, 11, 23),
-    new Event("hb", "Cleansed three goblin sites of power of Ahala's influence; Learned from Brakknap's ancestors that Ahala was hiding in the Stagfall Caves", 4725, 11, 24),
-    new Event("hb", "Explored the depths of the Stagfall Caves and defeated Ahala before his ritual could be completed", 4725, 11, 26),
-    new Event("hb", "Celebrated the defeat of Ahala with the goblin community, where they were named Friends of Thorngrip", 4725, 11, 27),
-    new Event("hb", "Returned to Saringallow and met with the Hellbreaker Lieutenants; Were told to assist with local missions until they receive further orders from the League's founders", 4725, 11, 30)
+    new Event("hb", "The party began escorting the ex-Eagle Knight, Ethran Howell, to Saringallow", 4725, 10, 17),
+    new Event("hb", "In Saringallow, the party met with the local Hellbreaker lieutenants", 4725, 10, 22),
+    new Event("hb", "They ambushed a Chelaxian ship for provisions.<br><br>While the rest of the group was unconscious, Maric drowned the ship's captain", 4725, 10, 24),
+    new Event("hb", "Maire told the party that Rhokrag was late returning from his mission", 4725, 10, 27),
+    new Event("hb", "They rescued Rhokrag from Chelaxian slavers.<br><br>Theylearned that a Hellknight was paying for information on the Hellbreakers League", 4725, 10, 29),
+    new Event("hb", "Rhokrag sent the party through the Isgeri countryside to offer aid to local villages", 4725, 11, 6),
+    new Event("hb", "At the abandoned Vordia orphanage, they defeated the Attic Whisperer", 4725, 11, 10),
+    new Event("hb", "Reports of goblin attacks led the group to Fernsby.<br><br>They discovered a goblin snake was responsible and sent him to seek a place in the Stumpfield community", 4725, 11, 15),
+    new Event("hb", "On the road, Sister Sylve of the Golden Erinyes shared that Viro Ahala, a false Hellknight, had deceived her sisters and was planning a dangerous ritual", 4725, 11, 16),
+    new Event("hb", "An investigation of the abandoned Wolfpoint Garrison led to a meeting with Hellknight Caeto Vulaunex.<br><br>He thanked the group for helping maintain order in the countryside", 4725, 11, 17),
+    new Event("hb", "After returning to Vordia, the group travelled into the mountains to find the Lucent Mission.<br><br>The Mother Superior revealed that Ahala planned to perform a ritual in the Chitterwood that would kill all goblinkind", 4725, 11, 19),
+    new Event("hb", "In the Chitterwood, the group met the Looksee Party and encountered the goblin oracle Brakknap in Thorngrip", 4725, 11, 23),
+    new Event("hb", "They cleansed three goblin sites of power of Ahala's influence.<br><br>Brakknap's ancestors revealed that Ahala was hiding in the Stagfall Caves", 4725, 11, 24),
+    new Event("hb", "Deep in the Stagfall Caves, they defeated Ahala before he could complete the ritual", 4725, 11, 26),
+    new Event("hb", "The goblin community celebrated Ahala's defeat with the party and named them Friends of Thorngrip", 4725, 11, 27),
+    new Event("hb", "Back in Saringallow, the group met with the Hellbreaker lieutenants.<br><br>They were told to assist with local missions while awaiting further orders from the League's founders", 4725, 11, 30)
 ]
