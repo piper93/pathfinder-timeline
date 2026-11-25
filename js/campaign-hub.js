@@ -30,7 +30,7 @@ export function showCampaignHub(campaign, events) {
   document.querySelector('.archive-nav a[href="campaigns.html"]').classList.add("archive-section-active");
   document.getElementById("hub-name").textContent = campaign.name;
   document.getElementById("hub-symbol").className = "fa fa-" + campaign.icon;
-  header.style.setProperty("--campaign-accent", "var(--" + campaign.id + ")");
+  document.body.style.setProperty("--campaign-accent", "var(--" + campaign.id + ")");
   header.hidden = false;
 
   for (const [label, value, icon] of entries) {
@@ -50,5 +50,23 @@ export function showCampaignHub(campaign, events) {
     description.textContent = value === "In progress" ? "In Progress" : value;
     details.append(term, description);
   }
-  sidebar.hidden = details.childElementCount === 0;
+  if (campaign.sections?.length) {
+    const menu = document.getElementById("hub-sections");
+    const list = menu.querySelector("ul");
+
+    for (const section of campaign.sections) {
+      const item = document.createElement("li");
+      const icon = document.createElement("span");
+      icon.className = "fa fa-" + section.icon;
+      icon.setAttribute("aria-hidden", "true");
+      const badge = document.createElement("span");
+      badge.className = "hub-section-wip";
+      badge.textContent = "WIP";
+      item.append(icon, section.name, badge);
+      list.append(item);
+    }
+
+    menu.hidden = false;
+  }
+  sidebar.hidden = details.childElementCount === 0 && !campaign.sections?.length;
 }

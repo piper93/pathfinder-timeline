@@ -10,6 +10,8 @@
 
 - Campaign cards open shared hubs with existing portraits, a campaign timeline and a sidebar for status and date ranges.
 
+- The Hellbreakers sidebar links to its timeline and marks Session Notes, Player Characters and Important NPCs as WIP.
+
 ## Remaining work
 
 ### 1. Campaign selection, combined timeline and campaign hubs
@@ -22,12 +24,22 @@
 ### 2. Hellbreakers session notes and timeline links
 
 - [ ] Add Markdown with YAML front matter and a small generator for the static archive index and rendered content. Validate IDs, links and image references.
-- [ ] Pilot with player-facing Hellbreakers notes supplied by the user. Show optional real-world and Golarion dates and generate chronological lists and previous and next links.
+- [ ] Use one Markdown file per session and pilot the format with the first supplied player-facing Hellbreakers recap. Store optional dates, relationships and statistics in that same file.
+- [ ] Add a Session Notes list and detail view inside the Hellbreakers hub. Use the mock-ups for layout, omitting the Discoveries & Notable Items panel. Generate previous and next links by session order, and show statistics and related timeline events only when available. Keep all other campaign hubs timeline-only.
 - [ ] Add stable event anchors and optional links between timeline entries, campaign pages and session notes. Verify direct links to events in filtered views.
 - [ ] Confirm the Pages publishing source and agree on local generation or GitHub Actions before changing deployment settings. Obtain approval before committing, pushing or deploying.
 
-### 3. Hellbreakers NPC and player-character profiles
+### 3. Hellbreakers important NPCs
 
-- [ ] Add individual NPC and player-character profiles with optional metadata, portraits and Markdown descriptions. Use supplied player-facing content and reuse existing roster data.
-- [ ] Support membership in multiple campaigns and derive related sessions and timeline events from explicit references. Show profiles on associated campaign overviews and link to them from relevant timeline entries.
-- [ ] Verify populated and sparse campaign views. Extend the archive to other campaigns as the user supplies material.
+- [ ] Add a grid of NPC profiles with optional portraits, descriptions and affiliations from supplied player-facing content. Derive related sessions and timeline events from explicit references. Add search and affiliation filtering when the profile list warrants them.
+
+### 4. Optional Foundry chat-log statistics
+
+Start collecting statistics with the next Hellbreakers session. Earlier recaps can be published without statistics.
+
+- [ ] Review a representative Foundry export and agree on supported statistics and counting rules.
+- [ ] Build a local script that extracts supported metrics into the session Markdown for review. Keep raw chat logs out of the published site.
+
+### 5. Hellbreakers player characters
+
+- [ ] Add character profiles last, using player-written summaries and existing portraits where appropriate. Support optional character metadata and multi-campaign membership.

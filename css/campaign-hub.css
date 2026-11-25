@@ -159,3 +159,59 @@
   clip-path: inset(50%);
   white-space: nowrap;
 }
+
+.hub-sections {
+  margin-top: 1.25rem;
+  border-top: 1px solid #435263;
+  padding-top: 0.75rem;
+}
+
+.hub-sections ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.hub-sections li,
+.hub-sections a {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  min-height: 2.5rem;
+  font-size: 0.875rem;
+}
+
+.hub-sections li {
+  padding-inline: 0.5rem;
+  color: #c9d5df;
+}
+
+.hub-sections a {
+  flex: 1;
+  color: #fff;
+  margin-inline: -0.5rem;
+  padding-inline: 0.5rem;
+  border-radius: 0.35rem;
+  text-decoration: none;
+}
+
+.hub-sections a[aria-current="location"] {
+  background: linear-gradient(90deg, rgb(29 40 51 / 18%), rgb(29 40 51 / 45%)), var(--campaign-accent);
+}
+
+.hub-sections .fa {
+  width: 1rem;
+  text-align: center;
+}
+
+.hub-section-wip {
+  margin-left: auto;
+  padding: 0.15rem 0.35rem;
+  border: 1px solid #657586;
+  border-radius: 0.25rem;
+  font-size: 0.75rem;
+}
+
+.campaign-hub #timeline {
+  scroll-margin-top: 4rem;
+}
