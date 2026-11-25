@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
@@ -9,55 +10,18 @@
 <link rel="stylesheet" href="css/table.css">
 <link rel="stylesheet" href="css/campaigns.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<head>
+<link rel="stylesheet" href="css/archive.css">
   <title>Pathfinder Timeline</title>
 </head>
 <body>
-<div class="topnav" id="myTopnav">
-  <button onclick='updatePage("all")' class="all-link active">All</button>
-  <button onclick='updatePage("aoa")' class="aoa-link">Age of Ashes</button>
-  <button onclick='updatePage("ec")' class="ec-link">Extinction Curse</button>
-  <button onclick='updatePage("av")' class="av-link">Abomination Vaults</button>
-  <button onclick='updatePage("notgd")' class="notgd-link">Night of the Gray Death</button>
-  <button onclick='updatePage("ooa")' class="ooa-link">Outlaws of Alkenstar</button>
-  <button onclick='updatePage("bl")' class="bl-link">Blood Lords</button>
-  <button onclick='updatePage("sog")' class="sog-link">Season of Ghosts</button>
-  <button onclick='updatePage("sw")' class="sw-link">Spore War</button>
-  <button onclick='updatePage("sob")' class="sob-link">Shades of Blood</button>
-  <button onclick='updatePage("hb")' class="hb-link">Hellbreakers</button>
-
-  <!--- Dropdown for mobile (hidden by default)-->
-   <select id="campaignSelect" class="campaign-select" onchange="updatePage(this.value)">
-    <option value="all">All</option>
-    <option value="aoa">Age of Ashes</option>
-    <option value="ec">Extinction Curse</option>
-    <option value="av">Abomination Vaults</option>
-    <option value="notgd">Night of the Gray Death</option>
-    <option value="ooa">Outlaws of Alkenstar</option>
-    <option value="bl">Blood Lords</option>
-    <option value="sog">Season of Ghosts</option>
-    <option value="sw">Spore War</option>
-    <option value="sob">Shades of Blood</option>
-  </select>
-  
-  <button href="javascript:void(0);" class="icon" onclick="topNav()">
-    <i class="fa fa-bars"></i>
-  </button>
-</div>
+<nav class="archive-nav" aria-label="Main navigation">
+  <a href="campaigns.html">Campaigns</a>
+  <a href="index.html">Combined timeline</a>
+</nav>
 <section id="characters">
 </section>
 <section id="timeline">
 </section>
 <script src="js/timeline.js" type="module"></script>
-<script>
-function topNav() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
-</script>
 </body>
 </html>

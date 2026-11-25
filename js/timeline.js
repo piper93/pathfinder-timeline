@@ -1,22 +1,8 @@
-const MONTHS = [
-  "ABA",
-  "CAL",
-  "PHA",
-  "GOZ",
-  "DES",
-  "SAR",
-  "ERA",
-  "ARO",
-  "ROV",
-  "LAM",
-  "NET",
-  "KUT"
-];
+﻿import { MONTHS } from "./golarion-calendar.js";
 
 import { EVENTS, CHARACTERS } from "./campaigns.js";
+import { CAMPAIGNS } from "./campaign-catalogue.js";
 
-console.log(EVENTS);
-console.log(CHARACTERS);
 
 var sortedEvents = {};
 var orderedEvents = new Object();
@@ -51,20 +37,6 @@ for (var year of years) {
      orderedEvents[orderedKey].push(sortedEvents[year][month][day])
    }
  }
-}
-
-function updatePage(filter){
- var oldLink = document.getElementsByClassName("active");
- oldLink[0].classList.remove("active");
- var newLink = document.getElementsByClassName(`${filter}-link`);
- newLink[0].classList.add("active");
-
- // Also update the select dropdown
-  document.getElementById("campaignSelect").value = filter;
-
-
- getCharacters(filter);
- getTimeline(filter);
 }
 
 function getCharacters(filter = "all") {
@@ -125,7 +97,6 @@ function getTimeline(filter = "all") {
    let events = displayedEvents[key][0];
    //get date from first events
    var firstEvent = events[0];
-   console.log(firstEvent);
    var string = `
    <article>
      <div class="inner" id="${firstEvent.tag}">
@@ -134,7 +105,7 @@ function getTimeline(filter = "all") {
          <span class="month">${MONTHS[firstEvent.month-1]}</span>
          <span class="year">${firstEvent.year}</span>
        </span>`
-     for (event of events) {
+     for (const event of events) {
        string += `<div class="event-block ${event.tag}"><h2>${event.name}</h2></div>`
      }
      string += `</div>
@@ -176,6 +147,13 @@ function checkTag(event) {
  return event.tag === tagFilter;
 }
 
-getTimeline();
+const requestedCampaign = new URLSearchParams(window.location.search).get("campaign");
+const campaign = CAMPAIGNS.find(entry => entry.id === requestedCampaign);
+const filter = campaign?.id ?? "all";
 
-window.updatePage = updatePage;
+if (!campaign) {
+  document.querySelector('.archive-nav a[href="index.html"]').setAttribute("aria-current", "page");
+}
+
+getCharacters(filter);
+getTimeline(filter);
