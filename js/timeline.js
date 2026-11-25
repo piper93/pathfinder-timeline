@@ -1,5 +1,5 @@
 ﻿import { showCampaignHub } from "./campaign-hub.js";
-import { MONTHS } from "./golarion-calendar.js";
+import { MONTHS, displayGolarionDate } from "./golarion-calendar.js";
 
 import { EVENTS, CHARACTERS } from "./campaigns.js";
 import { CAMPAIGNS } from "./campaign-catalogue.js";
@@ -84,7 +84,7 @@ function getCharacters(filter = "all") {
  section.innerHTML = characters;
 }
 
-function getTimeline(filter = "all") {
+function getTimeline(filter = "all", calendar) {
  var displayedEvents = orderedEvents;
  if (filter != "all")
  {
@@ -99,13 +99,14 @@ function getTimeline(filter = "all") {
    let events = displayedEvents[key][0];
    //get date from first events
    var firstEvent = events[0];
+   const date = displayGolarionDate(firstEvent, calendar);
    var string = `
    <article>
      <div class="inner" id="${firstEvent.tag}">
        <span class="date ${MONTHS[firstEvent.month-1].toLowerCase()}">
-         <span class="day">${firstEvent.day}</span>
-         <span class="month">${MONTHS[firstEvent.month-1]}</span>
-         <span class="year">${firstEvent.year}</span>
+         <span class="day">${date.day}</span>
+         <span class="month">${date.month}</span>
+         <span class="year">${date.year}</span>
        </span>`
      for (const event of events) {
        string += `<div class="event-block ${event.tag}"><h2>${event.name}</h2></div>`
@@ -161,4 +162,4 @@ if (campaign) {
 }
 
 getCharacters(filter);
-getTimeline(filter);
+getTimeline(filter, campaign?.calendar);

@@ -20,7 +20,7 @@ export function showCampaignHub(campaign, events) {
   const sidebar = document.getElementById("hub-sidebar");
   const details = document.getElementById("hub-details");
   const entries = [
-    ["Golarion · recorded timeline", formatGolarionRange(events, campaign.status === "In progress"), "calendar"],
+    [(campaign.calendar === "IC" ? "Imperial Calendar" : "Golarion") + " · recorded timeline", formatGolarionRange(events, campaign.status === "In progress", campaign.calendar), "calendar"],
     ["Real-world dates", formatRealRange(campaign), "globe"],
     ["Status", campaign.status, "circle"]
   ];

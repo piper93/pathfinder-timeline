@@ -5,7 +5,7 @@
   { id: "notgd", icon: "eye", name: "Night of the Gray Death", status: "Complete" },
   { id: "ooa", icon: "cogs", name: "Outlaws of Alkenstar", status: "Complete" },
   { id: "bl", icon: "tint", name: "Blood Lords", status: "Complete" },
-  { id: "sog", icon: "leaf", name: "Season of Ghosts", status: "Complete" },
+  { id: "sog", icon: "leaf", name: "Season of Ghosts", status: "Complete", calendar: "IC" },
   { id: "sw", icon: "tree", name: "Spore War", status: "Complete" },
   { id: "sob", icon: "diamond", name: "Shades of Blood", status: "Complete", hiddenFromSelection: true },
   {
