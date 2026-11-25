@@ -22,7 +22,7 @@ const IMPERIAL_MONTHS = [
   "Fletch", "Hazen", "Nuvar", "Shaldo", "Joya", "Kai"
 ];
 
-export function displayGolarionDate({ year, month, day }, calendar) {
+export function displayGolarionDate({ year, month, day }, calendar = "AR") {
   if (calendar === "IC") {
     return { day, month: IMPERIAL_MONTHS[month - 1].slice(0, 3).toUpperCase(), year: year + 2500 };
   }
@@ -35,7 +35,7 @@ function formatDate(event, calendar) {
 }
 
 
-export function formatGolarionRange(events, ongoing, calendar) {
+export function formatGolarionRange(events, ongoing, calendar = "AR") {
   const sorted = [...events].sort((first, second) => dateKey(first) - dateKey(second));
   if (!sorted.length) return "";
 
