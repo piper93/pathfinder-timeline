@@ -5,41 +5,6 @@ import { EVENTS, CHARACTERS } from "./campaigns.js";
 import { CAMPAIGNS } from "./campaign-catalogue.js";
 
 
-var sortedEvents = {};
-var orderedEvents = new Object();
-let tagFilter = "all";
-
-for (var event of EVENTS) {
- if (!sortedEvents.hasOwnProperty(event.year)) {
-   sortedEvents[event.year] = {}
- }
- if (!sortedEvents[event.year].hasOwnProperty(event.month)) {
-   sortedEvents[event.year][event.month] = {}
- }
- if (!sortedEvents[event.year][event.month].hasOwnProperty(event.day)) {
-   sortedEvents[event.year][event.month][event.day] = new Array();
- }
- sortedEvents[event.year][event.month][event.day].push(event)
-}
-
-let years = Object.keys(sortedEvents).map(Number);
-years.sort(function(a, b){return a - b});
-for (var year of years) {
- let months = Object.keys(sortedEvents[year]).map(Number);
- months.sort(function(a, b){return a - b});
- for (var month of months) {
-   let days = Object.keys(sortedEvents[year][month]).map(Number);
-   days.sort(function(a, b){return a - b});
-   for (var day of days) {
-     var orderedKey = `${day}.${month}.${year}`;
-     if (!orderedEvents.hasOwnProperty(orderedKey)){
-       orderedEvents[orderedKey] = new Array()
-     }
-     orderedEvents[orderedKey].push(sortedEvents[year][month][day])
-   }
- }
-}
-
 function getCharacters(filter = "all") {
  var section = document.getElementById("characters");
  if (filter == "all") {
@@ -84,55 +49,43 @@ function getCharacters(filter = "all") {
  section.innerHTML = characters;
 }
 
-function getTimeline(filter = "all", calendar) {
- var displayedEvents = orderedEvents;
- if (filter != "all")
- {
-   tagFilter = filter;
-   displayedEvents = filterEvents()
+function getTimeline(events, calendar) {
+ const orderedEvents = [...events].sort((first, second) =>
+   first.year - second.year || (first.month ?? 0) - (second.month ?? 0) || (first.day ?? 0) - (second.day ?? 0)
+ );
+ const dateGroups = new Map();
+ for (const event of orderedEvents) {
+   const key = [event.year, event.month, event.day].join(".");
+   if (!dateGroups.has(key)) dateGroups.set(key, []);
+   dateGroups.get(key).push(event);
  }
- var section = document.getElementById("timeline");
- var timeline = ``;
- var keys = Object.keys(displayedEvents)
- for (var key of keys)
- {
-   let events = displayedEvents[key][0];
-   //get date from first events
+
+ const section = document.getElementById("timeline");
+ let timeline = "";
+ for (const events of dateGroups.values()) {
    var firstEvent = events[0];
    const date = displayGolarionDate(firstEvent, calendar);
-   var string = `
-   <article>
-     <div class="inner" id="${firstEvent.tag}">
-       <span class="date ${MONTHS[firstEvent.month-1].toLowerCase()}">
+   const badge = firstEvent.month == null || firstEvent.day == null
+     ? `<span class="date year-only"><span class="year">${date.year}</span></span>`
+     : `<span class="date ${MONTHS[firstEvent.month - 1].toLowerCase()}">
          <span class="day">${date.day}</span>
          <span class="month">${date.month}</span>
          <span class="year">${date.year}</span>
-       </span>`
+       </span>`;
+   var string = `
+   <article>
+     <div class="inner" id="${firstEvent.tag}">
+       ${badge}`
      for (const event of events) {
-       string += `<div class="event-block ${event.tag}"><h2>${event.name}</h2></div>`
+       const contextClass = event.historical ? " historical-event" : "";
+       const label = event.historical ? '<img class="historical-event-icon" src="img/scroll.svg" alt="Historical context" title="Historical context">' : "";
+       string += `<div class="event-block ${event.tag}${contextClass}"><h2>${event.name}${label}</h2></div>`;
      }
      string += `</div>
        </article>`
    timeline += string
  }
  section.innerHTML = timeline;
-}
-
-function filterEvents() {
- var filteredEvents = new Object()
- var keys = Object.keys(orderedEvents)
- for (var key of keys)
- {
-   let events = orderedEvents[key][0];
-   let result = events.filter(checkTag);
-   if (result.length > 0) {
-     if (!filteredEvents.hasOwnProperty(key)) {
-       filteredEvents[key] = new Array()
-     }
-     filteredEvents[key].push(result);
-   }
- }
- return filteredEvents;
 }
 
 function filterCharacters(tag) {
@@ -146,20 +99,40 @@ function filterCharacters(tag) {
  return filteredCharacters;
 }
 
-function checkTag(event) {
- return event.tag === tagFilter;
-}
-
 const requestedCampaign = new URLSearchParams(window.location.search).get("campaign");
 const campaign = CAMPAIGNS.find(entry => entry.id === requestedCampaign);
 const filter = campaign?.id ?? "all";
 
+const campaignEvents = campaign ? EVENTS.filter(event => event.tag === filter) : EVENTS;
+const historicalEvents = campaign?.status === "Complete"
+  ? (campaign.historicalEvents ?? []).map(event => {
+      const { month, day } = event;
+      const hasFullDate = month != null && day != null;
+      return { ...event, month: hasFullDate ? month : undefined, day: hasFullDate ? day : undefined, tag: filter, historical: true };
+    })
+  : [];
+
+
 if (campaign) {
-  showCampaignHub(campaign, EVENTS.filter(event => event.tag === filter));
-  document.getElementById("timeline").hidden = !EVENTS.some(event => event.tag === filter);
+  showCampaignHub(campaign, campaignEvents);
 } else {
   document.querySelector('.archive-nav a[href="index.html"]').setAttribute("aria-current", "page");
 }
 
 getCharacters(filter);
-getTimeline(filter, campaign?.calendar);
+const historyToggle = document.getElementById("show-history");
+
+function renderTimeline() {
+  const events = historicalEvents.length && historyToggle.checked
+    ? [...historicalEvents, ...campaignEvents]
+    : campaignEvents;
+  document.getElementById("timeline").hidden = events.length === 0;
+  getTimeline(events, campaign?.calendar);
+}
+
+if (historicalEvents.length) {
+  document.getElementById("timeline-controls").hidden = false;
+  historyToggle.addEventListener("change", renderTimeline);
+}
+
+renderTimeline();

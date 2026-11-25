@@ -24,7 +24,7 @@ const IMPERIAL_MONTHS = [
 
 export function displayGolarionDate({ year, month, day }, calendar = "AR") {
   if (calendar === "IC") {
-    return { day, month: IMPERIAL_MONTHS[month - 1].slice(0, 3).toUpperCase(), year: year + 2500 };
+    return { day, month: IMPERIAL_MONTHS[month - 1]?.slice(0, 3).toUpperCase(), year: year + 2500 };
   }
   return { day, month: MONTHS[month - 1], year };
 }
