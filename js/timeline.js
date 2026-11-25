@@ -1,4 +1,5 @@
-﻿import { MONTHS } from "./golarion-calendar.js";
+﻿import { showCampaignHub } from "./campaign-hub.js";
+import { MONTHS } from "./golarion-calendar.js";
 
 import { EVENTS, CHARACTERS } from "./campaigns.js";
 import { CAMPAIGNS } from "./campaign-catalogue.js";
@@ -51,6 +52,7 @@ function getCharacters(filter = "all") {
      <table style="width:100%">
        <tr>`;
  var filteredCharacters = filterCharacters(filter);
+ section.hidden = filteredCharacters.length === 0;
  var count = 0;
  for (var character of filteredCharacters)
  {
@@ -151,7 +153,10 @@ const requestedCampaign = new URLSearchParams(window.location.search).get("campa
 const campaign = CAMPAIGNS.find(entry => entry.id === requestedCampaign);
 const filter = campaign?.id ?? "all";
 
-if (!campaign) {
+if (campaign) {
+  showCampaignHub(campaign, EVENTS.filter(event => event.tag === filter));
+  document.getElementById("timeline").hidden = !EVENTS.some(event => event.tag === filter);
+} else {
   document.querySelector('.archive-nav a[href="index.html"]').setAttribute("aria-current", "page");
 }
 

@@ -8,5 +8,5 @@
   { id: "sog", icon: "leaf", name: "Season of Ghosts", status: "Complete" },
   { id: "sw", icon: "tree", name: "Spore War", status: "Complete" },
   { id: "sob", icon: "diamond", name: "Shades of Blood", status: "Complete", hiddenFromSelection: true },
-  { id: "hb", icon: "chain-broken", name: "Hellbreakers", status: "In progress" }
+  { id: "hb", icon: "chain-broken", name: "Hellbreakers", status: "In progress", realStart: "2026-08-08" }
 ];

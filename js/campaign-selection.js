@@ -1,15 +1,7 @@
 ﻿import { CAMPAIGNS } from "./campaign-catalogue.js";
 
 import { EVENTS } from "./campaigns.js";
-import { MONTHS } from "./golarion-calendar.js";
-
-function dateKey({ year, month, day }) {
-  return year * 10000 + month * 100 + day;
-}
-
-function formatDate({ year, month, day }) {
-  return day + " " + MONTHS[month - 1] + " " + year;
-}
+import { formatGolarionRange } from "./golarion-calendar.js";
 
 const grid = document.getElementById("campaign-grid");
 
@@ -32,17 +24,15 @@ for (const campaign of CAMPAIGNS.filter(entry => !entry.hiddenFromSelection)) {
   const footer = document.createElement("span");
   footer.className = "campaign-card-footer";
 
-  const events = EVENTS.filter(event => event.tag === campaign.id);
-  events.sort((first, second) => dateKey(first) - dateKey(second));
-  if (events.length) {
+  const dates = formatGolarionRange(
+    EVENTS.filter(event => event.tag === campaign.id),
+    campaign.status === "In progress"
+  );
+  if (dates) {
     const range = document.createElement("span");
     range.className = "campaign-dates";
     range.title = "Recorded timeline range";
-    const start = formatDate(events[0]);
-    const end = formatDate(events.at(-1));
-    range.textContent = campaign.status === "In progress"
-      ? start + " –"
-      : start === end ? start : start + " – " + end;
+    range.textContent = dates;
     footer.append(range);
   }
 

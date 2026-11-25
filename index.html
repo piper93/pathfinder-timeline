@@ -11,6 +11,7 @@
 <link rel="stylesheet" href="css/campaigns.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/archive.css">
+<link rel="stylesheet" href="css/campaign-hub.css">
   <title>Pathfinder Timeline</title>
 </head>
 <body>
@@ -18,10 +19,22 @@
   <a href="campaigns.html">Campaigns</a>
   <a href="index.html">Combined timeline</a>
 </nav>
-<section id="characters">
-</section>
-<section id="timeline">
-</section>
+<main>
+  <header class="hub-header" id="hub-header" hidden>
+    <div class="hub-title">
+      <span id="hub-symbol" aria-hidden="true"></span>
+      <h1 id="hub-name"></h1>
+    </div>
+    <section id="characters" aria-label="Campaign characters" hidden></section>
+  </header>
+  <div class="timeline-layout">
+    <aside class="hub-sidebar" id="hub-sidebar" hidden>
+      <h2>Campaign overview</h2>
+      <dl id="hub-details"></dl>
+    </aside>
+    <section id="timeline" aria-label="Golarion timeline"></section>
+  </div>
+</main>
 <script src="js/timeline.js" type="module"></script>
 </body>
 </html>
