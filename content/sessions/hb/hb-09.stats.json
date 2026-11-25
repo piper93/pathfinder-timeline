@@ -1,0 +1,82 @@
+﻿{
+  "schemaVersion": 1,
+  "campaign": "hb",
+  "sessionId": "hb-09",
+  "totals": {
+    "rollMessages": 36,
+    "hpHealed": 69,
+    "d20Faces": {
+      "4": 2,
+      "5": 3,
+      "7": 4,
+      "8": 1,
+      "9": 1,
+      "10": 1,
+      "11": 2,
+      "13": 2,
+      "14": 2,
+      "16": 2,
+      "17": 2,
+      "18": 1,
+      "19": 2,
+      "20": 1
+    },
+    "damageTaken": 46
+  },
+  "characters": {
+    "hb-maric": {
+      "name": "Maric",
+      "metrics": {
+        "rollMessages": 10,
+        "d20Faces": {
+          "4": 1,
+          "8": 1,
+          "9": 1,
+          "11": 1,
+          "19": 1,
+          "20": 1
+        }
+      }
+    },
+    "hb-delilah": {
+      "name": "Delilah",
+      "metrics": {
+        "hpHealed": 69,
+        "rollMessages": 8,
+        "damageTaken": 6,
+        "d20Faces": {
+          "7": 2,
+          "10": 1,
+          "13": 1,
+          "16": 2
+        }
+      }
+    },
+    "hb-velius": {
+      "name": "Velius",
+      "metrics": {
+        "rollMessages": 8,
+        "d20Faces": {
+          "11": 1,
+          "13": 1,
+          "14": 1,
+          "17": 2,
+          "18": 1
+        }
+      }
+    },
+    "hb-zinx": {
+      "name": "Zinx",
+      "metrics": {
+        "rollMessages": 6,
+        "d20Faces": {
+          "4": 1,
+          "5": 1,
+          "7": 1,
+          "14": 1,
+          "19": 1
+        }
+      }
+    }
+  }
+}

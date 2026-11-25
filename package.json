@@ -1,0 +1,12 @@
+﻿{
+  "name": "pathfinder-timeline",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:sessions": "node scripts/build-sessions.mjs"
+  },
+  "dependencies": {
+    "gray-matter": "4.0.3",
+    "markdown-it": "15.0.3"
+  }
+}
