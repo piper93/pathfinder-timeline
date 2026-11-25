@@ -28,12 +28,61 @@
       { year: 4720, name: "Sarvel Ever-Hunger begins his invasion of the aeon towers." }
     ]
   },
-  { id: "av", icon: "shield", name: "Abomination Vaults", status: "Complete" },
+  {
+    id: "av", icon: "shield", name: "Abomination Vaults", status: "Complete",
+    historicalEvents: [
+      { year: null, name: "Serpentfolk construct the Empty Vault, a shrine to Nhimbaloth far beneath the surface of Golarion." },
+      { year: 1, name: "Aroden raises the Starstone Isles; the Empty Vault ascends with it." },
+      { year: 4213, name: "Belcorra Haruvex is born to the wealthy Haruvex family in Absalom. Unknown to anyone outside the family, they have a strong aberrant bloodline and a familiar devotion to Nhimbaloth." },
+      { year: 4219, name: "The Haruvex family is ejected from Absalom after their secret sacrifices are discovered. They flee to Andoran, where they live in poverty. The Haruvexes instill in six-year-old Belcorra a hatred of Absalom and tell her she is Nhimbaloth's chosen one." },
+      { year: 4230, name: "Belcorra relocates to the Isle of Kortos and begins work on a magical lighthouse called <i>Gauntlight</i>, directly above the Empty Vault. She opens passages through the earth to reach the shrine and begins to collect an army of aberrations to attack Absalom." },
+      { year: 4234, name: "Belcorra completes <i>Gauntlight</i> and begins work on its dungeons, the Abomination Vaults." },
+      { year: 4244, name: "One of Absalom's \"hunting lodges\" called the Roseguard hear of Belcorra and come to investigate her lighthouse. They kill her but never learn of the expansive dungeons beneath. Belcorra kills the rogue Otari Ilvashti in this battle. The victorious Roseguard construct a small port community and retire there, naming it Otari after their fallen friend." },
+      { year: 4719, name: "Belcorra awakens as a ghost and begins work to reactivate <i>Gauntlight</i>. Its dungeons have been populated with generations of infighting creatures since her death and she seeks to bring back under her control." }
+    ]
+  },
   { id: "notgd", icon: "eye", name: "Night of the Gray Death", status: "Complete" },
   { id: "ooa", icon: "cogs", name: "Outlaws of Alkenstar", status: "Complete" },
-  { id: "bl", icon: "tint", name: "Blood Lords", status: "Complete" },
-  { id: "sog", icon: "leaf", name: "Season of Ghosts", status: "Complete", calendar: "IC" },
-  { id: "sw", icon: "tree", name: "Spore War", status: "Complete" },
+  {
+    id: "bl", icon: "tint", name: "Blood Lords", status: "Complete",
+    historicalEvents: [
+      { year: -929, name: "The declining empire of Osirion formally cedes control of its southern reaches to the archmages Geb and Nex." },
+      { year: -892, name: "Nex and Geb go to war, unleashing dire magic against each other's nations." },
+      { year: 576, name: "Nex magically destroys many Gebbites, prompting Geb to resurrect a vast undead army and march on Nex. Nex vanishes from his capital in Quantium during a Gebbite poison attack, and the war comes to a stalemate." },
+      { year: 577, name: "Geb's primary apprentices, 60 feuding necromancers called the Blood Lords, take control of the government as Geb retreats into solitude." },
+      { year: 632, name: "Geb attempts to escape Golarion in an act of ritual suicide but arises as a melancholic ghost" },
+      { year: 4719, name: "Geb's unwilling queen, the lich Arazni, abandons Geb to pursue her freedom. The graveknights pledged to contain her are destroyed by Arazni's machinations, other than the spymaster Seldeg Bhedlis." },
+      { year: 4720, name: "Geb returns to more active management of his nation, turning his eye toward Nex." }
+    ]
+  },
+  {
+    id: "sog", icon: "leaf", name: "Season of Ghosts", status: "Complete", calendar: "IC",
+    historicalEvents: [
+      { year: 3723, name: "The adventurer Tan Sui-Jing defeats the fiend Kugaptee but dies herself. Her body sprouts a sugi tree over Kugaptee's remains, trapping him below the roots and preventing him from returning to life." },
+      { year: 4520, name: "The village of Willowshore is founded by a follower of Sangpotshi named Zhi Hui. She builds a monastery in the hinterlands, incorporating Tan Sui-Jin's sugi tree." },
+      { year: 4554, name: "Zhi Hui passes away of natural causes." },
+      { year: 4560, name: "Willowshore becomes a lumber town. Local Sangpotshi traditions dwindle. The monks of the monastery abandon it." },
+      { year: 4562, name: "Chou Mingxia, leader of the city of Sze, sends her son to Willowshore. He attempts to harvest the glorious sugi tree. His attempt fails but allows Kugaptee's influence to spread." },
+      { year: 4602, name: "Governor Heh Shan-Bao is installed at Willowshore by Lung Wa." },
+      { year: 4606, name: "The Lung Wa empire collapses. Government officials in Shenmen are cut off and they succumb to greed. Governor Heh does his best to shelter Willowshore from these events." },
+      { year: 4607, name: "Shenmen falls under the control of the jorogumo Lang Loi." },
+      { year: 4608, name: "The people of Willowshore perish in their sleep when Heh Shan-Bao attempts and fails to perform a ritual to heal the Tan Sugi and permanently seal Kugaptee away. Two parallel mindscapes of Willowshore are created, one trapping the townsfolk in a realm between life and death." },
+      { year: 4723, name: "Lumber baron Mago Kai begins his plans to turn Willowshore into a new lumber camp and starts orchestrating a mass exorcism and cleansing of Willowshore." }
+    ]
+  },
+  {
+    id: "sw", icon: "tree", name: "Spore War", status: "Complete",
+    historicalEvents: [
+      { year: 2497, name: "Treerazer is exiled to Golarion" },
+      { year: 2632, name: "Treerazer attempts to corrupt the <i>Sovyrian Stone</i>; elves return to Golarion to protect Kyonin from him." },
+      { year: 2988, name: "A Calistrian witch named Silisifex contacts the ancient elf, Aelthian, who joins the fight against Treerazer's armies. His attempt to banish Treerazer weakens the demon but ultimately fails." },
+      { year: 3041, name: "Tanglebriar's borders no longer grow. Scholars consider this the official date of Treerazer's defeat." },
+      { year: 3050, name: "Silisifex leads a force of Calistrians to reclaim Shevaroth, but vanishes without a trace." },
+      { year: 3520, name: "Kyloss Syndar fights the demonic hydra Slithermaw; he defeats the monster but pays for it with his life. Greengold is founded in his honour." },
+      { year: 4445, name: "Queen Telandia becomes Kyonin's ruler." },
+      { year: 4724, name: "Gorum is slain, and the Godsrain washes over Golarion. The red rain from this event causes Treerazer's Jeharlu Spore network to experience sudden growth, allowing the demon lord to accelerate his plans for attack." }
+    ]
+  },
   { id: "sob", icon: "diamond", name: "Shades of Blood", status: "Complete", hiddenFromSelection: true },
   {
     id: "hb", icon: "chain-broken", name: "Hellbreakers", status: "In progress", realStart: "2026-08-08",
