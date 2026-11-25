@@ -52,7 +52,7 @@ function getCharacters(filter = "all") {
 
 function getTimeline(events, calendar) {
  const orderedEvents = [...events].sort((first, second) =>
-   first.year - second.year || (first.month ?? 0) - (second.month ?? 0) || (first.day ?? 0) - (second.day ?? 0)
+   Number(first.year != null) - Number(second.year != null) || (first.year ?? 0) - (second.year ?? 0) || (first.month ?? 0) - (second.month ?? 0) || (first.day ?? 0) - (second.day ?? 0)
  );
  const dateGroups = new Map();
  for (const event of orderedEvents) {
@@ -66,8 +66,8 @@ function getTimeline(events, calendar) {
  for (const events of dateGroups.values()) {
    var firstEvent = events[0];
    const date = displayGolarionDate(firstEvent, calendar);
-   const badge = firstEvent.month == null || firstEvent.day == null
-     ? `<span class="date year-only"><span class="year">${date.year}</span></span>`
+   const badge = firstEvent.year == null || firstEvent.month == null || firstEvent.day == null
+     ? `<span class="date year-only"><span class="year">${firstEvent.year == null ? "?" : date.year}</span></span>`
      : `<span class="date ${MONTHS[firstEvent.month - 1].toLowerCase()}">
          <span class="day">${date.day}</span>
          <span class="month">${date.month}</span>
@@ -109,7 +109,7 @@ const campaignEvents = campaign ? EVENTS.filter(event => event.tag === filter) :
 const historicalEvents = campaign?.status === "Complete"
   ? (campaign.historicalEvents ?? []).map(event => {
       const { month, day } = event;
-      const hasFullDate = month != null && day != null;
+      const hasFullDate = event.year != null && month != null && day != null;
       return { ...event, month: hasFullDate ? month : undefined, day: hasFullDate ? day : undefined, tag: filter, historical: true };
     })
   : [];
