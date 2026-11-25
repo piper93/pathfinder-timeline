@@ -1,4 +1,5 @@
-﻿import { showCampaignHub } from "./campaign-hub.js";
+﻿import { sessionsFor, sessionUrl, showSessionNotes } from "./session-notes.js";
+import { showCampaignHub } from "./campaign-hub.js";
 import { MONTHS, displayGolarionDate } from "./golarion-calendar.js";
 
 import { EVENTS, CHARACTERS } from "./campaigns.js";
@@ -99,7 +100,8 @@ function filterCharacters(tag) {
  return filteredCharacters;
 }
 
-const requestedCampaign = new URLSearchParams(window.location.search).get("campaign");
+const query = new URLSearchParams(window.location.search);
+const requestedCampaign = query.get("campaign");
 const campaign = CAMPAIGNS.find(entry => entry.id === requestedCampaign);
 const filter = campaign?.id ?? "all";
 
@@ -113,8 +115,14 @@ const historicalEvents = campaign?.status === "Complete"
   : [];
 
 
+const sessions = campaign?.sections?.some(section => section.name === "Session Notes")
+  ? sessionsFor(campaign.id)
+  : [];
+const sessionNotesUrl = sessions.length ? sessionUrl(campaign.id) : "";
+const showingSessions = Boolean(sessionNotesUrl && query.get("view") === "sessions");
+
 if (campaign) {
-  showCampaignHub(campaign, campaignEvents);
+  showCampaignHub(campaign, campaignEvents, sessionNotesUrl, showingSessions);
 } else {
   document.querySelector('.archive-nav a[href="index.html"]').setAttribute("aria-current", "page");
 }
@@ -135,4 +143,8 @@ if (historicalEvents.length) {
   historyToggle.addEventListener("change", renderTimeline);
 }
 
-renderTimeline();
+if (showingSessions) {
+  showSessionNotes(campaign, sessions, query.get("session"));
+} else {
+  renderTimeline();
+}

@@ -1,0 +1,245 @@
+﻿.session-panel {
+  min-width: 0;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border-radius: 0.65rem;
+  background: #1d2833;
+}
+
+.session-panel a {
+  color: #c4e9ff;
+  text-underline-offset: 0.2em;
+}
+
+.session-breadcrumb,
+.session-header,
+.session-navigation,
+.session-dates {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  align-items: center;
+}
+
+.session-header {
+  justify-content: space-between;
+  margin-top: 0.75rem;
+}
+
+.session-breadcrumb,
+.session-breadcrumb a {
+  font-size: 0.875rem;
+}
+
+.session-breadcrumb a {
+  display: inline-flex;
+  gap: 0.55rem;
+  color: inherit;
+  text-decoration: none;
+  align-items: center;
+}
+
+.session-panel .session-navigation a {
+  padding: 0.4rem 0.65rem;
+  border: 1px solid var(--campaign-accent);
+  border-radius: 0.35rem;
+  background: var(--campaign-accent);
+  color: #fff;
+  text-decoration: none;
+}
+
+.session-panel .session-navigation a:hover,
+.session-panel .session-navigation a:focus-visible {
+  background: linear-gradient(rgb(0 0 0 / 18%), rgb(0 0 0 / 18%)), var(--campaign-accent);
+}
+
+.session-heading {
+  margin: 0;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  text-transform: uppercase;
+}
+
+.session-dates {
+  color: #dce5ee;
+  font-size: 0.875rem;
+}
+
+.session-dates > * {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.55rem;
+}
+
+.session-panel > .session-dates {
+  margin: 0.75rem 0 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid #657586;
+}
+
+.session-sections {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+.session-field {
+  grid-column: 1 / -1;
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #657586;
+  border-radius: 0.5rem;
+}
+
+.session-field-people,
+.session-field-places {
+  grid-column: auto;
+}
+
+.session-field h3 {
+  margin: 0;
+  padding: 0.55rem 0.85rem;
+  background: linear-gradient(90deg, var(--campaign-accent), #30323d);
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.session-prose {
+  padding: 0.7rem 0.85rem;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+
+.session-prose > :first-child { margin-top: 0; }
+.session-prose > :last-child { margin-bottom: 0; }
+.session-prose img { max-width: 100%; height: auto; }
+.session-prose ul {
+  padding-left: 1.25rem;
+  list-style-type: square;
+}
+
+.session-prose ul > li::marker {
+  color: var(--campaign-accent);
+  color: color-mix(in srgb, var(--campaign-accent) 65%, white);
+}
+
+.session-list-heading {
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--campaign-accent);
+}
+
+.session-list {
+  display: grid;
+  gap: 0.85rem;
+  padding: 0;
+  margin: 1.25rem 0 0;
+  list-style: none;
+}
+
+.session-list-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-right: 1rem;
+  overflow: hidden;
+  border: 1px solid #657586;
+  border-top: 5px solid var(--campaign-accent);
+  border-radius: 0.65rem;
+  background: #192631;
+  color: inherit;
+  text-decoration: none;
+}
+
+.session-panel .session-list-card {
+  color: inherit;
+}
+
+.session-list-card:hover,
+.session-list-card:focus-visible {
+  background: #293746;
+}
+
+.session-list-number {
+  display: grid;
+  place-content: center;
+  align-self: stretch;
+  min-width: 5rem;
+  padding: 0.85rem;
+  background: linear-gradient(110deg, var(--campaign-accent), #34303d);
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.session-list-number strong {
+  font-size: 1.75rem;
+}
+
+.session-list .session-dates {
+  display: grid;
+  flex: 0 0 auto;
+  gap: 0.5rem;
+  padding-block: 0.75rem;
+}
+
+.session-list-recap {
+  flex: 1;
+  min-width: 0;
+  margin: 0.75rem 0;
+  padding-left: 1rem;
+  border-left: 1px solid #657586;
+  line-height: 1.45;
+}
+
+.session-list-arrow {
+  margin-left: auto;
+}
+
+@media (max-width: 1050px) {
+  .session-list-card {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+  }
+
+  .session-list .session-dates {
+    grid-column: 2;
+  }
+
+  .session-list-recap {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    margin: 0 0 0.85rem 0.85rem;
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .session-list-arrow {
+    grid-column: 3;
+    grid-row: 1;
+  }
+}
+
+@media (max-width: 650px) {
+  .session-sections {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.session-breadcrumb a:hover .fa-arrow-left,
+.session-breadcrumb a:focus-visible .fa-arrow-left {
+  color: var(--campaign-accent);
+}
+
+.session-list-heading,
+.session-header .session-heading {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55em;
+}
+
+.session-book-icon {
+  display: inline-block;
+  align-self: center;
+  flex: 0 0 1.15em;
+  height: 1em;
+  background: currentColor;
+  mask: url("../img/book-open.svg") center / contain no-repeat;
+}

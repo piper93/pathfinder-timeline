@@ -15,7 +15,7 @@ function formatRealRange({ realStart, realEnd, status }) {
   return start + " – " + realDateFormat.format(new Date(realEnd));
 }
 
-export function showCampaignHub(campaign, events) {
+export function showCampaignHub(campaign, events, sessionNotesUrl, showingSessions) {
   const header = document.getElementById("hub-header");
   const sidebar = document.getElementById("hub-sidebar");
   const details = document.getElementById("hub-details");
@@ -53,12 +53,26 @@ export function showCampaignHub(campaign, events) {
   if (campaign.sections?.length) {
     const menu = document.getElementById("hub-sections");
     const list = menu.querySelector("ul");
+    const timeline = list.querySelector("a");
+    if (showingSessions) {
+      timeline.href = "index.html?campaign=" + encodeURIComponent(campaign.id) + "#timeline";
+      timeline.removeAttribute("aria-current");
+    }
 
     for (const section of campaign.sections) {
       const item = document.createElement("li");
       const icon = document.createElement("span");
       icon.className = "fa fa-" + section.icon;
       icon.setAttribute("aria-hidden", "true");
+      if (section.name === "Session Notes" && sessionNotesUrl) {
+        const link = document.createElement("a");
+        link.href = sessionNotesUrl;
+        link.append(icon, section.name);
+        if (showingSessions) link.setAttribute("aria-current", "location");
+        item.append(link);
+        list.append(item);
+        continue;
+      }
       const badge = document.createElement("span");
       badge.className = "hub-section-wip";
       badge.textContent = "WIP";

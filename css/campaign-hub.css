@@ -200,6 +200,12 @@
   text-decoration: none;
 }
 
+.hub-sections a:not([aria-current]):hover,
+.hub-sections a:not([aria-current]):focus-visible {
+  background: #46586a;
+  box-shadow: inset 3px 0 var(--campaign-accent);
+}
+
 .hub-sections a[aria-current="location"] {
   background: linear-gradient(90deg, rgb(29 40 51 / 18%), rgb(29 40 51 / 45%)), var(--campaign-accent);
 }
