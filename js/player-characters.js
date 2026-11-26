@@ -35,7 +35,9 @@ export function showPlayerCharacters(campaign, characters) {
       const image = element("img", "player-character-portrait");
       image.src = portrait;
       image.alt = "";
-      card.append(image);
+      const frame = element("div", "player-character-frame");
+      frame.append(image);
+      card.append(frame);
     }
 
     const content = element("div", "player-character-content");

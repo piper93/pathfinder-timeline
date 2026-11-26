@@ -54,10 +54,8 @@ export function showCampaignHub(campaign, events, sectionUrls, activeSection) {
     const menu = document.getElementById("hub-sections");
     const list = menu.querySelector("ul");
     const timeline = list.querySelector("a");
-    if (activeSection) {
-      timeline.href = "index.html?campaign=" + encodeURIComponent(campaign.id) + "#timeline";
-      timeline.removeAttribute("aria-current");
-    }
+    timeline.href = "index.html?campaign=" + encodeURIComponent(campaign.id);
+    if (activeSection) timeline.removeAttribute("aria-current");
 
     for (const section of campaign.sections) {
       const item = document.createElement("li");

@@ -149,7 +149,8 @@
   text-decoration: none;
 }
 
-.session-panel .session-list-card {
+.session-panel .session-list-card,
+.previous-session .session-list-card {
   color: inherit;
 }
 
@@ -174,7 +175,7 @@
   font-size: 1.75rem;
 }
 
-.session-list .session-dates {
+.session-list-card .session-dates {
   display: grid;
   grid-column: 2;
   min-width: 0;
@@ -241,4 +242,30 @@
   height: 1em;
   background: currentColor;
   mask: url("../img/book-open.svg") center / contain no-repeat;
+}
+
+.previous-session:not([hidden]) {
+  margin-bottom: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 0.65rem;
+  background: #1d2833;
+}
+
+
+.session-featured-label {
+  margin: 0 0 0.65rem;
+  color: #f5f6fa;
+  font-size: 0.875rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.previous-session .session-list-card {
+  border-color: var(--campaign-accent);
+  background: linear-gradient(110deg, #30303c, #22303e);
+}
+
+.previous-session .session-list-card:hover,
+.previous-session .session-list-card:focus-visible {
+  background: #384352;
 }

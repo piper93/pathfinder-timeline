@@ -16,11 +16,19 @@
   background: #192631;
 }
 
-.player-character-portrait {
-  width: 42%;
-  aspect-ratio: 1;
-  object-fit: cover;
+.player-character-frame {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-end;
+  flex: 0 0 42%;
   background: #121c25;
+}
+
+.player-character-portrait {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
 }
 
 .player-character-content {
@@ -59,7 +67,18 @@
     grid-template-columns: minmax(0, 1fr);
   }
 
-  .player-character-portrait {
-    max-width: 15rem;
-  }
+  .player-character-frame {
+  display: flex;
+  align-self: stretch;
+  align-items: flex-end;
+  flex: 0 0 42%;
+  background: #121c25;
+}
+
+.player-character-portrait {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
 }

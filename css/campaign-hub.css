@@ -141,12 +141,33 @@
     grid-template-rows: minmax(0, 1fr);
   }
 
+  .campaign-hub .hub-content {
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr);
+    align-self: stretch;
+    min-width: 0;
+    min-height: 0;
+  }
+
+  .campaign-hub .previous-session {
+    grid-row: 1;
+    box-sizing: border-box;
+    max-height: 30vh;
+    overflow: auto;
+  }
+
   .campaign-hub .timeline-panel,
   .campaign-hub .session-panel {
     align-self: stretch;
+    min-height: 0;
     overflow: auto;
     border-radius: 0.65rem;
     background: #1d2833;
+  }
+
+  .campaign-hub .hub-content > .timeline-panel,
+  .campaign-hub .hub-content > .session-panel {
+    grid-row: 2;
   }
 
   .campaign-hub .hub-sidebar {
