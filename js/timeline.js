@@ -1,7 +1,7 @@
 ﻿import { playerCharactersFor, showPlayerCharacters } from "./player-characters.js";
 import { npcsFor, showImportantNpcs } from "./important-npcs.js";
 import { sessionsFor, sessionUrl, showPreviousSession, showSessionNotes } from "./session-notes.js";
-import { showCampaignHub } from "./campaign-hub.js";
+import { setTimelineFavicon, showCampaignHub } from "./campaign-hub.js";
 import { MONTHS, displayGolarionDate } from "./golarion-calendar.js";
 
 import { EVENTS, CHARACTERS } from "./campaigns.js";
@@ -70,7 +70,7 @@ function getTimeline(events, calendar) {
    const date = displayGolarionDate(firstEvent, calendar);
    const badge = firstEvent.year == null || firstEvent.month == null
      ? `<span class="date year-only"><span class="year">${firstEvent.year == null ? "?" : date.year}</span></span>`
-     : `<span class="date ${MONTHS[firstEvent.month - 1].toLowerCase()}">
+     : `<span class="date ${MONTHS[firstEvent.month - 1].toLowerCase()}${date.day == null ? " month-only" : ""}">
          ${date.day == null ? "" : `<span class="day">${date.day}</span>`}
          <span class="month">${date.month}</span>
          <span class="year">${date.year}</span>
@@ -142,6 +142,7 @@ if (campaign) {
   showCampaignHub(campaign, campaignEvents, sectionUrls, activeSection);
 } else {
   document.querySelector('.archive-nav a[href="index.html"]').setAttribute("aria-current", "page");
+  void setTimelineFavicon(document.querySelector("#hub-sections .fa-hourglass-half"));
 }
 
 getCharacters(filter);

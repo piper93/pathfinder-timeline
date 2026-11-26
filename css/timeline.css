@@ -244,3 +244,8 @@ section#timeline article div.inner div.event-block:first-child {
     padding: 14px;
   }
 }
+
+section#timeline article div.inner span.date.month-only {
+  display: grid;
+  align-content: center;
+}
