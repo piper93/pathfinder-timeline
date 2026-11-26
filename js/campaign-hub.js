@@ -15,6 +15,38 @@ function formatRealRange({ realStart, realEnd, status }) {
   return start + " – " + realDateFormat.format(new Date(realEnd));
 }
 
+export async function setTimelineFavicon(symbol) {
+  if (!symbol || !document.fonts) return;
+  const font = "42px FontAwesome";
+  try {
+    const fonts = await document.fonts.load(font);
+    if (!fonts.length) return;
+  } catch {
+    return;
+  }
+
+  const content = getComputedStyle(symbol, "::before").content;
+  if (!/^".+"$/.test(content)) return;
+
+  const canvas = document.createElement("canvas");
+  canvas.width = canvas.height = 64;
+  const context = canvas.getContext("2d");
+  if (!context) return;
+  context.fillStyle = "#181f26";
+  context.fillRect(0, 0, 64, 64);
+  context.fillStyle = "#f5f6fa";
+  context.font = font;
+  context.textAlign = "center";
+  context.textBaseline = "middle";
+  context.fillText(content.slice(1, -1), 32, 33);
+
+  const favicon = document.createElement("link");
+  favicon.rel = "icon";
+  favicon.type = "image/png";
+  favicon.href = canvas.toDataURL("image/png");
+  document.head.append(favicon);
+}
+
 export function showCampaignHub(campaign, events, sectionUrls, activeSection) {
   const header = document.getElementById("hub-header");
   const sidebar = document.getElementById("hub-sidebar");
@@ -29,7 +61,9 @@ export function showCampaignHub(campaign, events, sectionUrls, activeSection) {
   document.title = campaign.name + " | Golarion Timeline";
   document.querySelector('.archive-nav a[href="campaigns.html"]').classList.add("archive-section-active");
   document.getElementById("hub-name").textContent = campaign.name;
-  document.getElementById("hub-symbol").className = "fa fa-" + campaign.icon;
+  const campaignSymbol = document.getElementById("hub-symbol");
+  campaignSymbol.className = "fa fa-" + campaign.icon;
+  void setTimelineFavicon(campaignSymbol);
   document.body.style.setProperty("--campaign-accent", "var(--" + campaign.id + ")");
   header.hidden = false;
 
