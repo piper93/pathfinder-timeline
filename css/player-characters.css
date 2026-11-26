@@ -1,0 +1,65 @@
+﻿.player-character-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.player-character-card {
+  display: flex;
+  gap: 0;
+  min-width: 0;
+  align-items: flex-start;
+  overflow: hidden;
+  border: 1px solid #657586;
+  border-top: 7px solid var(--campaign-accent);
+  border-radius: 0.65rem;
+  background: #192631;
+}
+
+.player-character-portrait {
+  width: 42%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  background: #121c25;
+}
+
+.player-character-content {
+  flex: 1;
+  min-width: 0;
+  padding: 1rem;
+  overflow-wrap: anywhere;
+}
+
+.player-character-content h3 {
+  margin: 0;
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  text-transform: uppercase;
+}
+
+.player-character-traits {
+  margin: 0.45rem 0 0;
+  color: #dce5ee;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+.player-character-bio {
+  margin-top: 0.8rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid #657586;
+  line-height: 1.5;
+}
+
+.player-character-bio > :first-child { margin-top: 0; }
+.player-character-bio > :last-child { margin-bottom: 0; }
+.player-character-bio img { max-width: 100%; height: auto; }
+
+@media (max-width: 1050px) {
+  .player-character-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .player-character-portrait {
+    max-width: 15rem;
+  }
+}

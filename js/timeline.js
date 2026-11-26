@@ -1,4 +1,6 @@
-﻿import { sessionsFor, sessionUrl, showSessionNotes } from "./session-notes.js";
+﻿import { playerCharactersFor, showPlayerCharacters } from "./player-characters.js";
+import { npcsFor, showImportantNpcs } from "./important-npcs.js";
+import { sessionsFor, sessionUrl, showSessionNotes } from "./session-notes.js";
 import { showCampaignHub } from "./campaign-hub.js";
 import { MONTHS, displayGolarionDate } from "./golarion-calendar.js";
 
@@ -117,14 +119,27 @@ const historicalEvents = (campaign?.historicalEvents ?? [])
   }));
 
 
-const sessions = campaign?.sections?.some(section => section.name === "Session Notes")
+const sessions = campaign?.sections?.some(section => section.id === "sessions")
   ? sessionsFor(campaign.id)
   : [];
-const sessionNotesUrl = sessions.length ? sessionUrl(campaign.id) : "";
-const showingSessions = Boolean(sessionNotesUrl && query.get("view") === "sessions");
+const npcs = campaign?.sections?.some(section => section.id === "npcs")
+  ? npcsFor(campaign.id)
+  : [];
+const playerCharacters = campaign?.sections?.some(section => section.id === "characters")
+  ? playerCharactersFor(campaign.id)
+  : [];
+const sectionUrls = {
+  characters: playerCharacters.length ? "index.html?" + new URLSearchParams({ campaign: campaign.id, view: "characters" }) : "",
+  sessions: sessions.length ? sessionUrl(campaign.id) : "",
+  npcs: npcs.length ? "index.html?" + new URLSearchParams({ campaign: campaign.id, view: "npcs" }) : ""
+};
+const requestedSection = query.get("view");
+const activeSection = Object.hasOwn(sectionUrls, requestedSection) && sectionUrls[requestedSection]
+  ? requestedSection
+  : null;
 
 if (campaign) {
-  showCampaignHub(campaign, campaignEvents, sessionNotesUrl, showingSessions);
+  showCampaignHub(campaign, campaignEvents, sectionUrls, activeSection);
 } else {
   document.querySelector('.archive-nav a[href="index.html"]').setAttribute("aria-current", "page");
 }
@@ -145,7 +160,11 @@ if (historicalEvents.length) {
   historyToggle.addEventListener("change", renderTimeline);
 }
 
-if (showingSessions) {
+if (activeSection === "characters") {
+  showPlayerCharacters(campaign, playerCharacters);
+} else if (activeSection === "npcs") {
+  showImportantNpcs(campaign, npcs, sessions);
+} else if (activeSection === "sessions") {
   showSessionNotes(campaign, sessions, query.get("session"));
 } else {
   renderTimeline();

@@ -16,6 +16,9 @@ export const SESSIONS = [
       "month": 10,
       "day": 22
     },
+    "relatedNpcIds": [
+      "rhokrag"
+    ],
     "body": [
       {
         "heading": "Session Recap",
@@ -75,6 +78,295 @@ export const SESSIONS = [
         "heading": "Places Visited",
         "kind": "places",
         "html": "<ul>\n<li>Hellbreakers Headquarters</li>\n</ul>\n"
+      }
+    ]
+  },
+  {
+    "id": "hb-03",
+    "campaign": "hb",
+    "title": "The Rescue of Rhokrag",
+    "order": 3,
+    "realDate": "2026-09-05",
+    "golarionStart": {
+      "year": 4725,
+      "month": 10,
+      "day": 25
+    },
+    "golarionEnd": {
+      "year": 4725,
+      "month": 11,
+      "day": 6
+    },
+    "relatedNpcIds": [
+      "rhokrag"
+    ],
+    "body": [
+      {
+        "heading": "Session Recap",
+        "kind": "recap",
+        "html": "<p>After returning to headquarters, the party learned of Rhokrag's disappearance and tracked him to the Waterspout Inn. Following a confrontation with loyalists and Chelaxian marines, they rescued Rhokrag and learned that a Hellknight was seeking information on the League.</p>\n"
+      },
+      {
+        "heading": "Key Events",
+        "kind": "events",
+        "html": "<ul>\n<li>The party recovered from their encounter with the snakes and discovered a wagon left by the rescued crew as a gesture of thanks.</li>\n<li>Upon returning to headquarters, the party learned that Rhokrag had gone missing whilst investigating whether the Hellknights had regrouped.</li>\n<li>The party investigated the Waterspout Inn, where a bar brawl with loyalists escalated into a larger fight involving reinforcements and Chelaxian marines.</li>\n<li>Aboard the docked ship, the party discovered Rhokrag being interrogated by the captain and a summoned devil. They defeated both and freed Rhokrag, who warned them that Hellknight Ahala was offering payment for information on the League.</li>\n<li>At a subsequent League meeting, the party were assigned an area of Isger in which to provide aid to locals and improve the League's reputation.</li>\n</ul>\n"
+      },
+      {
+        "heading": "People Encountered",
+        "kind": "people",
+        "html": "<ul>\n<li>Maire Phelan</li>\n<li>Ethran Howell</li>\n<li>Rhokrag</li>\n<li>Captain Lamperia Bane</li>\n</ul>\n"
+      },
+      {
+        "heading": "Places Visited",
+        "kind": "places",
+        "html": "<ul>\n<li>Hellbreakers Headquarters</li>\n<li>Waterspout Inn</li>\n</ul>\n"
+      }
+    ]
+  },
+  {
+    "id": "hb-04",
+    "campaign": "hb",
+    "title": "The Haunting of Vordia",
+    "order": 4,
+    "realDate": "2026-09-12",
+    "golarionStart": {
+      "year": 4725,
+      "month": 11,
+      "day": 7
+    },
+    "golarionEnd": {
+      "year": 4725,
+      "month": 11,
+      "day": 10
+    },
+    "body": [
+      {
+        "heading": "Session Recap",
+        "kind": "recap",
+        "html": "<p>The party travelled to Vordia, where rumours of strange activity led them to investigate a seemingly abandoned orphanage. After several encounters with troublesome haunts, they discovered and defeated an Attic Whisperer.</p>\n"
+      },
+      {
+        "heading": "Key Events",
+        "kind": "events",
+        "html": "<ul>\n<li>During the journey to Vordia, Maric performed some anti-Cheliax slam poetry at an inn, which was poorly received by the audience.</li>\n<li>Upon arriving in the heavily pro-Cheliax town of Vordia, the party heard concerning rumours about the local orphanage. Town records indicated that its two remaining orphans had recently been adopted, but the family names were unreadable.</li>\n<li>The party investigated the orphanage, discovering a haunted toybox that opened into the void. They managed to hold it shut whilst Zinx dispersed the haunt.</li>\n<li>A second haunt attacked the party with flying spaghetti, knocking Zinx unconscious before Delilah managed to calm the spirits by telling them off. The party retreated for the day, contemplating burning down the orphanage.</li>\n<li>Returning the following morning, the party discovered an Attic Whisperer upstairs. The creature stole Delilah's voice and knocked Velius unconscious by stealing his breath, before Zinx finally defeated it with a single punch.</li>\n</ul>\n"
+      },
+      {
+        "heading": "People Encountered",
+        "kind": "people",
+        "html": "<ul>\n<li>Attic Whisperer</li>\n</ul>\n"
+      },
+      {
+        "heading": "Places Visited",
+        "kind": "places",
+        "html": "<ul>\n<li>Vordia</li>\n</ul>\n"
+      }
+    ]
+  },
+  {
+    "id": "hb-05",
+    "campaign": "hb",
+    "title": "Doing Good in Isger",
+    "order": 5,
+    "realDate": "2026-09-19",
+    "golarionStart": {
+      "year": 4725,
+      "month": 11,
+      "day": 10
+    },
+    "golarionEnd": {
+      "year": 4725,
+      "month": 11,
+      "day": 16
+    },
+    "body": [
+      {
+        "heading": "Session Recap",
+        "kind": "recap",
+        "html": "<p>The party continued their efforts to improve the Hellbreakers League's reputation, investigating forest fires near Umok and resolving a dispute between Stumpfield and Fernsby. Whilst travelling towards Wolfpoint Garrison, they encountered Sister Sylve, who revealed Viro Ahala's plans to summon a devil.</p>\n"
+      },
+      {
+        "heading": "Key Events",
+        "kind": "events",
+        "html": "<ul>\n<li>Further investigation of the Vordia orphanage uncovered a draft letter stating that the orphans had been sent elsewhere. The party shared their findings with the townsfolk before departing for Umok.</li>\n<li>In Umok, the party encountered an injured goblin named Grizzo, whom the townsfolk suspected of causing the recent forest fires. The party investigated the Chitterwood and defeated two hell hounds, returning with evidence of Grizzo's innocence.</li>\n<li>After participating in Stumpfield's cooperative art day, the party were asked to investigate accusations from neighbouring Fernsby.</li>\n<li>The party discovered that Hissbite, a goblin snake, was responsible for repeatedly destroying Fernsby's village green. After burying the snakes killed during their investigation, they brought Hissbite to Stumpfield in the hope that he could find a community there.</li>\n<li>Whilst travelling towards Wolfpoint Garrison, the party encountered Sister Sylve of the Sisters of the Golden Erinyes. She revealed that Viro Ahala was impersonating a Hellknight and planning a ritual to summon a devil, directing the party towards the Lucent Mission for further answers.</li>\n</ul>\n"
+      },
+      {
+        "heading": "People Encountered",
+        "kind": "people",
+        "html": "<ul>\n<li>Grizzo</li>\n<li>Mayor Marblemug</li>\n<li>Hissbite</li>\n<li>Sister Sylve</li>\n</ul>\n"
+      },
+      {
+        "heading": "Places Visited",
+        "kind": "places",
+        "html": "<ul>\n<li>Vordia</li>\n<li>Umok</li>\n<li>Chitterwood</li>\n<li>Stumpfield</li>\n<li>Fernsby</li>\n</ul>\n"
+      }
+    ]
+  },
+  {
+    "id": "hb-06",
+    "campaign": "hb",
+    "title": "Secrets of the Lucent Mission",
+    "order": 6,
+    "realDate": "2026-10-10",
+    "golarionStart": {
+      "year": 4725,
+      "month": 11,
+      "day": 17
+    },
+    "golarionEnd": {
+      "year": 4725,
+      "month": 11,
+      "day": 19
+    },
+    "relatedNpcIds": [
+      "caeto-vulaunex"
+    ],
+    "body": [
+      {
+        "heading": "Session Recap",
+        "kind": "recap",
+        "html": "<p>After encountering a contingent of Hellknights at Wolfpoint Garrison, the party returned to Vordia to investigate the Lucent Mission. Fighting their way through the Sisters of the Golden Erinyes, they uncovered further details of Ahala's planned ritual in the Chitterwood.</p>\n"
+      },
+      {
+        "heading": "Key Events",
+        "kind": "events",
+        "html": "<ul>\n<li>The party arrived at Wolfpoint Garrison and met Caeto Vulaunex, a Hellknight travelling towards Elidir who had already resolved the troubles at the garrison.</li>\n<li>Returning to Vordia, the party travelled into the mountains to investigate the Lucent Mission. After defeating the sisters guarding the entrance, they discovered a concealed statue of Asmodeus within the pulpit.</li>\n<li>The party fought their way through the mission, encountering hostile sisters and devils. Maric's attempt to pass himself off as one of the sisters using his stolen robes only made him a more appealing target.</li>\n<li>After defeating the remaining sisters and a summoned devil, the party secured the surrender of the Mother Superior.</li>\n<li>The Mother Superior revealed that Ahala planned to perform a ritual in the Chitterwood, summoning a devil he could control without making a deal, intending to rid Isger of its &quot;goblin problems&quot;. The party spared her life and left her with the knowledge that Ahala had deceived her.</li>\n</ul>\n"
+      },
+      {
+        "heading": "People Encountered",
+        "kind": "people",
+        "html": "<ul>\n<li>Caeto Vulaunex</li>\n<li>Sisters of the Golden Erinyes</li>\n<li>Mother Superior Sister Endreah</li>\n</ul>\n"
+      },
+      {
+        "heading": "Places Visited",
+        "kind": "places",
+        "html": "<ul>\n<li>Wolfpoint Garrison</li>\n<li>Vordia</li>\n<li>Lucent Mission</li>\n</ul>\n"
+      }
+    ]
+  },
+  {
+    "id": "hb-07",
+    "campaign": "hb",
+    "title": "Allies in the Chitterwood",
+    "order": 7,
+    "realDate": "2026-10-17",
+    "golarionStart": {
+      "year": 4725,
+      "month": 11,
+      "day": 20
+    },
+    "golarionEnd": {
+      "year": 4725,
+      "month": 11,
+      "day": 23
+    },
+    "relatedNpcIds": [
+      "brakknap"
+    ],
+    "body": [
+      {
+        "heading": "Session Recap",
+        "kind": "recap",
+        "html": "<p>The party ventured into the Chitterwood in search of Viro Ahala, encountering a local goblin community willing to aid their investigation. After dealing with the Isgeri Slayers, they learned that Ahala's ritual had disturbed three goblin sites of power, which must be cleansed before his location can be revealed.</p>\n"
+      },
+      {
+        "heading": "Key Events",
+        "kind": "events",
+        "html": "<ul>\n<li>The party returned to Vordia before travelling to Umok, where they gathered information to narrow down Viro Ahala's location.</li>\n<li>Following tracks through the Chitterwood, the party discovered a petrified tree stump guarded by three ort devils. Maric defeated one of them with a single attack using salt.</li>\n<li>After defeating the devils, the party encountered a goblin Looksee party led by Zagnub, who escorted them to Thorngrip and introduced them to the community's elder, Brakknap.</li>\n<li>In exchange for Brakknap's assistance, the party tracked down and killed the Isgeri Slayers, a group responsible for hunting and murdering goblins in the forest.</li>\n<li>Brakknap revealed that Ahala's ritual had disturbed three goblin sites of power, preventing the ancestors from locating him. He asked the party to cleanse these sites so that the ancestors could reveal Ahala's whereabouts.</li>\n</ul>\n"
+      },
+      {
+        "heading": "People Encountered",
+        "kind": "people",
+        "html": "<ul>\n<li>Zagnub</li>\n<li>Brakknap</li>\n<li>Isgeri Slayers</li>\n</ul>\n"
+      },
+      {
+        "heading": "Places Visited",
+        "kind": "places",
+        "html": "<ul>\n<li>Vordia</li>\n<li>Umok</li>\n<li>Chitterwood</li>\n<li>Thorngrip</li>\n</ul>\n"
+      }
+    ]
+  },
+  {
+    "id": "hb-08",
+    "campaign": "hb",
+    "title": "Into the Stagfall Caves",
+    "order": 8,
+    "realDate": "2026-11-07",
+    "golarionStart": {
+      "year": 4725,
+      "month": 11,
+      "day": 24
+    },
+    "golarionEnd": {
+      "year": 4725,
+      "month": 11,
+      "day": 26
+    },
+    "relatedNpcIds": [
+      "brakknap"
+    ],
+    "body": [
+      {
+        "heading": "Session Recap",
+        "kind": "recap",
+        "html": "<p>The party cleansed the three goblin sites of power, allowing Brakknap to reveal Ahala's location within the Stagfall Caves. Venturing into the caves, they encountered devils, Hellknights and a basilisk that temporarily turned Velius to stone.</p>\n"
+      },
+      {
+        "heading": "Key Events",
+        "kind": "events",
+        "html": "<ul>\n<li>At the Little Tree, the party encountered distorted magical energy that caused Zinx to shrink. After Velius defeated a bear, Zinx dispersed the magic and restored the site.</li>\n<li>Maric successfully dispelled the magic at the Hungry Hole and Moss Pond. At the latter, the party also fought several regenerating moss sloths, eventually overcoming their regeneration using Alchemist's Fire.</li>\n<li>Having cleansed all three sites, the party returned to Brakknap, who revealed that Ahala was performing his ritual in the Stagfall Caves and allowed them to keep his pendant.</li>\n<li>The party entered the Stagfall Caves, fighting devils and encountering Hellknights as they explored the tunnels. Velius landed several critical hits, whilst Maric sabotaged the Hellknights' belongings to make them look foolish.</li>\n<li>The party encountered a basilisk that turned Velius to stone. After defeating the creature, they followed Zinx's advice and used Maric's cookware to collect its blood, pouring it over Velius to reverse the petrification.</li>\n</ul>\n"
+      },
+      {
+        "heading": "People Encountered",
+        "kind": "people",
+        "html": "<ul>\n<li>Brakknap</li>\n<li>Hellknights</li>\n</ul>\n"
+      },
+      {
+        "heading": "Places Visited",
+        "kind": "places",
+        "html": "<ul>\n<li>Thorngrip</li>\n<li>Chitterwood</li>\n<li>Little Tree</li>\n<li>Hungry Hole</li>\n<li>Moss Pond</li>\n<li>Stagfall Caves</li>\n</ul>\n"
+      }
+    ]
+  },
+  {
+    "id": "hb-09",
+    "campaign": "hb",
+    "title": "The Fall of Viro Ahala",
+    "order": 9,
+    "realDate": "2026-11-14",
+    "golarionStart": {
+      "year": 4725,
+      "month": 11,
+      "day": 26
+    },
+    "golarionEnd": {
+      "year": 4725,
+      "month": 11,
+      "day": 30
+    },
+    "relatedNpcIds": [
+      "brakknap",
+      "rhokrag"
+    ],
+    "body": [
+      {
+        "heading": "Session Recap",
+        "kind": "recap",
+        "html": "<p>The party confronted Viro Ahala in the Stagfall Caves, disrupting his ritual and putting an end to his plans. After celebrating their victory with the goblins of Thorngrip, they returned to Saringallow to learn that the League's efforts had successfully improved its reputation throughout the countryside.</p>\n"
+      },
+      {
+        "heading": "Key Events",
+        "kind": "events",
+        "html": "<ul>\n<li>Continuing through the Stagfall Caves, the party were ambushed by Hellknights and devils. Velius swiftly defeated them, although the last Hellknight managed to shout a warning deeper into the caves.</li>\n<li>The party discovered Viro Ahala performing his ritual. Their intervention destabilised the ritual's magical energies, causing chaos throughout the ensuing fight.</li>\n<li>Delilah intercepted a critical hit intended for Maric, leaving her dying. After healing her, Maric successfully dispelled the ritual energy, leaving Ahala staggered and allowing Velius to kill him.</li>\n<li>The party returned to Thorngrip, where the goblins celebrated their victory with costumes and plenty of pickle liquor. Maric reconsidered his dislike of goblins, and Brakknap gifted the party his crystal as a symbol of friendship between Thorngrip and the League.</li>\n<li>Returning to Saringallow, the party learned that the League's efforts had significantly improved public sentiment towards them throughout the countryside. They were assigned local League work whilst awaiting further instructions from the founders.</li>\n</ul>\n"
+      },
+      {
+        "heading": "People Encountered",
+        "kind": "people",
+        "html": "<ul>\n<li>Viro Ahala</li>\n<li>Zagnub</li>\n<li>Brakknap</li>\n<li>Maire Phelan</li>\n<li>Rhokrag</li>\n<li>Xerra Bluebottle</li>\n</ul>\n"
+      },
+      {
+        "heading": "Places Visited",
+        "kind": "places",
+        "html": "<ul>\n<li>Stagfall Caves</li>\n<li>Thorngrip</li>\n<li>Saringallow</li>\n<li>Hellbreakers Headquarters</li>\n</ul>\n"
       }
     ]
   }

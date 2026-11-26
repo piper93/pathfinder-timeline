@@ -15,7 +15,7 @@ function formatRealRange({ realStart, realEnd, status }) {
   return start + " – " + realDateFormat.format(new Date(realEnd));
 }
 
-export function showCampaignHub(campaign, events, sessionNotesUrl, showingSessions) {
+export function showCampaignHub(campaign, events, sectionUrls, activeSection) {
   const header = document.getElementById("hub-header");
   const sidebar = document.getElementById("hub-sidebar");
   const details = document.getElementById("hub-details");
@@ -54,7 +54,7 @@ export function showCampaignHub(campaign, events, sessionNotesUrl, showingSessio
     const menu = document.getElementById("hub-sections");
     const list = menu.querySelector("ul");
     const timeline = list.querySelector("a");
-    if (showingSessions) {
+    if (activeSection) {
       timeline.href = "index.html?campaign=" + encodeURIComponent(campaign.id) + "#timeline";
       timeline.removeAttribute("aria-current");
     }
@@ -64,11 +64,11 @@ export function showCampaignHub(campaign, events, sessionNotesUrl, showingSessio
       const icon = document.createElement("span");
       icon.className = "fa fa-" + section.icon;
       icon.setAttribute("aria-hidden", "true");
-      if (section.name === "Session Notes" && sessionNotesUrl) {
+      if (sectionUrls[section.id]) {
         const link = document.createElement("a");
-        link.href = sessionNotesUrl;
+        link.href = sectionUrls[section.id];
         link.append(icon, section.name);
-        if (showingSessions) link.setAttribute("aria-current", "location");
+        if (activeSection === section.id) link.setAttribute("aria-current", "location");
         item.append(link);
         list.append(item);
         continue;

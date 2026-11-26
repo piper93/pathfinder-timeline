@@ -98,9 +98,9 @@
       { year: 4725, month: 8, day: 13, publicDuringPlay: true, name: "The Eagle Knights and the Hellbreakers League retake Breachill and Citadel Altaerein" }
     ],
     sections: [
-      { name: "Session Notes", icon: "book" },
-      { name: "Player Characters", icon: "users" },
-      { name: "Important NPCs", icon: "user" }
+      { id: "sessions", name: "Session Notes", icon: "book" },
+      { id: "characters", name: "Player Characters", icon: "users" },
+      { id: "npcs", name: "Important NPCs", icon: "user" }
     ]
   }
 ];
