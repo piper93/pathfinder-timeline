@@ -1,6 +1,6 @@
 ﻿import { playerCharactersFor, showPlayerCharacters } from "./player-characters.js";
 import { npcsFor, showImportantNpcs } from "./important-npcs.js";
-import { sessionsFor, sessionUrl, showSessionNotes } from "./session-notes.js";
+import { sessionsFor, sessionUrl, showPreviousSession, showSessionNotes } from "./session-notes.js";
 import { showCampaignHub } from "./campaign-hub.js";
 import { MONTHS, displayGolarionDate } from "./golarion-calendar.js";
 
@@ -160,12 +160,18 @@ if (historicalEvents.length) {
   historyToggle.addEventListener("change", renderTimeline);
 }
 
+const requestedSession = query.get("session");
+const showingSessionDetail = activeSection === "sessions" && sessions.some(session => session.id === requestedSession);
+if (campaign?.status === "In progress" && !showingSessionDetail && sessions.length) {
+  showPreviousSession(campaign, sessions.at(-1));
+}
+
 if (activeSection === "characters") {
   showPlayerCharacters(campaign, playerCharacters);
 } else if (activeSection === "npcs") {
   showImportantNpcs(campaign, npcs, sessions);
 } else if (activeSection === "sessions") {
-  showSessionNotes(campaign, sessions, query.get("session"));
+  showSessionNotes(campaign, sessions, requestedSession);
 } else {
   renderTimeline();
 }

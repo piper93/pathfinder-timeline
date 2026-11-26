@@ -77,6 +77,33 @@ function dates(session, compact = false) {
   return metadata;
 }
 
+function sessionCard(campaign, entry) {
+  const card = link("", sessionUrl(campaign.id, entry), "session-list-card");
+  card.setAttribute("aria-label", sessionNumber(entry) + " — " + entry.title);
+  const number = element("span", "Session", "session-list-number");
+  number.append(element("strong", String(entry.order).padStart(2, "0")));
+  card.append(number);
+  const metadata = dates(entry, true);
+  if (metadata.childElementCount) card.append(metadata);
+  const recap = entry.body.find(part => part.kind === "recap");
+  if (recap) {
+    const source = document.createElement("template");
+    source.innerHTML = recap.html;
+    card.append(element("p", source.content.textContent.trim(), "session-list-recap"));
+  }
+  const arrow = element("span", "", "fa fa-angle-right session-list-arrow");
+  arrow.setAttribute("aria-hidden", "true");
+  card.append(arrow);
+  return card;
+}
+
+export function showPreviousSession(campaign, session) {
+  const panel = document.getElementById("previous-session");
+  if (!panel) return;
+  panel.append(element("h2", "Previous Session", "session-featured-label"), sessionCard(campaign, session));
+  panel.hidden = false;
+}
+
 export function showSessionNotes(campaign, sessions, requestedSession) {
   const panel = document.getElementById("session-panel");
   const index = sessions.findIndex(session => session.id === requestedSession);
@@ -93,23 +120,7 @@ export function showSessionNotes(campaign, sessions, requestedSession) {
     const list = element("ul", "", "session-list");
     for (const entry of sessions) {
       const row = element("li");
-      const card = link("", sessionUrl(campaign.id, entry), "session-list-card");
-      card.setAttribute("aria-label", sessionNumber(entry) + " — " + entry.title);
-      const number = element("span", "Session", "session-list-number");
-      number.append(element("strong", String(entry.order).padStart(2, "0")));
-      card.append(number);
-      const metadata = dates(entry, true);
-      if (metadata.childElementCount) card.append(metadata);
-      const recap = entry.body.find(part => part.kind === "recap");
-      if (recap) {
-        const source = document.createElement("template");
-        source.innerHTML = recap.html;
-        card.append(element("p", source.content.textContent.trim(), "session-list-recap"));
-      }
-      const arrow = element("span", "", "fa fa-angle-right session-list-arrow");
-      arrow.setAttribute("aria-hidden", "true");
-      card.append(arrow);
-      row.append(card);
+      row.append(sessionCard(campaign, entry));
       list.append(row);
     }
     panel.append(list);

@@ -40,14 +40,17 @@
         </ul>
       </nav>
     </aside>
-    <section class="session-panel" id="session-panel" aria-label="Session Notes" hidden></section>
-    <section class="session-panel" id="npc-panel" aria-label="Important NPCs" hidden></section>
-    <section class="session-panel" id="player-character-panel" aria-label="Player Characters" hidden></section>
-    <div class="timeline-panel">
-      <div class="timeline-controls" id="timeline-controls" hidden>
-        <label><input type="checkbox" id="show-history" checked aria-controls="timeline"> Show Historical Entries</label>
+    <div class="hub-content">
+      <section id="previous-session" class="previous-session" aria-label="Previous Session" hidden></section>
+      <section class="session-panel" id="session-panel" aria-label="Session Notes" hidden></section>
+      <section class="session-panel" id="npc-panel" aria-label="Important NPCs" hidden></section>
+      <section class="session-panel" id="player-character-panel" aria-label="Player Characters" hidden></section>
+      <div class="timeline-panel">
+        <div class="timeline-controls" id="timeline-controls" hidden>
+          <label><input type="checkbox" id="show-history" checked aria-controls="timeline"> Show Historical Entries</label>
+        </div>
+        <section id="timeline" aria-label="Golarion timeline"></section>
       </div>
-      <section id="timeline" aria-label="Golarion timeline"></section>
     </div>
   </div>
 </main>
