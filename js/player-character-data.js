@@ -16,7 +16,7 @@ export const PLAYER_CHARACTERS = [
     "name": "Maric Brightforce",
     "rosterName": "Maric",
     "ancestry": "Halfling Angelkin",
-    "class": "Sorcerer",
+    "class": "Angelic Sorcerer",
     "portrait": "img/hb/maric-portrait.png",
     "html": ""
   },
