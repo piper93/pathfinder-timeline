@@ -1,4 +1,4 @@
-html, body {
+﻿html, body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', 'Roboto', Arial, sans-serif;
@@ -12,52 +12,6 @@ section#timeline {
   width: 80%;
   margin: 30px auto;
   position: relative;
-}
-
-@media screen and (max-width: 600px) {
-  section#timeline {
-    width: 95%;
-    margin: 10px auto;
-  }
-
-  section#timeline:before {
-    left: 20px;
-  }
-
-  section#timeline article div.inner {
-    width: 100%;
-    float: none;
-    margin-left: 60px;
-  }
-
-  section#timeline article:nth-child(2n+2) div.inner {
-    float: none;
-    margin-left: 60px;
-  }
-
-  section#timeline article div.inner span.date {
-    left: 0;
-    margin: 0;
-    width: 55px;
-    height: 55px;
-    font-size: 11px;
-  }
-
-  section#timeline article div.inner span.date span.month {
-    font-size: 14px;
-  }
-
-  section#timeline article div.inner h2 {
-    font-size: 16px;
-    padding: 14px;
-  }
-
-  section #timeline article div.inner p {
-    font-size: 13px;
-    padding: 14px;
-    line-height: 1.5;
-  }
-
 }
 
 section#timeline:before {
@@ -262,3 +216,31 @@ section#timeline article div.inner div.event-block:only-child h2 {
 section#timeline article div.inner div.event-block:first-child {
   border-radius: 0 0 10px 10px;
 } */
+
+@media (max-width: 800px) {
+  section#timeline {
+    width: calc(100% - 2rem);
+    margin: 1rem auto;
+  }
+
+  section#timeline::before {
+    left: 30px;
+  }
+
+  section#timeline article div.inner,
+  section#timeline article:nth-child(2n+2) div.inner {
+    float: none;
+    width: auto;
+    margin: 0 0 0 74px;
+  }
+
+  section#timeline article div.inner span.date {
+    left: 0;
+    margin: 0;
+  }
+
+  section#timeline article div.inner h2 {
+    font-size: 16px;
+    padding: 14px;
+  }
+}
