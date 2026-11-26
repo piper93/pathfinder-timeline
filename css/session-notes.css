@@ -135,7 +135,8 @@
 }
 
 .session-list-card {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 13rem minmax(0, 1fr) auto;
   align-items: center;
   gap: 1rem;
   padding-right: 1rem;
@@ -175,13 +176,14 @@
 
 .session-list .session-dates {
   display: grid;
-  flex: 0 0 auto;
+  grid-column: 2;
+  min-width: 0;
   gap: 0.5rem;
   padding-block: 0.75rem;
 }
 
 .session-list-recap {
-  flex: 1;
+  grid-column: 3;
   min-width: 0;
   margin: 0.75rem 0;
   padding-left: 1rem;
@@ -190,17 +192,13 @@
 }
 
 .session-list-arrow {
+  grid-column: 4;
   margin-left: auto;
 }
 
 @media (max-width: 1050px) {
   .session-list-card {
-    display: grid;
     grid-template-columns: auto minmax(0, 1fr) auto;
-  }
-
-  .session-list .session-dates {
-    grid-column: 2;
   }
 
   .session-list-recap {
@@ -212,6 +210,7 @@
   }
 
   .session-list-arrow {
+  grid-column: 4;
     grid-column: 3;
     grid-row: 1;
   }

@@ -10,7 +10,7 @@
 
 - Campaign cards open shared hubs with existing portraits, a campaign timeline and a sidebar for status and date ranges.
 
-- The Hellbreakers sidebar links to its timeline and marks Session Notes, Player Characters and Important NPCs as WIP.
+- The Hellbreakers sidebar links to its timeline, Session Notes and Important NPCs. Player Characters is also available in Hellbreakers.
 
 - Completed campaign hubs support separately styled historical context entries. Add entries as approved player-facing material is supplied.
 
@@ -37,6 +37,8 @@
 
 ### 3. Hellbreakers important NPCs
 
+- [x] Add the Hellbreakers NPC card view with Rhokrag and Brakknap and derive session links from the existing session references.
+
 - [ ] Add a grid of NPC profiles with optional portraits, descriptions and affiliations from supplied player-facing content. Derive related sessions and timeline events from explicit references. Add search and affiliation filtering when the profile list warrants them.
 
 ### 4. Optional Foundry session statistics
@@ -58,4 +60,6 @@ Required metrics when work resumes:
 
 ### 5. Hellbreakers player characters
 
-- [ ] Add character profiles last, using player-written summaries and existing portraits where appropriate. Support optional character metadata and multi-campaign membership.
+- [x] Add the four Hellbreakers character cards in alphabetical order with the supplied ancestry and class and existing portrait fallbacks.
+- [x] Add the four supplied square portraits to the character cards.
+- [ ] Add player-written summaries as supplied. Multi-campaign character membership remains future work.

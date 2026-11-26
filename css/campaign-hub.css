@@ -164,18 +164,6 @@
   .campaign-hub section#timeline::before {
     left: calc(1rem + 30px);
   }
-
-  .campaign-hub section#timeline article div.inner,
-  .campaign-hub section#timeline article:nth-child(2n+2) div.inner {
-    float: none;
-    width: auto;
-    margin: 0 0 0 74px;
-  }
-
-  .campaign-hub section#timeline article div.inner span.date {
-    left: 0;
-    margin: 0;
-  }
 }
 
 .hub-sidebar dl {

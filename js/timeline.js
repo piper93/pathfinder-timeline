@@ -1,4 +1,6 @@
-﻿import { sessionsFor, sessionUrl, showSessionNotes } from "./session-notes.js";
+﻿import { playerCharactersFor, showPlayerCharacters } from "./player-characters.js";
+import { npcsFor, showImportantNpcs } from "./important-npcs.js";
+import { sessionsFor, sessionUrl, showSessionNotes } from "./session-notes.js";
 import { showCampaignHub } from "./campaign-hub.js";
 import { MONTHS, displayGolarionDate } from "./golarion-calendar.js";
 
@@ -66,10 +68,10 @@ function getTimeline(events, calendar) {
  for (const events of dateGroups.values()) {
    var firstEvent = events[0];
    const date = displayGolarionDate(firstEvent, calendar);
-   const badge = firstEvent.year == null || firstEvent.month == null || firstEvent.day == null
+   const badge = firstEvent.year == null || firstEvent.month == null
      ? `<span class="date year-only"><span class="year">${firstEvent.year == null ? "?" : date.year}</span></span>`
      : `<span class="date ${MONTHS[firstEvent.month - 1].toLowerCase()}">
-         <span class="day">${date.day}</span>
+         ${date.day == null ? "" : `<span class="day">${date.day}</span>`}
          <span class="month">${date.month}</span>
          <span class="year">${date.year}</span>
        </span>`;
@@ -106,23 +108,38 @@ const campaign = CAMPAIGNS.find(entry => entry.id === requestedCampaign);
 const filter = campaign?.id ?? "all";
 
 const campaignEvents = campaign ? EVENTS.filter(event => event.tag === filter) : EVENTS;
-const historicalEvents = campaign?.status === "Complete"
-  ? (campaign.historicalEvents ?? []).map(event => {
-      const { month, day } = event;
-      const hasFullDate = event.year != null && month != null && day != null;
-      return { ...event, month: hasFullDate ? month : undefined, day: hasFullDate ? day : undefined, tag: filter, historical: true };
-    })
-  : [];
+const historicalEvents = (campaign?.historicalEvents ?? [])
+  .filter(event => campaign.status === "Complete" || event.publicDuringPlay === true)
+  .map(event => ({
+    ...event,
+    month: event.year == null ? undefined : event.month,
+    day: event.year == null || event.month == null ? undefined : event.day,
+    tag: filter,
+    historical: true
+  }));
 
 
-const sessions = campaign?.sections?.some(section => section.name === "Session Notes")
+const sessions = campaign?.sections?.some(section => section.id === "sessions")
   ? sessionsFor(campaign.id)
   : [];
-const sessionNotesUrl = sessions.length ? sessionUrl(campaign.id) : "";
-const showingSessions = Boolean(sessionNotesUrl && query.get("view") === "sessions");
+const npcs = campaign?.sections?.some(section => section.id === "npcs")
+  ? npcsFor(campaign.id)
+  : [];
+const playerCharacters = campaign?.sections?.some(section => section.id === "characters")
+  ? playerCharactersFor(campaign.id)
+  : [];
+const sectionUrls = {
+  characters: playerCharacters.length ? "index.html?" + new URLSearchParams({ campaign: campaign.id, view: "characters" }) : "",
+  sessions: sessions.length ? sessionUrl(campaign.id) : "",
+  npcs: npcs.length ? "index.html?" + new URLSearchParams({ campaign: campaign.id, view: "npcs" }) : ""
+};
+const requestedSection = query.get("view");
+const activeSection = Object.hasOwn(sectionUrls, requestedSection) && sectionUrls[requestedSection]
+  ? requestedSection
+  : null;
 
 if (campaign) {
-  showCampaignHub(campaign, campaignEvents, sessionNotesUrl, showingSessions);
+  showCampaignHub(campaign, campaignEvents, sectionUrls, activeSection);
 } else {
   document.querySelector('.archive-nav a[href="index.html"]').setAttribute("aria-current", "page");
 }
@@ -143,7 +160,11 @@ if (historicalEvents.length) {
   historyToggle.addEventListener("change", renderTimeline);
 }
 
-if (showingSessions) {
+if (activeSection === "characters") {
+  showPlayerCharacters(campaign, playerCharacters);
+} else if (activeSection === "npcs") {
+  showImportantNpcs(campaign, npcs, sessions);
+} else if (activeSection === "sessions") {
   showSessionNotes(campaign, sessions, query.get("session"));
 } else {
   renderTimeline();

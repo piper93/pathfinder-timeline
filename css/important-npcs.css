@@ -1,0 +1,131 @@
+﻿.npc-heading {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 0 0 1.25rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid #657586;
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  text-transform: uppercase;
+}
+
+.npc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+  gap: 1rem;
+}
+
+.npc-card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 1rem;
+  border: 1px solid var(--campaign-accent);
+  border-top-width: 8px;
+  border-radius: 0.65rem;
+  background: #192631;
+}
+
+.npc-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.npc-card-header > .fa {
+  font-size: 1.5rem;
+}
+
+.npc-portrait {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.35rem;
+  object-fit: cover;
+}
+
+.npc-identity {
+  padding-left: 0.75rem;
+  border-left: 1px solid #657586;
+}
+
+.npc-identity h3,
+.npc-identity p {
+  margin: 0;
+}
+
+.npc-identity h3 {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+}
+
+.npc-identity p,
+.npc-related {
+  font-size: 0.875rem;
+}
+
+.npc-badge {
+  align-self: flex-start;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid currentColor;
+  border-radius: 0.75rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.npc-description {
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.npc-description img {
+  max-width: 100%;
+  height: auto;
+}
+
+.npc-related {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.55rem;
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+.npc-related a {
+  min-width: 1.5rem;
+}
+
+.npc-descriptor {
+  text-transform: uppercase;
+}
+
+.npc-life-status {
+  margin-left: auto;
+}
+
+.npc-relationship {
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.npc-related + .npc-relationship {
+  align-self: flex-end;
+  margin-top: 0.75rem;
+}
+
+.npc-badge[data-status="ally"] {
+  color: #a5e4bb;
+  background: #1d392e;
+}
+
+.npc-badge[data-status="neutral"] {
+  color: #d2d8de;
+  background: #34404b;
+}
+
+.npc-badge[data-status="enemy"],
+.npc-badge[data-status="deceased"] {
+  color: #ffb5b9;
+  background: #48252d;
+}
